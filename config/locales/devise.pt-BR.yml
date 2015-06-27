@@ -1,0 +1,65 @@
+pt-BR:
+  devise:
+    mailer:
+      confirmation_instructions:
+        action: Confirmar minha conta
+        greeting: Bem-vindo %{recipient}!
+        instruction: "Você pode confirmar sua conta através do link abaixo:"
+        subject: "[RX Hive - Cotação] - Confirmação de cadastro"
+      reset_password_instructions:
+        subject: "[RX Hive - Cotação] - Pedido de alteração de senha"
+        action: Redefinir minha senha
+        greeting: Olá %{recipient}!
+        instruction: Alguém fez o pedido para redefinir sua senha, e você pode fazer isso clicando no link abaixo.
+        instruction_2: Se você não fez este pedido, por favor ignore este e-mail.
+        instruction_3: Sua senha não será alterada até que você acesse o link abaixo e crie uma nova.
+      unlock_instructions:
+        action: Desbloquear minha conta
+        greeting: Olá %{recipient}!
+        instruction: 'Clique no link abaixo para desbloquear sua conta:'
+        message: Sua conta foi bloqueada devido ao excessivo número de tentativas acesso inválidas.
+    email: E-mail
+    password: Senha
+    passwords:
+      user:
+        no_token: "Você só pode acessar essa página através de um e-mail de troca de senha. Se já estiver acessando por um e-mail, verifique se a URL fornecida está completa."
+        send_instructions: 'Dentro de minutos, você receberá um e-mail com instruções para a troca da sua senha.'
+        send_paranoid_instructions: 'Se o seu endereço de e-mail estiver cadastrado, você receberá um link de recuperação da senha via e-mail.'
+        updated: 'Sua senha foi alterada com sucesso. Você está logado.'
+        updated_not_active: 'Sua senha foi alterada com sucesso.'
+    to_remember: Lembrar
+    sign_in: Entrar
+    sign_up: Cadastre-se
+    change_your_password: Mudar senha
+    sign_out: Sair
+    edit_user: Edição de usuário
+    update: Atualizar
+    forgot_password: Esqueci minha senha
+    send_password_reset_instructions: Enviar
+    password_confirmation: Confirme sua senha
+    send: Enviar
+    failure:
+      already_authenticated: 'Você já está logado.'
+      inactive: 'Sua conta ainda não foi ativada.'
+      not_permitted: 'Você não possui permissão para acessar esta página'
+      invalid: 'E-mail ou senha inválidos.'
+      invalid_token: 'O token de autenticação não é válido.'
+      locked: 'Sua conta está bloqueada.'
+      not_found_in_database: 'E-mail ou senha inválidos.'
+      timeout: 'Sua sessão expirou, por favor, efetue login novamente para continuar.'
+      unauthenticated: 'Algumas funcionalidades desta página requerem autenticação (login).'
+      unconfirmed: 'Antes de continuar, confirme a sua conta.'
+    sessions:
+      signed_in: Login efetuado com sucesso.
+      signed_out: Logout efetuado com sucesso.
+  errors:
+    messages:
+      access_denied: Acesso Negado.
+      already_confirmed: "já foi confirmado"
+      confirmation_period_expired: "precisa ser confirmada em até %{period}, por favor, solicite uma nova"
+      expired: "expirou, por favor, solicite uma nova"
+      not_found: "não encontrado"
+      not_locked: "não foi bloqueado"
+      not_saved:
+        one: "Não foi possível salvar %{resource}: 1 erro"
+        other: "Não foi possível salvar %{resource}: %{count} erros."

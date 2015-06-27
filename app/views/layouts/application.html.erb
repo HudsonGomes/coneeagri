@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>CONEEAGRI UFF 2016</title>
+  <%= stylesheet_link_tag  'application', media: 'all', 'data-turbolinks-track' => true %>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+  <%= csrf_meta_tags %>
+  <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+</head>
+<body>
+    <header>
+        <nav role="navigation">
+          <div class="nav-wrapper">
+            <%=link_to( image_tag('logo_menor.png'), root_path, :class=>"brand-logo") %>
+            <ul id="nav-mobile" class="right hide-on-med-and-down">
+              <li><%= link_to 'Eventos Culturais', eventos_culturais_path %></li>
+              <li><%= link_to 'Eventos Acadêmicos', eventos_academicos_index_path %></li>
+              <li><%= link_to 'Estrutura', estruturas_path %></li>
+              <li><%= link_to 'Mostra Científica', mostras_cientifica_path %></li>
+              <li><%= link_to 'Contato', new_contato_path %></li>
+            </ul>
+          </div>
+        </nav>
+    </header>
+
+    <main>
+      <%= yield %>
+    </main>
+
+<footer class="page-footer">
+  <div class="container">
+    <p>
+
+      Coneeagri UFF 2016 |
+      Todos os direitos reservados
+
+    </p>
+  </div>
+</footer>
+</body>
+</html>
+
+
+
+

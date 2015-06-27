@@ -1,0 +1,121 @@
+//SLIDER
+.slider{
+  height: 100vh !important;
+
+  .indicators{
+    bottom: 50px;
+  }
+
+  .left-align{
+    margin-left: -150px;
+  }
+
+  .photo-1{
+    h1 {
+      color: #1b5e20;
+      font-weight: bold;
+      font-size: 6.0rem;
+      text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+    }
+
+    h3{
+      color: #1b5e20;
+      font-weight: bold;
+      font-size: 4.2rem;
+      margin-top: 50px;
+      text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+    }
+  }
+
+  .photo-2, .photo-3{
+
+    .caption {
+      h1 {
+        color: #1b5e20;
+        font-weight: bold;
+        font-size: 4.2rem;
+        text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+      }
+
+      h3{
+        color: #1b5e20;
+        font-weight: bold;
+        text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+      }
+    }
+  }
+
+  .inscrever-home{
+    text-align: center;
+    button{
+      bottom: 100px;
+      font-weight: normal;
+      font-size: 30px;
+      opacity: 0.8;
+
+
+      &:hover{
+        opacity: 1.0;
+        background-color: #1b5e20;
+      }
+    }
+  }
+}
+
+.slides{
+  height: 100vh !important;
+  opacity: 0.8;
+}
+
+.divider{
+  margin: 20px 0px;
+}
+
+.logo-secundario{
+  img{
+    max-width: 300px;
+  }
+}
+
+//FOOTER
+body{
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+main {
+  flex: 1 0 auto;
+}
+
+.hidden {
+  display: none;
+}
+
+.alert-error {
+  background-color: #f2dede;
+  border-color: #eed3d7;
+  color: #b94a48;
+  text-align: left;
+}
+
+.alert-alert {
+  background-color: #f2dede;
+  border-color: #eed3d7;
+  color: #b94a48;
+  text-align: left;
+}
+
+.alert-success {
+  background-color: #dff0d8;
+  border-color: #d6e9c6;
+  color: #468847;
+  text-align: left;
+}
+
+.alert-notice {
+  background-color: #dff0d8;
+  border-color: #d6e9c6;
+  color: #468847;
+  text-align: left;
+}

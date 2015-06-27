@@ -1,0 +1,22 @@
+nav{
+  position: fixed;
+  z-index: 10;
+  background: rgba(25, 95, 25, .4);
+
+  li{
+    font-weight: bold;
+  }
+
+  .nav-wrapper{
+    width: 90%;
+    margin: 0 auto;
+  }
+}
+
+.brand-logo{
+  margin-left: 50px;
+
+  img{
+    max-width: 80px;
+  }
+}
