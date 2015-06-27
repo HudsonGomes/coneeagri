@@ -14,4 +14,3 @@ class Coneeagri.Routers.Main extends Backbone.Router
     @current_view.clear() if @current_view isnt null
     @current_view = new Coneeagri.Views.EventosAcademicos.IndexView()
 
-  load_home: ->
