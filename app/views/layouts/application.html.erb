@@ -4,7 +4,7 @@
   <%= favicon_link_tag 'favicon.ico' %>
   <title>CONEEAGRI UFF 2016</title>
   <%= stylesheet_link_tag  'application', media: 'all', 'data-turbolinks-track' => true %>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <%= csrf_meta_tags %>
   <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
@@ -14,6 +14,14 @@
         <nav role="navigation">
           <div class="nav-wrapper">
             <%=link_to( image_tag('logo_menor.png'), root_path, :class=>"brand-logo") %>
+            <ul id="slide-out" class="side-nav">
+              <li><%= link_to 'Eventos Culturais', eventos_culturais_path %></li>
+              <li><%= link_to 'Eventos Acadêmicos', eventos_academicos_index_path %></li>
+              <li><%= link_to 'Infraestrutura', estruturas_path %></li>
+              <li><%= link_to 'Mostra Científica', mostras_cientifica_path %></li>
+              <li><%= link_to 'Contato', new_contato_path %></li>
+            </ul>
+            <a href="#" data-activates="slide-out" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
             <ul id="nav-mobile" class="right hide-on-med-and-down">
               <li><%= link_to 'Eventos Culturais', eventos_culturais_path %></li>
               <li><%= link_to 'Eventos Acadêmicos', eventos_academicos_index_path %></li>
