@@ -38,7 +38,10 @@ $(document).ready(function(){
         }
     );
 
-    $('.button-collapse').sideNav();
+    $('.button-collapse').sideNav({
+        edge: 'right',
+        closeOnClick: true
+    });
 });
 
 

@@ -19,6 +19,17 @@ section{
   margin-top: 20px;
 }
 
+
+nav {
+  .button-collapse {
+    float: right;
+  }
+}
+
+#sidenav-overlay{
+  z-index: 0;
+}
+
 //MAIN
 main {
   .special-container{
