@@ -39,7 +39,18 @@
     font-size: 300%;
     margin-top: 0.1em;
     font-weight: bold;
-    margin-bottom: 20px;
+}
+
+@media screen and (min-width: 900px){
+    .time_circles > div > span {
+        margin-bottom: 20px;
+    }
+}
+
+@media screen and (max-width: 900px){
+    .time_circles > div > span {
+        margin-bottom: 10px;
+    }
 }
 
 .timing{
@@ -49,4 +60,8 @@
 
 .time_circles {
     z-index: 2;
+}
+
+.time_circles canvas{
+    max-width: 100%;
 }

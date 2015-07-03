@@ -1,24 +1,28 @@
 <div class="container">
   <div id="eventos-academicos">
-  <h1>Eventos Acadêmicos</h1>
-  <div class="row">
-    <div class="col s12">
-    <button class="waves-effect waves-light btn">24/01</button>
-    <button class="waves-effect waves-light btn">25/01</button>
-    <button class="waves-effect waves-light btn">26/01</button>
-    <button class="waves-effect waves-light btn">27/01</button>
-    <button class="waves-effect waves-light btn">28/01</button>
-    <button class="waves-effect waves-light btn">29/01</button>
-    <button class="waves-effect waves-light btn">30/01</button>
+    <div class="row">
+      <div class="col s12">
+        <h1>Eventos Acadêmicos</h1>
+      </div>
     </div>
-  </div>
-  <div class="divider"></div>
-  <section data-section="eventos-academicos">
-    <% if @eventos_academicos.any? %>
-      <%= render partial: 'index' %>
-    <% else %>
-      <span>Aguarde! Em breve teremos novidades para você</span>
-    <% end %>
-  </section>
+    <div class="row">
+      <div class="col s12">
+      <button class="waves-effect waves-light btn">24/01</button>
+      <button class="waves-effect waves-light btn">25/01</button>
+      <button class="waves-effect waves-light btn">26/01</button>
+      <button class="waves-effect waves-light btn">27/01</button>
+      <button class="waves-effect waves-light btn">28/01</button>
+      <button class="waves-effect waves-light btn">29/01</button>
+      <button class="waves-effect waves-light btn">30/01</button>
+      </div>
+    </div>
+    <div class="divider"></div>
+    <section data-section="eventos-academicos">
+      <% if @eventos_academicos.any? %>
+        <%= render partial: 'index' %>
+      <% else %>
+        <span>Aguarde! Em breve teremos novidades para você</span>
+      <% end %>
+    </section>
   </div>
 </div>
