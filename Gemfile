@@ -39,15 +39,14 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 
 gem 'less-rails'
 #gem 'twitter-bootstrap-rails'
-
 gem 'materialize-sass'
-
 gem 'kaminari'
 gem 'rails-backbone'
 gem 'devise'
 gem 'paperclip'
 gem 'ransack'
 
+#Contact Us
 gem 'mail_form'
 gem 'simple_form'
 

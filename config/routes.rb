@@ -12,6 +12,7 @@ Rails.application.routes.draw do
 
   resources :inscricoes, only: [:new, :index]
 
+  match '/contatos', to: 'contatos#new', via: 'get'
   resources :contatos, only: [:new, :create]
 
   resources :mostras_cientifica, only: [:index]

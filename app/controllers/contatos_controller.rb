@@ -7,10 +7,9 @@ class ContatosController < ApplicationController
     @contato = Contato.new(params[:contato])
     @contato.request = request
     if @contato.deliver
-      flash.now[:notice] = 'Mensagem enviado com sucesso'
-      render :new
+      flash.now[:notice] = 'Thank you for your message. We will contact you soon!'
     else
-      flash.now[:error] = 'Desculpe, não foi possível enviar o email'
+      flash.now[:error] = 'Cannot send message.'
       render :new
     end
   end
