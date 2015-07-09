@@ -1,7 +1,7 @@
 class InfraestruturasController < ApplicationController
 
   def index
-    @infraestruturas = Infraestrutura.all
+    @infraestruturas = []
   end
 
 end
