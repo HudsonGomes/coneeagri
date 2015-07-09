@@ -51,7 +51,7 @@ gem 'mail_form'
 gem 'simple_form'
 
 gem 'akitaonrails-locarails'
-gem 'capistrano', '2.4.3'
+gem 'capistrano', '2.5.0'
 
 # Use Unicorn as the app server
 # gem 'unicorn'

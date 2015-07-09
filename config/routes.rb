@@ -17,7 +17,7 @@ Rails.application.routes.draw do
 
   resources :mostras_cientifica, only: [:index]
 
-  resources :estruturas, only: [:index]
+  resources :infraestruturas, only: [:index]
 
   get '/edital' => 'mostras_cientifica#download_edital', as: :download_edital
   get '/formulario' => 'mostras_cientifica#download_formulario', as: :download_formulario

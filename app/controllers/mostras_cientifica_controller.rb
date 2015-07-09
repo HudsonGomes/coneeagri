@@ -5,9 +5,9 @@ class MostrasCientificaController < ApplicationController
 
   def download_edital
     send_file(
-        "#{Rails.root}/public/IC-base-do-edital.pdf",
+        "#{Rails.root}/public/IC-base-do-edital-novo.pdf",
         :disposition => 'inline',
-        filename: "IC-base-do-edital.pdf",
+        filename: "Edital.pdf",
         type: "application/pdf",
         :x_sendfile => true
     )

@@ -138,7 +138,7 @@
     <orderEntry type="library" scope="PROVIDED" name="builder (v3.2.2, RVM: ruby-2.2.1 [coneeagri]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="bundler (v1.8.4, RVM: ruby-2.2.1 [coneeagri]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="byebug (v5.0.0, RVM: ruby-2.2.1 [coneeagri]) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="capistrano (v2.4.3, RVM: ruby-2.2.1 [coneeagri]) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="capistrano (v2.5.0, RVM: ruby-2.2.1 [coneeagri]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="climate_control (v0.0.3, RVM: ruby-2.2.1 [coneeagri]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="cocaine (v0.5.7, RVM: ruby-2.2.1 [coneeagri]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="coffee-rails (v4.1.0, RVM: ruby-2.2.1 [coneeagri]) [gem]" level="application" />
