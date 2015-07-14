@@ -43,11 +43,6 @@ $(document).ready(function(){
         closeOnClick: true
     });
 
-    var options = [
-        {selector: '.countDown', offset: 0, callback: 'Materialize.fadeInImage("#count-down")' },
-    ];
-    Materialize.scrollFire(options);
-
 });
 
 
