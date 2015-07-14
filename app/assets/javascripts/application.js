@@ -42,6 +42,12 @@ $(document).ready(function(){
         edge: 'right',
         closeOnClick: true
     });
+
+    var options = [
+        {selector: '.countDown', offset: 0, callback: 'Materialize.fadeInImage("#count-down")' },
+    ];
+    Materialize.scrollFire(options);
+
 });
 
 
