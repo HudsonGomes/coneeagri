@@ -37,13 +37,20 @@
       }
     }
 
-    .photo-2, .photo-3{
+    .photo-2, .photo-3, .photo-4{
 
       .caption {
         h1 {
           color: #1b5e20;
           font-weight: bold;
           font-size: 0.8rem;
+          text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+        }
+
+        h2 {
+          color: #1b5e20;
+          font-weight: bold;
+          font-size: 1.8rem;
           text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
         }
 
@@ -91,7 +98,7 @@
         color: #1b5e20;
         font-weight: bold;
         font-size: 4.8rem;
-        text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+        text-shadow: -2px 0 white, 0 1px white, 1px 0 white, 0 -2px white;
       }
 
       h3{
@@ -99,24 +106,31 @@
         font-weight: bold;
         font-size: 3.5rem;
         margin-top: 50px;
-        text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+        text-shadow: -2px 0 white, 0 1px white, 1px 0 white, 0 -2px white;
       }
     }
 
-    .photo-2, .photo-3{
+    .photo-2, .photo-3, .photo-4{
 
       .caption {
         h1 {
           color: #1b5e20;
           font-weight: bold;
           font-size: 4.2rem;
-          text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+          text-shadow: -2px 0 white, 0 1px white, 1px 0 white, 0 -2px white;
+        }
+
+        h2 {
+          color: #1b5e20;
+          font-weight: bold;
+          font-size: 4.0rem;
+          text-shadow: -2px 0 white, 0 1px white, 1px 0 white, 0 -2px white;
         }
 
         h3{
           color: #1b5e20;
           font-weight: bold;
-          text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+          text-shadow: -2px 0 white, 0 1px white, 1px 0 white, 0 -2px white;
         }
       }
     }
