@@ -21,7 +21,9 @@
 //= require_tree .
 
 $(document).ready(function(){
-    $('.slider').slider({full_width: true, interval: 6000});
+    $('.slider-home').slider({full_width: true, interval: 6000});
+
+    $('.slider-infra').slider({indicators: false, full_width: true, height: 200, interval: 4000});
 
     $("#count-down").TimeCircles(
         {
