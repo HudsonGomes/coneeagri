@@ -1,153 +1,26 @@
-<div id="index-infraestrutura" class="container">
+<div id="index-infraestruturas" class="container">
   <div class="row">
     <div class="col s12">
       <h1>Infraestrutura</h1>
     </div>
   </div>
-  <div class="divider"></div>
+
   <div class="row">
     <div class="col s12">
-      <% if @infraestruturas.empty? %>
-        <div class="row">
-          <div class="row">
-            <div class="col s4 photo-infraestrutura">
-              <%= image_tag('infraestrutura/estrutura1.jpg', class: 'responsive-img materialboxed') %>
-            </div>
-            <div class="col s8 div-description">
-              <div class="title-infraestrutura">
-                <h5>Restaurante Universitário</h5>
-              </div>
-              <div>
-                <p class="description-infraestrutura">Espaço destinado a oferecer almoço e jantar
-                  aos congressistas de segunda a sexta</p>
-              </div>
-            </div>
-          </div>
-
-        <div class="divider"></div>
-
-        <div class="row">
-          <div class="col s4 photo-infraestrutura">
-            <%= image_tag('infraestrutura/estrutura2.jpg', class: 'responsive-img materialboxed') %>
-          </div>
-          <div class="col s8 div-description">
-            <div class="title-infraestrutura">
-              <h5>Restaurante Universitário</h5>
-            </div>
-            <div>
-              <p class="description-infraestrutura">Espaço destinado a oferecer almoço e jantar
-                aos congressistas de segunda a sexta</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="divider"></div>
-
-        <div class="row">
-          <div class="col s4 photo-infraestrutura">
-            <%= image_tag('infraestrutura/estrutura3.jpg', class: 'responsive-img materialboxed') %>
-          </div>
-          <div class="col s8 div-description">
-            <div class="title-infraesttrutrura">
-              <h5>Salas de Aula</h5>
-            </div>
-            <div>
-              <p class="description-infraestrutura">Espaço destinado para ministrar o conteúdo
-                acadêmico aos congressistas</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="divider"></div>
-
-        <div class="row">
-          <div class="col s4 photo-infraestrutura">
-            <%= image_tag('infraestrutura/estrutura8.jpg', class: 'responsive-img materialboxed') %>
-          </div>
-          <div class="col s8 div-description">
-            <div class="title-infraestrutura">
-              <h5>Salas de Aula</h5>
-            </div>
-            <div>
-              <p class="description-infraestrutura">Espaço destinado para ministrar o conteúdo
-                acadêmico aos congressistas</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="divider"></div>
-
-        <div class="row">
-          <div class="col s4 photo-infraestrutura">
-            <%= image_tag('infraestrutura/estrutura4.jpg', class: 'responsive-img materialboxed') %>
-          </div>
-          <div class="col s8 div-description">
-            <div class="title-infraestrutura">
-              <h5>Área Externa</h5>
-            </div>
-            <div>
-              <p class="description-infraestrutura">Espaço com um espetacular visual onde será oferecido
-                café da manhã e coffe break</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="divider"></div>
-
-        <div class="row">
-          <div class="col s4 photo-infraestrutura">
-            <%= image_tag('infraestrutura/estrutura5.jpg', class: 'responsive-img materialboxed') %>
-          </div>
-          <div class="col s8 div-description">
-            <div class="title-infraestrutura">
-              <h5>Auditório</h5>
-            </div>
-            <div>
-              <p class="description-infraestrutura">Espaço onde será realizado a cerimônia de abertura,
-                palestras e apresentações de trabalhos</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="divider"></div>
-
-        <div class="row">
-          <div class="col s4 photo-infraestrutura">
-            <%= image_tag('infraestrutura/estrutura6.jpg', class: 'responsive-img materialboxed') %>
-          </div>
-          <div class="col s8 div-description">
-            <div class="title-infraestrutura">
-              <h5>Coluni</h5>
-            </div>
-            <div>
-              <p class="description-infraestrutura">Colégio universitário da Universidade Federal Fluminense
-                aonde será o alojamento em salas de aula e ginásio, com capacidade para até 800 congressistas</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="divider"></div>
-
-        <div class="row">
-          <div class="col s4 photo-infraestrutura">
-            <%= image_tag('infraestrutura/estrutura7.jpg', class: 'responsive-img materialboxed') %>
-          </div>
-          <div class="col s8 div-description">
-            <div class="title-infraestrutura">
-              <h5>Coluni</h5>
-            </div>
-            <div>
-              <p class="description-infraestrutura">Colégio universitário da Universidade Federal Fluminense
-                aonde será o alojamento em salas de aula e ginásio, com capacidade para até 800 congressistas</p>
-            </div>
-          </div>
-        </div>
-
-
-        <% else %>
-          <p> Aguarde! Em breve divulgaremos todas as informações sobre a estrutura que será disponibiliziada para você</p>
-        <% end %>
-      </div>
+      <button class="waves-effect waves-light btn selected" data-button="restaurante">Restaurante</button>
+      <button class="waves-effect waves-light btn" data-button="salas-de-aula">Salas de Aula</button>
+      <button class="waves-effect waves-light btn" data-button="area-externa">Área Externa</button>
+      <button class="waves-effect waves-light btn" data-button="auditorio">Auditório</button>
+      <button class="waves-effect waves-light btn" data-button="coluni">Coluni</button>
     </div>
   </div>
+
+  <div class="divider"></div>
+
+  <div class="row">
+    <div class="col s12">
+      <%= render partial: 'infraestruturas/index' %>
+    </div>
+  </div>
+
 </div>
