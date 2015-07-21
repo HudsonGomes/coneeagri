@@ -23,13 +23,13 @@ class Coneeagri.Views.Dashboard.ShowView extends Backbone.View
     collection.fetch
 
   gerenciar_eventos_academicos: (event) ->
-    event.prevent_default()
+    event.preventDefault()
     @model = new Coneeagri.Models.EventosAcademicos()
     collection = @model.collection
     collection.fetch
 
   visualizar_inscricoes: (event) ->
-    event.prevent_default()
+    event.preventDefault()
     @model = new Coneeagri.Models.Inscricao()
     collection = @model.collection
     collection.fetch

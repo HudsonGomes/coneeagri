@@ -1,3 +1,17 @@
+@media screen and (max-width: 767px){
+  .btn{
+    width: 45%;
+    margin-top: 10px;
+  }
+}
+
+@media screen and (min-width: 767px){
+  .btn{
+    width: 18.5%;
+    margin-top: 10px;
+  }
+}
+
 #index-infraestruturas{
 
   .photo-infraestrutura{
@@ -19,5 +33,10 @@
   .salas-de-aula, .area-externa, .auditorio, .coluni{
     display: none;
   }
+
+  .little-photos img{
+    height: 115px;
+  }
+
 
 }

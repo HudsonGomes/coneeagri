@@ -10,6 +10,7 @@ class Coneeagri.Views.Infraestruturas.IndexView extends Backbone.View
     'click [data-button=area-externa]': 'load_area_externa'
     'click [data-button=auditorio]': 'load_auditorio'
     'click [data-button=coluni]': 'load_coluni'
+    'click .little-photos a': 'load_photo'
 
   initialize: ->
     @$el = $('#index-infraestruturas')
@@ -80,5 +81,10 @@ class Coneeagri.Views.Infraestruturas.IndexView extends Backbone.View
     $('.auditorio').hide()
     $('.coluni').show()
 
-
-
+  load_photo: (event) ->
+    $('.little-photos div').each (index, element) =>
+      $(element).removeClass('active-photo')
+    link = event.currentTarget
+    $(link).parent('div').addClass('active-photo')
+    src = $('.active-photo img').attr('src')
+    $('.active-image img').attr('src', src)
