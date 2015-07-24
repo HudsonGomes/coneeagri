@@ -12,6 +12,7 @@
 //
 //= require jquery
 //= require jquery_ujs
+//= require jquery-ui
 //= require materialize-sprockets
 //= require underscore
 //= require backbone
@@ -45,6 +46,20 @@ $(document).ready(function(){
     $('.button-collapse').sideNav({
         edge: 'right',
         closeOnClick: true
+    });
+
+    $( "#accordion" ).accordion({
+      collapsible: true,
+      animate: 500,
+      active: false,
+      icons: { "header": "ui-icon-plus", "activeHeader": "ui-icon-minus" }
+    });
+
+    $( "#accordion_2" ).accordion({
+        collapsible: true,
+        animate: 500,
+        active: false,
+        icons: { "header": "ui-icon-plus", "activeHeader": "ui-icon-minus" }
     });
 
 });

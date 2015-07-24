@@ -1,5 +1,11 @@
 #index-infraestruturas{
 
+  @media screen and (max-width: 320px){
+    .filters{
+      font-size: 12px;
+    }
+  }
+
   @media screen and (max-width: 767px){
     .btn{
       width: 45%;
