@@ -1,22 +1,30 @@
 #index-infraestruturas{
 
-  @media screen and (max-width: 320px){
-    .filters{
-      font-size: 12px;
+  @media screen and (max-width: 600px){
+    .expanded-filters{
+      display: none;
     }
   }
 
-  @media screen and (max-width: 767px){
+  @media screen and (max-width: 992px) and (min-width: 600px){
     .btn{
       width: 45%;
       margin-top: 10px;
     }
+
+    .compressed-filters{
+      display: none;
+    }
   }
 
-  @media screen and (min-width: 767px){
+  @media screen and (min-width: 992px){
     .btn{
       width: 18.5%;
       margin-top: 10px;
+    }
+
+    .compressed-filters{
+      display: none;
     }
   }
 
