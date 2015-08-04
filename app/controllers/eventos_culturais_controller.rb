@@ -1,22 +1,7 @@
 class EventosCulturaisController < ApplicationController
 
   def index
-    @eventos_culturais = EventosCulturais.all
+    @eventos_culturais = []
   end
-
-  def new
-
-  end
-
-  def create
-
-  end
-
-  def destroy
-
-  end
-
-  def update
-
-  end
+  
 end
