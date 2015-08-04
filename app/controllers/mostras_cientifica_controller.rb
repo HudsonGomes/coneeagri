@@ -20,4 +20,16 @@ class MostrasCientificaController < ApplicationController
         type: "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
     )
   end
+
+  def download_resumo_extendido
+    send_file(
+        "#{Rails.root}/public/resumo-extendido-modelo.pdf",
+        :disposition => 'inline',
+        filename: "Resumo do Modelo.pdf",
+        type: "application/pdf",
+        :x_sendfile => true
+    )
+  end
+
+
 end

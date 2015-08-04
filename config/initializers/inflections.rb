@@ -10,6 +10,7 @@ ActiveSupport::Inflector.inflections(:en) do |inflect|
   inflect.irregular 'eventos_academicos', 'eventos_academicos'
   inflect.irregular 'inscricao', 'inscricoes'
   inflect.irregular 'mostra_cientifica', 'mostras_cientifica'
+  inflect.irregular 'pacote_adicional', 'pacotes_adicionais'
 #   inflect.uncountable %w( fish sheep )
 end
 

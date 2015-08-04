@@ -49,8 +49,8 @@ $(document).ready(function(){
     });
 
     $( "#accordion" ).accordion({
-      collapsible: true,
-      animate: 500,
+      collapsible: false,
+      animate: 200,
       active: false,
       icons: { "header": "ui-icon-plus", "activeHeader": "ui-icon-minus" }
     });

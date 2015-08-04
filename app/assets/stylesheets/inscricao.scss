@@ -1,12 +1,20 @@
 .pacote-inscricao{
   background-color: #e0e0e0;
   min-height: 30%;
-  width: 46.6667% !important;
-  padding-bottom: 10px !important;
+  padding: 1px 10px;
+  margin-bottom: 20px;
 }
 
 #new-inscricao{
   font-size: 12px;
+
+  .body-accordion{
+    height: auto !important;
+  }
+
+  .titulo-pacote{
+    font-size: 16px;
+  }
 
   #accordion{
     border: 1px solid #81c784;
@@ -18,6 +26,12 @@
       &:hover{
         cursor: pointer;
       }
+    }
+  }
+
+  .valores-pacote{
+    span{
+      margin: 0px 10px;
     }
   }
 
