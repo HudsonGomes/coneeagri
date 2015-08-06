@@ -17,17 +17,25 @@
               <div class="valores-pacote">
 
                 <% if pacote.valor_lote_2 or pacote.valor_lote_3 %>
-                  <span><strong>Lote 1: </strong><%= number_to_currency(pacote.valor_lote_1) %></span>
+                  <div class="lote-inscricao">
+                    <span><strong>Lote 1: </strong><%= number_to_currency(pacote.valor_lote_1) %></span>
+                  </div>
                 <% else %>
-                  <span><strong>Lote Único: </strong><%= number_to_currency(pacote.valor_lote_1) %></span>
+                  <div class="lote-inscricao">
+                    <span><strong>Lote Único: </strong><%= number_to_currency(pacote.valor_lote_1) %></span>
+                  </div>
                 <% end %>
 
                 <% if pacote.valor_lote_2 %>
-                  <span><strong>Lote 2: </strong><%= number_to_currency(pacote.valor_lote_2) %></span>
+                  <div class="lote-inscricao">
+                    <span><strong>Lote 2: </strong><%= number_to_currency(pacote.valor_lote_2) %></span>
+                  </div>
                 <% end %>
 
                 <% if pacote.valor_lote_2 %>
-                  <span><strong>Lote 3: </strong><%= number_to_currency(pacote.valor_lote_3) %></span>
+                  <div class="lote-inscricao">
+                    <span><strong>Lote 3: </strong><%= number_to_currency(pacote.valor_lote_3) %></span>
+                  </div>
                 <% end %>
               </div>
             </div>
