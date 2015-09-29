@@ -21,6 +21,13 @@ h1{
   background-color: #81c784 !important;
 }
 
+.btn-small{
+  height: 25px;
+  line-height: 25px;
+  font-size: 11px;
+  padding: 0 1rem;
+}
+
 section{
   margin-top: 20px;
 }
@@ -30,6 +37,10 @@ nav {
   .button-collapse {
     float: right;
   }
+}
+
+.nav-wrapper{
+  width: 80% !important;
 }
 
 #sidenav-overlay{

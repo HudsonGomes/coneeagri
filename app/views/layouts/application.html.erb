@@ -12,7 +12,7 @@
 <body>
     <header>
         <nav role="navigation">
-          <div class="nav-wrapper">
+          <div class="nav-wrapper container">
             <%=link_to( image_tag('logo_menor.png'), root_path, :class=>"brand-logo") %>
             <ul id="slide-out" class="side-nav">
               <li><%= link_to 'Eventos Culturais', eventos_culturais_path %></li>
@@ -29,6 +29,7 @@
               <li><%= link_to 'Infraestrutura', infraestruturas_path %></li>
               <li><%= link_to 'Mostra Científica', mostras_cientifica_path %></li>
               <li><%= link_to 'Pacotes', pacotes_path %></li>
+              <li><%= react_component('LoginHeader', {})%></li>
               <li><%= link_to 'Contato', new_contato_path %></li>
             </ul>
           </div>

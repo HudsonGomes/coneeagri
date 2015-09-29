@@ -19,6 +19,9 @@
 //= require backbone_rails_sync
 //= require backbone_datalink
 //= require backbone/coneeagri
+//= require react
+//= require react_ujs
+//= require components
 //= require_tree .
 
 $(document).ready(function(){

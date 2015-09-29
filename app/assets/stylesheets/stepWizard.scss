@@ -1,0 +1,33 @@
+.step-wizard{
+  .menu-item{
+    float: left;
+    margin-right: 5px;
+    border-top: 1px solid #81C784;
+    border-left: 1px solid #81C784;
+    border-right: 1px solid #81C784;
+    padding: 5px;
+    color: #81C784;
+    font-weight: bold;
+  }
+  .active-menu-item{
+    float: left;
+    margin-right: 5px;
+    border-top: 1px solid white;
+    border-left: 1px solid white;
+    border-right: 1px solid white;
+    padding: 5px;
+    color: white;
+    font-weight: bold;
+    background-color: #81C784;
+  }
+
+  .wizards{
+    clear: both;
+    border: 1px solid #81C784;
+    min-height: 300px;
+  }
+
+  .action-buttons{
+    float: right;
+  }
+}

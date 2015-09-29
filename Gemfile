@@ -51,7 +51,7 @@ gem 'ransack'
 #Contact Us
 gem 'mail_form'
 gem 'simple_form'
-
+gem 'react-rails', '~> 1.0'
 gem 'akitaonrails-locarails'
 gem 'capistrano', '2.5.0'
 

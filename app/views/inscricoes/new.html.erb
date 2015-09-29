@@ -1,88 +1,11 @@
 <div id="new-inscricao">
   <div class="container">
-    <h1>Pacotes</h1>
-    <div class="divider"></div>
+    <div class="row">
+      <div class="col s12">
 
-        <div class="body-accordion">
+        <%= react_component('StepWizard', {titlesOfWizards: ['Passo 1', 'Passo 2', 'Passo 3']}, {}) %>
 
-          <% if @pacotes.any? %>
-            <% @pacotes.each do |pacote| %>
-              <div class="pacote-inscricao">
-                <div class="col s1"></div>
-                <div class="col s10 pacote-inscricao">
-                  <h5 class="titulo-pacote"><%= pacote.nome %></h5>
-                  <p><%= pacote.descricao %></p>
-                  <div class="valores-pacote">
-                  <span><strong>Lote 1: </strong><%= number_to_currency(pacote.valor_lote_1) %></span>
-
-                  <% if pacote.valor_lote_2 %>
-                    <span><strong>Lote 2: </strong><%= number_to_currency(pacote.valor_lote_2) %></span>
-                  <% end %>
-
-                  <% if pacote.valor_lote_2 %>
-                    <span><strong>Lote 3: </strong><%= number_to_currency(pacote.valor_lote_3) %></span>
-                  <% end %>
-                  </div>
-                </div>
-              </div>
-            <% end %>
-          <% else %>
-            <div class="row">
-              <div class="col s12">
-                <p>Não há pacotes disponíveis</p>
-              </div>
-            </div>
-          <% end %>
-
-        </div>
-      </div>
-
-
-    <% if 1 == 2 %>
-
-    <div id="accordion_2">
-      <div class="row header-accordion">
-        <div class="col s12">
-          <h6>Pacotes Adicionais</h6>
-        </div>
-      </div>
-
-      <div class="body-accordion">
-        <% if @pacotes_adicionais.any? %>
-          <% @pacotes_adicionais.in_groups_of(2, false).each do |pacotes| %>
-            <div class="row">
-              <div class="col"><p></p></div>
-              <div class="col s12 m12 l5 pacote-inscricao">
-                <div style="margin-left: 30px">
-                  <input name="group1" type="radio" id="test1" />
-                  <h5 class="titulo-pacote"><%= pacotes.first.nome %></h5>
-                  <p><%= pacotes.first.descricao %></p>
-                </div>
-              </div>
-
-              <% if pacotes.last %>
-                <div class="col"><p></p></div>
-                <div class="col s12 m12 l5 pacote-inscricao">
-                  <div style="margin-left: 30px">
-                    <input name="group1" type="radio" id="test1" />
-                    <h5 class="titulo-pacote"><%= pacotes.last.nome %></h5>
-                    <p><%= pacotes.last.descricao %></p>
-                  </div>
-                  </div>
-              <% end %>
-            </div>
-          <% end %>
-        <% else %>
-          <div class="row">
-            <div class="col s12">
-              <p>Não há pacotes adicionais disponíveis</p>
-            </div>
-          </div>
-        <% end %>
       </div>
     </div>
-
-    <% end %>
-
   </div>
 </div>

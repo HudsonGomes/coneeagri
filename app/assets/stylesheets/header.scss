@@ -3,6 +3,20 @@ nav{
   z-index: 10;
   background: rgba(25, 95, 25, .4);
 
+  .collapsible {
+    border-top: none;
+
+    li{
+      &:hover{
+        background-color: transparent;
+      }
+    }
+
+    .collapsible-header {
+      background-color: inherit;
+      border: none;
+    }
+  }
   li{
     font-weight: bold;
   }
@@ -14,9 +28,9 @@ nav{
 }
 
 .brand-logo{
-  margin-left: 50px;
 
   img{
     max-width: 80px;
   }
+
 }
