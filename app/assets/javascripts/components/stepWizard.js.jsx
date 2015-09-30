@@ -2,90 +2,108 @@ var StepWizard = React.createClass({
 
   propTypes: {
     className: React.PropTypes.string,
-    titlesOfWizards: React.PropTypes.array,
+    menuList: React.PropTypes.array
   },
 
   getDefaultProps: function() {
     return {
       className: 'step-wizard',
-      titlesOfWizards: ['Default']
+      menuList: []
     }
   },
 
   getInitialState: function(){
     return {
-      currentWizard: 1
+      currentIndex: 0
     }
   },
 
-  onHandleChangedCurrentWizard: function(){
+  handleIncrementCurrentIndex: function(){
+    if (this.state.currentIndex < this.props.menuList.length - 1) {
+      this.setState({
+        currentIndex: this.state.currentIndex += 1
+      });
+    }
+  },
 
+  handleDecrementCurrentIndex: function(){
+    if (this.state.currentIndex > 0) {
+      this.setState({
+        currentIndex: this.state.currentIndex -= 1
+      });
+    }
   },
 
   render: function() {
     return (
       <div className={this.props.className}>
-        <MenuList {...this.props} onHanleChangedCurrentWizard={this.onHandleChangedCurrentWizard()} currentWizard={this.state.currentWizard} />
-        <Windows />
+        <MenuList
+          list={this.props.menuList}
+          currentIndex={this.state.currentIndex} />
+
+        <Windows
+          currentIndex={this.state.currentIndex}
+          lastIndex={this.props.menuList.length - 1}
+          onIncrementCurrentIndex={this.handleIncrementCurrentIndex}
+          onDecrementCurrentIndex={this.handleDecrementCurrentIndex} />
       </div>
     );
   }
 });
 
 var MenuList = React.createClass({
+
+  propTypes: {
+    className: React.PropTypes.string
+  },
+
+  getDefaultProps: function() {
+    return {
+      className: 'step-wizard-menu-list'
+    }
+  },
+
+  render: function() {
+    var menuList = this.props.list;
+    var rows = [];
+    menuList.forEach(function(option, i){
+      var className = this.props.currentIndex == i ? "menu-option active-menu-option" : "menu-option  non-active-menu-option";
+      rows.push(<MenuOption key={i} option={option} className={className} />);
+      if (i !== 2)
+        rows.push(<li className='chevron-right'><i className='material-icons'>chevron_right</i></li>);
+    }.bind(this));
+
+    return (
+      <div className={this.props.className}>
+        <ul>
+          {rows}
+        </ul>
+      </div>
+    );
+  }
+
+});
+
+var MenuOption = React.createClass({
+
   propTypes: {
     className: React.PropTypes.string
   },
 
   getDefaultProps: function(){
     return {
-      className: 'menu-list'
+      className: 'non-active-menu-option'
     }
-  },
-
-  onHandleClick: function(){
-    alert('clicou');
-  },
-
-  componentMenuList: function(){
-    component = [];
-    for(var i = 0; i < this.props.titlesOfWizards.length; i++){
-      var className = 'menu-item';
-      if( i === this.props.currentWizard - 1 ) { className='active-menu-item' }
-      component.push(<MenuItem wizardTitle={this.props.titlesOfWizards[i]} className={className} onHandleClick={this.onHandleClick} />);
-    }
-
-    return component;
   },
 
   render: function(){
+    var option = this.props.option;
+
     return (
-      <div>
-        <ul>
-          {this.componentMenuList()}
-        </ul>
-      </div>
+      <li className={this.props.className}><span>{option}</span></li>
     );
   }
-});
 
-var MenuItem = React.createClass({
-  propTypes: {
-    className: React.PropTypes.string,
-    onHandleClick: React.PropTypes.func
-  },
-
-  getDefaultProps: function(){
-    return {
-      className: 'menu-item'
-    }
-  },
-
-  render: function(){
-    return(
-      <li className={this.props.className} onClick={this.onHandleClick}><span>{this.props.wizardTitle}</span></li>
-    );
-  }
 });
 
 var Windows = React.createClass({
@@ -95,46 +113,90 @@ var Windows = React.createClass({
 
   getDefaultProps: function(){
     return {
-      className: 'wizards'
+      className: 'active-window'
     }
+  },
+
+  getInitialState: function() {
+    return {
+      disabledSubmitButton: true
+    }
+  },
+
+  changeSubmitButton: function(enable){
+    this.setState({
+      disabledSubmitButton: enable
+    })
   },
 
   render: function(){
     return (
       <div className={this.props.className}>
-        <ActionButtons />
+
+        <WindowButtons
+          currentIndex={this.props.currentIndex}
+          lastIndex={this.props.lastIndex}
+          onIncrementCurrentIndex={this.props.onIncrementCurrentIndex}
+          onDecrementCurrentIndex={this.props.onDecrementCurrentIndex}
+          disabledSubmitButton={this.state.disabledSubmitButton}
+          />
+
       </div>
     );
   }
 });
 
-var ActionButtons = React.createClass({
+var WindowButtons = React.createClass({
   propTypes: {
-    className: React.PropTypes.string
+    className: React.PropTypes.string,
+    disabledSubmitButton: React.PropTypes.bool
   },
 
-  getDefaultProps: function(){
+  getDefaultProps: function() {
     return {
-      className: 'action-buttons'
+      className: 'action-buttons',
+      disabledSubmitButton: true
     }
   },
 
-  handleClick: function(){
-    this.props.onHandleChangedCurrentWizard;
+  decrementCurrentIndex: function(){
+    this.props.onDecrementCurrentIndex();
+  },
+
+  incrementCurrentIndex: function(){
+    this.props.onIncrementCurrentIndex();
+  },
+
+  handleSubmit: function() {
+    alert('Finalizou')
   },
 
   render: function(){
+    var index = this.props.currentIndex;
+    var lastIndex = this.props.lastIndex;
+    buttonComponents = [];
+
+    if (index === 0) {
+      buttonComponents.push(<button key={index} className='btn button-next' onClick={this.incrementCurrentIndex} >Próximo</button>);
+    } else if (index == lastIndex) {
+      buttonComponents.push(<button key={index} className='btn button' onClick={this.decrementCurrentIndex}>Anterior</button>);
+      buttonComponents.push(<button ref={'submitButton'} onClick={this.handleSubmit} className='btn button-next'>Finalizar</button>);
+    } else{
+      buttonComponents.push(<button key={index} className='btn button' onClick={this.decrementCurrentIndex}>Anterior</button>);
+      buttonComponents.push(<button key={index+1} className='btn button-next' onClick={this.incrementCurrentIndex} >Próximo</button>);
+    }
+
     return (
-      <div className='row'>
+      <div className='row div-action-buttons'>
         <div className='col s12'>
-          <div className={this.props.className}>
-            <button className='waves-effect waves-light btn'>Anterior</button>
-            <button className='waves-effect waves-light btn'>Pŕoximo</button>
+          <div className={this.props.className} >
+            {buttonComponents}
           </div>
         </div>
       </div>
     );
   }
+
 });
 
 var FormWizard = React.createClass({
@@ -159,15 +221,6 @@ var FormWizard = React.createClass({
 });
 
 var FormView = React.createClass({
-  render: function(){
-    return (
-      <div>
-      </div>
-    );
-  }
-});
-
-var ActionView = React.createClass({
   render: function(){
     return (
       <div>

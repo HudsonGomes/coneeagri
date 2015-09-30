@@ -1,9 +1,20 @@
+
+<%
+   step_wizard_props = {
+     menuList: [
+       'Passo 1',
+       'Passo 2',
+       'Passo 3'
+     ]
+   }
+%>
+
 <div id="new-inscricao">
   <div class="container">
     <div class="row">
       <div class="col s12">
 
-        <%= react_component('StepWizard', {titlesOfWizards: ['Passo 1', 'Passo 2', 'Passo 3']}, {}) %>
+        <%= react_component('StepWizard', step_wizard_props, { class: 'manual-scheduler-step-wizard' }) %>
 
       </div>
     </div>
