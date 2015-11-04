@@ -31,110 +31,31 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="stepWizard.js.jsx" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/assets/javascripts/components/stepWizard.js.jsx">
+      <file leaf-file-name="home.erb.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/views/layouts/home.erb.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.8372093">
-              <caret line="184" column="62" selection-start-line="184" selection-start-column="62" selection-end-line="184" selection-end-column="62" />
-              <folding>
-                <element signature="e#35#1177#0" expanded="false" />
-                <element signature="e#51#131#0" expanded="false" />
-                <element signature="e#164#239#0" expanded="false" />
-                <element signature="e#177#235#0" expanded="false" />
-                <element signature="e#271#317#0" expanded="false" />
-                <element signature="e#284#313#0" expanded="false" />
-                <element signature="e#361#523#0" expanded="false" />
-                <element signature="e#429#519#0" expanded="false" />
-                <element signature="e#451#511#0" expanded="false" />
-                <element signature="e#567#700#0" expanded="false" />
-                <element signature="e#606#696#0" expanded="false" />
-                <element signature="e#628#688#0" expanded="false" />
-                <element signature="e#724#1175#0" expanded="false" />
-                <element signature="e#745#1164#0" expanded="false" />
-                <element signature="e#792#890#0" expanded="false" />
-                <element signature="e#900#1151#0" expanded="false" />
-                <element signature="e#1214#1970#0" expanded="false" />
-                <element signature="e#1230#1273#0" expanded="false" />
-                <element signature="e#1306#1371#0" expanded="false" />
-                <element signature="e#1319#1367#0" expanded="false" />
-                <element signature="e#1395#1967#0" expanded="false" />
-                <element signature="e#1492#1827#0" expanded="false" />
-                <element signature="e#1861#1956#0" expanded="false" />
-                <element signature="e#1908#1943#0" expanded="false" />
-                <element signature="e#2009#2324#0" expanded="false" />
-                <element signature="e#2025#2068#0" expanded="false" />
-                <element signature="e#2100#2166#0" expanded="false" />
-                <element signature="e#2113#2162#0" expanded="false" />
-                <element signature="e#2189#2321#0" expanded="false" />
-                <element signature="e#2360#3150#0" expanded="false" />
-                <element signature="e#2375#2418#0" expanded="false" />
-                <element signature="e#2450#2507#0" expanded="false" />
-                <element signature="e#2463#2503#0" expanded="false" />
-                <element signature="e#2540#2597#0" expanded="false" />
-                <element signature="e#2553#2593#0" expanded="false" />
-                <element signature="e#2638#2705#0" expanded="false" />
-                <element signature="e#2658#2700#0" expanded="false" />
-                <element signature="e#2728#3148#0" expanded="false" />
-                <element signature="e#2749#3137#0" expanded="false" />
-                <element signature="e#2797#3123#0" expanded="false" />
-                <element signature="e#3207#3298#0" expanded="false" />
-                <element signature="e#3331#3423#0" expanded="false" />
-                <element signature="e#3344#3419#0" expanded="false" />
-                <element signature="e#3461#3508#0" expanded="false" />
-                <element signature="e#3546#3593#0" expanded="false" />
-                <element signature="e#3623#3651#0" expanded="false" />
-                <element signature="e#4543#4743#0" expanded="false" />
-                <element signature="e#4592#4730#0" expanded="false" />
-                <element signature="e#4628#4715#0" expanded="false" />
-                <element signature="e#4796#5093#0" expanded="false" />
-                <element signature="e#4811#4854#0" expanded="false" />
-                <element signature="e#4886#4941#0" expanded="false" />
-                <element signature="e#4899#4937#0" expanded="false" />
-                <element signature="e#4964#5091#0" expanded="false" />
-                <element signature="e#4985#5080#0" expanded="false" />
-                <element signature="e#5130#5204#0" expanded="false" />
-                <element signature="e#5152#5202#0" expanded="false" />
-                <element signature="e#5173#5191#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="new.html.erb" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/inscricoes/new.html.erb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-10.666667">
-              <caret line="16" column="59" selection-start-line="16" selection-start-column="59" selection-end-line="16" selection-end-column="59" />
+            <state vertical-scroll-proportion="0.23300971">
+              <caret line="8" column="47" selection-start-line="8" selection-start-column="47" selection-end-line="8" selection-end-column="47" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="stepWizard.scss" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/stepWizard.scss">
+      <file leaf-file-name="_index.html.erb" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/eventos_culturais/_index.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-5.111111">
-              <caret line="56" column="18" selection-start-line="56" selection-start-column="18" selection-end-line="56" selection-end-column="18" />
+            <state vertical-scroll-proportion="-0.0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="application.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/assets/javascripts/application.js">
+      <file leaf-file-name="index.html.erb" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/eventos_culturais/index.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="18" column="31" selection-start-line="18" selection-start-column="31" selection-end-line="18" selection-end-column="31" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="application.html.erb" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-5.3333335">
-              <caret line="8" column="23" selection-start-line="8" selection-start-column="23" selection-end-line="8" selection-end-column="23" />
+            <state vertical-scroll-proportion="-10.0">
+              <caret line="15" column="55" selection-start-line="15" selection-start-column="55" selection-end-line="15" selection-end-column="55" />
               <folding />
             </state>
           </provider>
@@ -145,11 +66,9 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/app/models/infraestrutura.rb" />
         <option value="$PROJECT_DIR$/app/controllers/infraestruturas_controller.rb" />
         <option value="$PROJECT_DIR$/app/views/contatos/new.html.erb" />
         <option value="$PROJECT_DIR$/app/views/inscricoes/index.html.erb" />
-        <option value="$PROJECT_DIR$/app/views/layouts/home.erb.html" />
         <option value="$PROJECT_DIR$/app/assets/javascripts/backbone/views/eventos_culturais/index_view.js.coffee" />
         <option value="$PROJECT_DIR$/app/assets/javascripts/backbone/coneeagri.js.coffee" />
         <option value="$PROJECT_DIR$/app/assets/javascripts/backbone/routers/main.js.coffee" />
@@ -196,6 +115,8 @@
         <option value="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
         <option value="$PROJECT_DIR$/app/assets/stylesheets/stepWizard.scss" />
         <option value="$PROJECT_DIR$/app/assets/javascripts/components/stepWizard.js.jsx" />
+        <option value="$PROJECT_DIR$/app/views/layouts/home.erb.html" />
+        <option value="$PROJECT_DIR$/app/views/eventos_culturais/index.html.erb" />
       </list>
     </option>
   </component>
@@ -207,9 +128,9 @@
     <order />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="y" value="24" />
+    <option name="y" value="-4" />
     <option name="width" value="1366" />
-    <option name="height" value="744" />
+    <option name="height" value="772" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -250,6 +171,9 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="RailsProjectView" />
+      <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -281,26 +205,8 @@
               <option name="myItemId" value="app" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
-          </PATH>
-          <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="coneeagri" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="coneeagri" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="assets" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="stylesheets" />
+              <option name="myItemId" value="views" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -318,11 +224,11 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="assets" />
+              <option name="myItemId" value="views" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="javascripts" />
+              <option name="myItemId" value="layouts" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -340,15 +246,30 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="assets" />
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="eventos_culturais" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="coneeagri" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="coneeagri" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
-      <pane id="RailsProjectView" />
-      <pane id="Scope" />
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -572,14 +493,14 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="24" width="1366" height="744" extended-state="6" />
+    <frame x="0" y="-4" width="1366" height="772" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.19469696" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.20984848" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3295129" sideWeight="0.5" order="11" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.14348462" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.14318182" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
@@ -633,20 +554,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/eventos_academicos.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="8" column="4" selection-start-line="8" selection-start-column="4" selection-end-line="9" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/eventos_culturais/index.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="9" column="8" selection-start-line="9" selection-start-column="8" selection-end-line="9" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/assets/javascripts/backbone/views/dashboard/show_view.js.coffee">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -682,13 +589,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/dashboards/show.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.42121685">
-          <caret line="15" column="12" selection-start-line="15" selection-start-column="12" selection-end-line="15" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/application_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -700,13 +600,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/layouts/home.erb.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="11" column="36" selection-start-line="11" selection-start-column="36" selection-end-line="11" selection-end-column="36" />
         </state>
       </provider>
     </entry>
@@ -945,7 +838,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.3379845">
           <caret line="60" column="37" selection-start-line="60" selection-start-column="37" selection-end-line="60" selection-end-column="37" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -956,102 +848,70 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/inscricoes/new.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-10.666667">
-          <caret line="16" column="59" selection-start-line="16" selection-start-column="59" selection-end-line="16" selection-end-column="59" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/assets/javascripts/application.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="18" column="31" selection-start-line="18" selection-start-column="31" selection-end-line="18" selection-end-column="31" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-5.3333335">
+        <state vertical-scroll-proportion="0.0">
           <caret line="8" column="23" selection-start-line="8" selection-start-column="23" selection-end-line="8" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/stepWizard.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-5.111111">
-          <caret line="56" column="18" selection-start-line="56" selection-start-column="18" selection-end-line="56" selection-end-column="18" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/assets/javascripts/components/stepWizard.js.jsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.8372093">
+        <state vertical-scroll-proportion="0.4775194">
           <caret line="184" column="62" selection-start-line="184" selection-start-column="62" selection-end-line="184" selection-end-column="62" />
-          <folding>
-            <element signature="e#35#1177#0" expanded="false" />
-            <element signature="e#51#131#0" expanded="false" />
-            <element signature="e#164#239#0" expanded="false" />
-            <element signature="e#177#235#0" expanded="false" />
-            <element signature="e#271#317#0" expanded="false" />
-            <element signature="e#284#313#0" expanded="false" />
-            <element signature="e#361#523#0" expanded="false" />
-            <element signature="e#429#519#0" expanded="false" />
-            <element signature="e#451#511#0" expanded="false" />
-            <element signature="e#567#700#0" expanded="false" />
-            <element signature="e#606#696#0" expanded="false" />
-            <element signature="e#628#688#0" expanded="false" />
-            <element signature="e#724#1175#0" expanded="false" />
-            <element signature="e#745#1164#0" expanded="false" />
-            <element signature="e#792#890#0" expanded="false" />
-            <element signature="e#900#1151#0" expanded="false" />
-            <element signature="e#1214#1970#0" expanded="false" />
-            <element signature="e#1230#1273#0" expanded="false" />
-            <element signature="e#1306#1371#0" expanded="false" />
-            <element signature="e#1319#1367#0" expanded="false" />
-            <element signature="e#1395#1967#0" expanded="false" />
-            <element signature="e#1492#1827#0" expanded="false" />
-            <element signature="e#1861#1956#0" expanded="false" />
-            <element signature="e#1908#1943#0" expanded="false" />
-            <element signature="e#2009#2324#0" expanded="false" />
-            <element signature="e#2025#2068#0" expanded="false" />
-            <element signature="e#2100#2166#0" expanded="false" />
-            <element signature="e#2113#2162#0" expanded="false" />
-            <element signature="e#2189#2321#0" expanded="false" />
-            <element signature="e#2360#3150#0" expanded="false" />
-            <element signature="e#2375#2418#0" expanded="false" />
-            <element signature="e#2450#2507#0" expanded="false" />
-            <element signature="e#2463#2503#0" expanded="false" />
-            <element signature="e#2540#2597#0" expanded="false" />
-            <element signature="e#2553#2593#0" expanded="false" />
-            <element signature="e#2638#2705#0" expanded="false" />
-            <element signature="e#2658#2700#0" expanded="false" />
-            <element signature="e#2728#3148#0" expanded="false" />
-            <element signature="e#2749#3137#0" expanded="false" />
-            <element signature="e#2797#3123#0" expanded="false" />
-            <element signature="e#3207#3298#0" expanded="false" />
-            <element signature="e#3331#3423#0" expanded="false" />
-            <element signature="e#3344#3419#0" expanded="false" />
-            <element signature="e#3461#3508#0" expanded="false" />
-            <element signature="e#3546#3593#0" expanded="false" />
-            <element signature="e#3623#3651#0" expanded="false" />
-            <element signature="e#4543#4743#0" expanded="false" />
-            <element signature="e#4592#4730#0" expanded="false" />
-            <element signature="e#4628#4715#0" expanded="false" />
-            <element signature="e#4796#5093#0" expanded="false" />
-            <element signature="e#4811#4854#0" expanded="false" />
-            <element signature="e#4886#4941#0" expanded="false" />
-            <element signature="e#4899#4937#0" expanded="false" />
-            <element signature="e#4964#5091#0" expanded="false" />
-            <element signature="e#4985#5080#0" expanded="false" />
-            <element signature="e#5130#5204#0" expanded="false" />
-            <element signature="e#5152#5202#0" expanded="false" />
-            <element signature="e#5173#5191#0" expanded="false" />
-          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/inscricoes/new.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.46601942">
+          <caret line="16" column="59" selection-start-line="16" selection-start-column="59" selection-end-line="16" selection-end-column="59" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/stepWizard.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="56" column="18" selection-start-line="56" selection-start-column="18" selection-end-line="56" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/dashboards/show.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.4368932">
+          <caret line="15" column="12" selection-start-line="15" selection-start-column="12" selection-end-line="15" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/eventos_culturais/index.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-10.0">
+          <caret line="15" column="55" selection-start-line="15" selection-start-column="55" selection-end-line="15" selection-end-column="55" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/eventos_culturais/_index.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/layouts/home.erb.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.23300971">
+          <caret line="8" column="47" selection-start-line="8" selection-start-column="47" selection-end-line="8" selection-end-column="47" />
+          <folding />
         </state>
       </provider>
     </entry>
