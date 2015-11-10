@@ -31,5 +31,14 @@ class MostrasCientificaController < ApplicationController
     )
   end
 
+  def download_modelo_banner
+    send_file(
+      "#{Rails.root}/public/modelo-de-banner.pdf",
+      :disposition => 'inline',
+      filename: "Modelo de Banner.pdf",
+      type: "application/pdf",
+      :x_sendfile => true
+    )
+  end
 
 end
