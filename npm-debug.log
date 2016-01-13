@@ -1,0 +1,23 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/bin/node', '/usr/bin/npm', 'uninstall', '-g', 'grunt-cli' ]
+2 info using npm@1.4.28
+3 info using node@v0.10.37
+4 verbose node symlink /usr/bin/node
+5 verbose lib/node_modules/grunt-cli unbuild
+6 info preuninstall grunt-cli@0.1.13
+7 info uninstall grunt-cli@0.1.13
+8 verbose true,/usr/lib/node_modules,/usr/lib/node_modules unbuild grunt-cli@0.1.13
+9 verbose /usr/bin,[object Object] binRoot
+10 error Error: EACCES, unlink '/usr/bin/grunt'
+10 error  { [Error: EACCES, unlink '/usr/bin/grunt'] errno: 3, code: 'EACCES', path: '/usr/bin/grunt' }
+11 error Please try running this command again as root/Administrator.
+12 error System Linux 3.16.0-57-generic
+13 error command "/usr/bin/node" "/usr/bin/npm" "uninstall" "-g" "grunt-cli"
+14 error cwd /home/hudson/Documentos/Projetos/coneeagri
+15 error node -v v0.10.37
+16 error npm -v 1.4.28
+17 error path /usr/bin/grunt
+18 error code EACCES
+19 error errno 3
+20 error stack Error: EACCES, unlink '/usr/bin/grunt'
+21 verbose exit [ 3, true ]

@@ -32,7 +32,7 @@ class UsersController < ApplicationController
   private
 
   def attributes
-    params[:user].permit!
+    params[:attributes].permit!
   end
 
 end
