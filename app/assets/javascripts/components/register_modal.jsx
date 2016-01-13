@@ -2,13 +2,15 @@ var RegisterModal = React.createClass({
 
   propTypes: {
     modalId: React.PropTypes.string,
-    className: React.PropTypes.string
+    className: React.PropTypes.string,
+    registerPassword: React.PropTypes.string
   },
 
   getDefaultProps: function() {
     return {
       modalId: 'register-modal',
-      className: 'modal register-modal'
+      className: 'modal register-modal',
+      registerPassword: true
     }
   },
 
