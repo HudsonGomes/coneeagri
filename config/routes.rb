@@ -1,16 +1,16 @@
 Rails.application.routes.draw do
+  devise_for :users, controllers: { sessions: "users/sessions" }
   # Make sure this routeset is defined last
  # comfy_route :cms, :path => '/', :sitemap => false
 
-  devise_for :users
-
   root to: 'application#index'
 
+  resources :users, only: [:create, :show, :edit, :update]
   resources :eventos_academicos, only: [:index]
 
   resources :eventos_culturais, only: [:index]
 
-  resources :inscricoes, only: [:new, :index]
+  resources :inscricoes, only: [:new, :index, :show]
 
   match '/contatos', to: 'contatos#new', via: 'get'
   resources :contatos, only: [:new, :create]

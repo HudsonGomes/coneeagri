@@ -1,0 +1,74 @@
+<div class='edit-user container'>
+
+  <%= form_for @user do |f| %>
+    <div>
+      <h5>Dados Pessoais</h5>
+
+      <div class="row">
+        <div class="input-field col s8">
+          <%= f.text_field :name %>
+          <label for="user_name">Nome</label>
+        </div>
+
+        <div class="input-field col s4">
+          <%= f.text_field :sexo %>
+          <label for="user_sexo">Sexo</label>
+        </div>
+      </div>
+
+      <div class='row'>
+        <div class="input-field col s6">
+          <%= f.text_field :birth_at %>
+          <label for="user_birth_at">Data de Nascimento</label>
+        </div>
+        <div class="input-field col s6">
+          <%= f.text_field :cpf %>
+          <label for="user_name">CPF</label>
+        </div>
+      </div>
+
+      <div class='row'>
+        <div class="input-field col s12">
+          <%= f.text_field :university %>
+          <label for="user_university">Universidade</label>
+        </div>
+      </div>
+
+    </div>
+
+    <div>
+      <h5>Contato</h5>
+
+      <div class='row'>
+        <div class="input-field col s6">
+          <%= f.text_field :email %>
+          <label for="user_email">Email</label>
+        </div>
+
+        <div class="input-field col s6">
+          <%= f.text_field :phone_number %>
+          <label for="user_phone_number">Telefone</label>
+        </div>
+      </div>
+
+    </div>
+
+    <div style="float: right">
+      <a id="update-password-button" class="waves-effect waves-light btn">Trocar senha</a>
+      <button class="waves-effect waves-light btn">Atualizar</button>
+    </div>
+    <div style="clear: both"></div>
+  <% end %>
+
+</div>
+
+<%= react_component('UpdatePasswordModal', {}) %>
+
+<script>
+
+  $('#update-password-button').click(function(event){
+    event.preventDefault();
+    $('#update-password').openModal();
+  })
+
+</script>

@@ -5,25 +5,30 @@
 
 @import "materialize";
 
+html {
+  //background-color: #e8f5e9;
+  color: #1b5e20;
+}
+
 h1{
   font-size: 3.2em;
-  color: #81c784;
+  color: #1b5e20;
   font-weight: bold;
   margin: 0%;
 }
 
 .divider{
-  background-color: #81c784;
+  background-color: #1b5e20;
 }
 
 .selected{
   color: white !important;
-  background-color: #81c784 !important;
+  background-color: #1b5e20 !important;
 }
 
 .btn-small{
-  height: 25px;
-  line-height: 25px;
+  height: 30px;
+  line-height: 27px;
   font-size: 11px;
   padding: 0 1rem;
 }
@@ -63,10 +68,10 @@ main {
 
 //FOOTER
 .page-footer{
-  background-color: white !important;
-  color: #81c784;
+  background-color: #a5d6a7 !important;
+  color: #1b5e20;
   padding-top: 0px !important;
-  border-top: 2px solid #81c784;
+  border-top: 2px solid #1b5e20;
   font-weight: bold;
 }
 

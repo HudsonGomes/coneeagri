@@ -1,12 +1,26 @@
 
 <%
-   step_wizard_props = {
-     menuList: [
-       'Passo 1',
-       'Passo 2',
-       'Passo 3'
-     ]
-   }
+  step_wizard = <<-JSX
+   <StepWizard>
+    <Step title='Selecionar Pacote'
+      id='select-package' nextButton={{name: 'Próximo'}} >
+
+      <SelectPackage />
+    </Step>
+
+    <Step title='Dados pessoais'
+      id='personal-data' nextButton={{name: 'Próximo'}} previewButton={{name: 'Anterior'}} >
+
+      <PersonalDatas currentUserId=#{current_user.id} />
+    </Step>
+
+    <Step title='Pagamento' id='payment'
+      previewButton={{name: 'Anterior'}} concludeButton={{name: 'Finalizar'}} >
+
+      <PaymentStep />
+    </Step>
+   </StepWizard>
+  JSX
 %>
 
 <div id="new-inscricao">
@@ -14,7 +28,7 @@
     <div class="row">
       <div class="col s12">
 
-        <%= react_component('StepWizard', step_wizard_props, { class: 'manual-scheduler-step-wizard' }) %>
+        <%= render_jsx(step_wizard) %>
 
       </div>
     </div>

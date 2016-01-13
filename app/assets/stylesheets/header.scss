@@ -25,6 +25,23 @@ nav{
     width: 90%;
     margin: 0 auto;
   }
+
+  #event-dropdown {
+    top: inherit !important;
+
+    a {
+      color: #a5d6a7;
+    }
+  }
+
+  #user-dropdown {
+    top: inherit !important;
+
+    a {
+      color: #a5d6a7;
+    }
+  }
+
 }
 
 .brand-logo{
@@ -33,4 +50,67 @@ nav{
     max-width: 80px;
   }
 
+}
+
+#login-header {
+
+  a {
+    :hover {
+      cursor: pointer;
+    }
+  }
+
+  .box-login{
+    width: 25%;
+    margin: 0px auto;
+    border: 2px solid #81C784;
+    padding: 10px 10px;
+
+    .actions{
+      margin: 10px 0px;
+    }
+
+    label{
+      color: #81C784;
+    }
+  }
+
+  .box-login{
+    position: absolute;
+    background-color: white;
+    color: #1b5e20;
+
+    .email-input {
+      line-height: 20px;
+
+      input {
+        height: 2rem;
+      }
+    }
+
+    .password-input {
+      line-height: 20px;
+
+      input {
+        height: 2rem;
+      }
+    }
+
+    .action-buttons {
+      float: right;
+      line-height: 40px;
+    }
+  }
+}
+
+.register-modal {
+  z-index: 999;
+  color: #1b5e20;
+
+  .modal-footer {
+    a{
+      font-weight: bold;
+      color: #1b5e20;
+    }
+  }
 }

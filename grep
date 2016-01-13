@@ -1,0 +1,44 @@
+                   Prefix Verb   URI Pattern                             Controller#Action
+         new_user_session GET    /users/sign_in(.:format)                users/sessions#new
+             user_session POST   /users/sign_in(.:format)                users/sessions#create
+     destroy_user_session DELETE /users/sign_out(.:format)               users/sessions#destroy
+            user_password POST   /users/password(.:format)               devise/passwords#create
+        new_user_password GET    /users/password/new(.:format)           devise/passwords#new
+       edit_user_password GET    /users/password/edit(.:format)          devise/passwords#edit
+                          PATCH  /users/password(.:format)               devise/passwords#update
+                          PUT    /users/password(.:format)               devise/passwords#update
+        user_confirmation POST   /users/confirmation(.:format)           devise/confirmations#create
+    new_user_confirmation GET    /users/confirmation/new(.:format)       devise/confirmations#new
+                          GET    /users/confirmation(.:format)           devise/confirmations#show
+                     root GET    /                                       application#index
+                    users POST   /users(.:format)                        users#create
+                edit_user GET    /users/:id/edit(.:format)               users#edit
+                     user GET    /users/:id(.:format)                    users#show
+                          PATCH  /users/:id(.:format)                    users#update
+                          PUT    /users/:id(.:format)                    users#update
+ eventos_academicos_index GET    /eventos_academicos(.:format)           eventos_academicos#index
+        eventos_culturais GET    /eventos_culturais(.:format)            eventos_culturais#index
+               inscricoes GET    /inscricoes(.:format)                   inscricoes#index
+            new_inscricao GET    /inscricoes/new(.:format)               inscricoes#new
+                inscricao GET    /inscricoes/:id(.:format)               inscricoes#show
+                 contatos GET    /contatos(.:format)                     contatos#new
+                          POST   /contatos(.:format)                     contatos#create
+              new_contato GET    /contatos/new(.:format)                 contatos#new
+       mostras_cientifica GET    /mostras_cientifica(.:format)           mostras_cientifica#index
+          infraestruturas GET    /infraestruturas(.:format)              infraestruturas#index
+                  pacotes GET    /pacotes(.:format)                      pacotes#index
+          download_edital GET    /edital(.:format)                       mostras_cientifica#download_edital
+      download_formulario GET    /formulario(.:format)                   mostras_cientifica#download_formulario
+download_resumo_extendido GET    /resumo_extendido(.:format)             mostras_cientifica#download_resumo_extendido
+   download_modelo_banner GET    /modelo_banner(.:format)                mostras_cientifica#download_modelo_banner
+               dashboards GET    /admin(.:format)                        dashboards#show
+                          POST   /admin/eventos_academicos(.:format)     eventos_academicos#create
+   new_eventos_academicos GET    /admin/eventos_academicos/new(.:format) eventos_academicos#new
+       eventos_academicos PATCH  /admin/eventos_academicos/:id(.:format) eventos_academicos#update
+                          PUT    /admin/eventos_academicos/:id(.:format) eventos_academicos#update
+                          DELETE /admin/eventos_academicos/:id(.:format) eventos_academicos#destroy
+                          POST   /admin/eventos_culturais(.:format)      eventos_culturais#create
+      new_evento_cultural GET    /admin/eventos_culturais/new(.:format)  eventos_culturais#new
+          evento_cultural PATCH  /admin/eventos_culturais/:id(.:format)  eventos_culturais#update
+                          PUT    /admin/eventos_culturais/:id(.:format)  eventos_culturais#update
+                          DELETE /admin/eventos_culturais/:id(.:format)  eventos_culturais#destroy

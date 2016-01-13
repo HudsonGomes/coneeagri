@@ -12,31 +12,79 @@
 </head>
 <body>
     <header>
+      <ul id="event-dropdown" class="dropdown-content">
+        <li><%= link_to 'Culturais', eventos_culturais_path %></li>
+        <li><%= link_to 'Acadêmicos', eventos_academicos_index_path %></li>
+      </ul>
         <nav role="navigation">
           <div class="nav-wrapper container">
             <%=link_to( image_tag('logo_menor.png'), root_path, :class=>"brand-logo") %>
             <ul id="slide-out" class="side-nav">
-              <li><%= link_to 'Eventos Culturais', eventos_culturais_path %></li>
-              <li><%= link_to 'Eventos Acadêmicos', eventos_academicos_index_path %></li>
+              <li>
+                <a class="dropdown-button" href="#!" data-activates="event-dropdown">Eventos<i class="material-icons right">arrow_drop_down</i></a>
+              </li>
               <li><%= link_to 'Infraestrutura', infraestruturas_path %></li>
               <li><%= link_to 'Mostra Científica', mostras_cientifica_path %></li>
               <li><%= link_to 'Pacotes', pacotes_path %></li>
+              <% unless current_user %>
+                <%= react_component('LoginHeader', {}) %>
+                <li><%= link_to 'Contato', new_contato_path %></li>
+              <% else %>
+                <ul id="user-dropdown" class="dropdown-content">
+                  <% if current_user.admin? %>
+                    <li><%= link_to 'Inscrições', inscricoes_path %></li>
+                  <% else %>
+                    <li><%= link_to 'Minhas inscrições', inscricao_path(current_user.id) %></li>
+                  <% end %>
+                  <li><%= link_to 'Contato', new_contato_path %></li>
+                  <li><%= link_to 'Minha Conta', user_path(current_user.id) %></li>
+                  <li><%= link_to 'Sair', destroy_user_session_path, method: :delete %></li>
+                </ul>
+                <li>
+                  <a class="dropdown-button" href="#!" data-activates="user-dropdown">
+                    <%= "#{current_user.name}" %>
+                    <i class="material-icons right">account_circle</i>
+                  </a>
+                </li>
+              <% end %>
               <li><%= link_to 'Contato', new_contato_path %></li>
             </ul>
             <a href="#" data-activates="slide-out" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
             <ul id="nav-mobile" class="right hide-on-med-and-down">
-              <li><%= link_to 'Eventos Culturais', eventos_culturais_path %></li>
-              <li><%= link_to 'Eventos Acadêmicos', eventos_academicos_index_path %></li>
+              <li>
+                <a class="dropdown-button" href="#!" data-activates="event-dropdown">Eventos<i class="material-icons right">arrow_drop_down</i></a>
+              </li>
               <li><%= link_to 'Infraestrutura', infraestruturas_path %></li>
               <li><%= link_to 'Mostra Científica', mostras_cientifica_path %></li>
               <li><%= link_to 'Pacotes', pacotes_path %></li>
-              <li><%= link_to 'Contato', new_contato_path %></li>
+              <% unless current_user %>
+                <li><%= react_component('LoginHeader', {}) %></li>
+                <li><%= link_to 'Contato', new_contato_path %></li>
+              <% else %>
+                <ul id="user-dropdown" class="dropdown-content">
+                  <% if current_user.admin? %>
+                    <li><%= link_to 'Inscrições', inscricoes_path %></li>
+                  <% else %>
+                    <li><%= link_to 'Minhas inscrições', inscricao_path(current_user.id) %></li>
+                  <% end %>
+                  <li><%= link_to 'Contato', new_contato_path %></li>
+                  <li><%= link_to 'Minha Conta', user_path(current_user.id) %></li>
+                  <li><%= link_to 'Sair', destroy_user_session_path, method: :delete %></li>
+                </ul>
+                <li>
+                  <a class="dropdown-button" href="#!" data-activates="user-dropdown">
+                    <%= "#{current_user.name}" %>
+                    <i class="material-icons right">account_circle</i>
+                  </a>
+                </li>
+              <% end %>
             </ul>
           </div>
         </nav>
     </header>
 
     <main>
+      <%= react_component('RegisterModal', {}) %>
       <%= yield %>
     </main>
 

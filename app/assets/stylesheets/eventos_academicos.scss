@@ -1,13 +1,13 @@
 .btn{
   font-weight: bold;
   background-color: white;
-  color: #81c784;
+  color: #a5d6a7;
   border: 2px solid;
   margin-left: 10px;
 
   &:hover, &:active, &:focus{
     color: white;
-    background-color: #81c784;
+    background-color: #1b5e20;
   }
 
 }
@@ -23,12 +23,12 @@
 }
 
 .events-header{
-  color: #81c784;
+  color: #a5d6a7;
   font-weight: bold;
   font-size: 18px;
 }
 
 .event-body{
   margin: 20px 0px;
-  color: #81c784;
+  color: #a5d6a7;
 }

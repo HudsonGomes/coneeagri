@@ -5,9 +5,9 @@ pt-BR:
         action: Confirmar minha conta
         greeting: Bem-vindo %{recipient}!
         instruction: "Você pode confirmar sua conta através do link abaixo:"
-        subject: "[RX Hive - Cotação] - Confirmação de cadastro"
+        subject: "[CONEEAGRI UFF -2016] - Confirmação de cadastro"
       reset_password_instructions:
-        subject: "[RX Hive - Cotação] - Pedido de alteração de senha"
+        subject: "[CONEEAGRI UFF -2016] - Pedido de alteração de senha"
         action: Redefinir minha senha
         greeting: Olá %{recipient}!
         instruction: Alguém fez o pedido para redefinir sua senha, e você pode fazer isso clicando no link abaixo.

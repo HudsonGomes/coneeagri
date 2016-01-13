@@ -1,4 +1,5 @@
 class InscricoesController < ApplicationController
+  before_filter :require_login
 
   def new
     @inscricao = Inscricao.new
@@ -6,6 +7,10 @@ class InscricoesController < ApplicationController
 
   def index
     @inscricoes = Inscricao.all
+  end
+
+  def show
+    @inscricao = Inscricao.find_by(user_id = params[:id])
   end
 
   def create
