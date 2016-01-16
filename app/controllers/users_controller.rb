@@ -5,7 +5,7 @@ class UsersController < ApplicationController
 
     respond_to do |format|
       format.html
-      format.json render json: { user: @user }
+      format.json { render json: { user: @user } }
     end
   end
 
@@ -32,7 +32,7 @@ class UsersController < ApplicationController
   private
 
   def attributes
-    params[:attributes].permit!
+    params[:user].permit!
   end
 
 end

@@ -97,7 +97,8 @@ var RegisterModal = React.createClass({
       success:function(data, textStatus) {
         alert('Um email foi enviado para você. ' +
           'Favor confirmar seu cadastro através do link presente no email.');
-      },
+        this.closeModal()
+      }.bind(this),
       error: function(xhr, textStatus, errorThrown) {
         this.setState({
           errors: JSON.parse(xhr.responseText)
