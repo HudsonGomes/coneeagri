@@ -27,22 +27,29 @@ var LoginHeader = React.createClass({
     return (
       <li id='login-header' className={this.props.className}>
         <a onClick={this.handleClick}><span>{this.props.text}</span></a>
-        <Login active={this.state.active} />
+        <Login active={this.state.active} handleClose={this.handleClose} />
       </li>
     )
-  }
+  },
 
+  handleClose: function() {
+    this.setState({
+      active: false
+    })
+  }
 });
 
 var Login = React.createClass({
 
   propTypes: {
-    className: React.PropTypes.string
+    className: React.PropTypes.string,
+    handleClose: React.PropTypes.func
   },
 
   getDefaultProps: function(){
     return {
-      className: 'box-login z-depth-1'
+      className: 'box-login z-depth-1',
+      handleClose: null
     }
   },
 
@@ -56,6 +63,14 @@ var Login = React.createClass({
   },
 
   componentDidMount: function(e) {
+    $('body').bind('click', function(e){
+      this.props.handleClose();
+    }.bind(this));
+
+    $('.login-form').on('click', function(e) {
+      e.stopPropagation();
+    }.bind(this));
+
     this.setState({token: $('meta[name=csrf-token]').attr('content')})
   },
 
@@ -65,6 +80,7 @@ var Login = React.createClass({
     $('#attributes_birth_at').inputmask("dd/mm/yyyy");
     $('#attributes_phone_number').inputmask("(99) 99999-9999");
     $('#attributes_cpf').inputmask("999.999.999-99");
+    this.props.handleClose();
   },
 
   handleSubmit: function() {
