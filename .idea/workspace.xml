@@ -31,19 +31,22 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="login_header.jsx" pinned="false" current-in-tab="true">
+      <file leaf-file-name="login_header.jsx" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/assets/javascripts/components/login_header.jsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.19844961">
-              <caret line="69" column="18" selection-start-line="69" selection-start-column="18" selection-end-line="69" selection-end-column="18" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="76" column="28" selection-start-line="76" selection-start-column="28" selection-end-line="76" selection-end-column="28" />
               <folding>
                 <element signature="e#52#129#0" expanded="false" />
                 <element signature="e#161#238#0" expanded="false" />
                 <element signature="e#174#234#0" expanded="false" />
                 <element signature="e#270#314#0" expanded="false" />
                 <element signature="e#283#310#0" expanded="false" />
+                <element signature="e#932#1020#0" expanded="false" />
                 <element signature="e#1053#1166#0" expanded="false" />
                 <element signature="e#1066#1162#0" expanded="false" />
+                <element signature="e#1202#1465#0" expanded="false" />
+                <element signature="e#1496#1777#0" expanded="false" />
                 <element signature="e#1807#2358#0" expanded="false" />
                 <element signature="e#1820#2352#0" expanded="false" />
                 <element signature="e#1907#2099#0" expanded="false" />
@@ -60,6 +63,86 @@
                 <element signature="e#4122#4224#0" expanded="false" />
                 <element signature="e#4185#4219#0" expanded="false" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="register_modal.jsx" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/assets/javascripts/components/register_modal.jsx">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="101" column="22" selection-start-line="101" selection-start-column="22" selection-end-line="101" selection-end-column="22" />
+              <folding>
+                <element signature="e#54#180#0" expanded="false" />
+                <element signature="e#213#340#0" expanded="false" />
+                <element signature="e#226#336#0" expanded="false" />
+                <element signature="e#373#414#0" expanded="false" />
+                <element signature="e#386#410#0" expanded="false" />
+                <element signature="e#438#3269#0" expanded="false" />
+                <element signature="e#458#3259#0" expanded="false" />
+                <element signature="e#529#2931#0" expanded="false" />
+                <element signature="e#642#2915#0" expanded="false" />
+                <element signature="e#706#2816#0" expanded="false" />
+                <element signature="e#832#1218#0" expanded="false" />
+                <element signature="e#892#1028#0" expanded="false" />
+                <element signature="e#1045#1154#0" expanded="false" />
+                <element signature="e#1234#1519#0" expanded="false" />
+                <element signature="e#1295#1462#0" expanded="false" />
+                <element signature="e#1535#1960#0" expanded="false" />
+                <element signature="e#1596#1744#0" expanded="false" />
+                <element signature="e#1761#1892#0" expanded="false" />
+                <element signature="e#1976#2356#0" expanded="false" />
+                <element signature="e#2037#2170#0" expanded="false" />
+                <element signature="e#2187#2293#0" expanded="false" />
+                <element signature="e#2372#2796#0" expanded="false" />
+                <element signature="e#2426#2580#0" expanded="false" />
+                <element signature="e#2597#2726#0" expanded="false" />
+                <element signature="e#2940#3246#0" expanded="false" />
+                <element signature="e#2981#3097#0" expanded="false" />
+                <element signature="e#3465#3629#0" expanded="false" />
+                <element signature="e#3843#4805#0" expanded="false" />
+                <element signature="e#3895#4771#0" expanded="false" />
+                <element signature="e#4002#4354#0" expanded="false" />
+                <element signature="e#4057#4184#0" expanded="false" />
+                <element signature="e#4195#4301#0" expanded="false" />
+                <element signature="e#4364#4758#0" expanded="false" />
+                <element signature="e#4415#4568#0" expanded="false" />
+                <element signature="e#4579#4698#0" expanded="false" />
+                <element signature="e#4841#6005#0" expanded="false" />
+                <element signature="e#4935#5969#0" expanded="false" />
+                <element signature="e#5045#5456#0" expanded="false" />
+                <element signature="e#5102#5269#0" expanded="false" />
+                <element signature="e#5282#5396#0" expanded="false" />
+                <element signature="e#5468#5954#0" expanded="false" />
+                <element signature="e#5525#5718#0" expanded="false" />
+                <element signature="e#5731#5881#0" expanded="false" />
+                <element signature="e#6043#6150#0" expanded="false" />
+                <element signature="e#6106#6146#0" expanded="false" />
+                <element signature="e#6188#6295#0" expanded="false" />
+                <element signature="e#6251#6291#0" expanded="false" />
+                <element signature="e#6329#6518#0" expanded="false" />
+                <element signature="e#6546#6589#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="users_controller.rb" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/controllers/users_controller.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.1627907">
+              <caret line="12" column="9" selection-start-line="12" selection-start-column="9" selection-end-line="12" selection-end-column="9" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="user_manager.rb" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/managers/user_manager.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="3" column="31" selection-start-line="3" selection-start-column="31" selection-end-line="3" selection-end-column="31" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -95,7 +178,6 @@
         <option value="$PROJECT_DIR$/app/controllers/inscricoes_controller.rb" />
         <option value="$PROJECT_DIR$/app/views/devise/shared/_links.html.erb" />
         <option value="$PROJECT_DIR$/app/assets/javascripts/components/update_password_modal.jsx" />
-        <option value="$PROJECT_DIR$/app/managers/user_manager.rb" />
         <option value="$PROJECT_DIR$/app/assets/javascripts/components/alert.jsx" />
         <option value="$PROJECT_DIR$/app/views/users/show.html.erb" />
         <option value="$PROJECT_DIR$/app/assets/javascripts/components/mixins/container_mixin.jsx" />
@@ -114,12 +196,13 @@
         <option value="$PROJECT_DIR$/config/database.yml" />
         <option value="$PROJECT_DIR$/app/assets/javascripts/components/user_form.jsx" />
         <option value="$PROJECT_DIR$/Gemfile" />
-        <option value="$PROJECT_DIR$/app/assets/javascripts/components/register_modal.jsx" />
         <option value="$PROJECT_DIR$/config/application.rb" />
         <option value="$PROJECT_DIR$/config/environments/production.rb" />
         <option value="$PROJECT_DIR$/config/environments/development.rb" />
-        <option value="$PROJECT_DIR$/app/controllers/users_controller.rb" />
         <option value="$PROJECT_DIR$/app/assets/javascripts/components/login_header.jsx" />
+        <option value="$PROJECT_DIR$/app/assets/javascripts/components/register_modal.jsx" />
+        <option value="$PROJECT_DIR$/app/managers/user_manager.rb" />
+        <option value="$PROJECT_DIR$/app/controllers/users_controller.rb" />
       </list>
     </option>
   </component>
@@ -131,9 +214,9 @@
     <order />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="y" value="24" />
+    <option name="y" value="-4" />
     <option name="width" value="1360" />
-    <option name="height" value="744" />
+    <option name="height" value="772" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -174,9 +257,9 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="Scratches" />
       <pane id="RailsProjectView" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -436,10 +519,10 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="24" width="1360" height="744" extended-state="6" />
+    <frame x="0" y="-4" width="1360" height="772" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.27929986" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.28386605" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3295129" sideWeight="0.5" order="11" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -543,13 +626,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="4" column="32" selection-start-line="4" selection-start-column="32" selection-end-line="4" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/managers/user_manager.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -774,13 +850,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/components/register_modal.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.37674418">
-          <caret line="99" column="25" selection-start-line="99" selection-start-column="25" selection-end-line="99" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/config/initializers/devise.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -823,26 +892,21 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/users_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.42170542">
-          <caret line="21" column="9" selection-start-line="21" selection-start-column="9" selection-end-line="21" selection-end-column="9" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/assets/javascripts/components/login_header.jsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.19844961">
-          <caret line="69" column="18" selection-start-line="69" selection-start-column="18" selection-end-line="69" selection-end-column="18" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="76" column="28" selection-start-line="76" selection-start-column="28" selection-end-line="76" selection-end-column="28" />
           <folding>
             <element signature="e#52#129#0" expanded="false" />
             <element signature="e#161#238#0" expanded="false" />
             <element signature="e#174#234#0" expanded="false" />
             <element signature="e#270#314#0" expanded="false" />
             <element signature="e#283#310#0" expanded="false" />
+            <element signature="e#932#1020#0" expanded="false" />
             <element signature="e#1053#1166#0" expanded="false" />
             <element signature="e#1066#1162#0" expanded="false" />
+            <element signature="e#1202#1465#0" expanded="false" />
+            <element signature="e#1496#1777#0" expanded="false" />
             <element signature="e#1807#2358#0" expanded="false" />
             <element signature="e#1820#2352#0" expanded="false" />
             <element signature="e#1907#2099#0" expanded="false" />
@@ -859,6 +923,80 @@
             <element signature="e#4122#4224#0" expanded="false" />
             <element signature="e#4185#4219#0" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/components/register_modal.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="101" column="22" selection-start-line="101" selection-start-column="22" selection-end-line="101" selection-end-column="22" />
+          <folding>
+            <element signature="e#54#180#0" expanded="false" />
+            <element signature="e#213#340#0" expanded="false" />
+            <element signature="e#226#336#0" expanded="false" />
+            <element signature="e#373#414#0" expanded="false" />
+            <element signature="e#386#410#0" expanded="false" />
+            <element signature="e#438#3269#0" expanded="false" />
+            <element signature="e#458#3259#0" expanded="false" />
+            <element signature="e#529#2931#0" expanded="false" />
+            <element signature="e#642#2915#0" expanded="false" />
+            <element signature="e#706#2816#0" expanded="false" />
+            <element signature="e#832#1218#0" expanded="false" />
+            <element signature="e#892#1028#0" expanded="false" />
+            <element signature="e#1045#1154#0" expanded="false" />
+            <element signature="e#1234#1519#0" expanded="false" />
+            <element signature="e#1295#1462#0" expanded="false" />
+            <element signature="e#1535#1960#0" expanded="false" />
+            <element signature="e#1596#1744#0" expanded="false" />
+            <element signature="e#1761#1892#0" expanded="false" />
+            <element signature="e#1976#2356#0" expanded="false" />
+            <element signature="e#2037#2170#0" expanded="false" />
+            <element signature="e#2187#2293#0" expanded="false" />
+            <element signature="e#2372#2796#0" expanded="false" />
+            <element signature="e#2426#2580#0" expanded="false" />
+            <element signature="e#2597#2726#0" expanded="false" />
+            <element signature="e#2940#3246#0" expanded="false" />
+            <element signature="e#2981#3097#0" expanded="false" />
+            <element signature="e#3465#3629#0" expanded="false" />
+            <element signature="e#3843#4805#0" expanded="false" />
+            <element signature="e#3895#4771#0" expanded="false" />
+            <element signature="e#4002#4354#0" expanded="false" />
+            <element signature="e#4057#4184#0" expanded="false" />
+            <element signature="e#4195#4301#0" expanded="false" />
+            <element signature="e#4364#4758#0" expanded="false" />
+            <element signature="e#4415#4568#0" expanded="false" />
+            <element signature="e#4579#4698#0" expanded="false" />
+            <element signature="e#4841#6005#0" expanded="false" />
+            <element signature="e#4935#5969#0" expanded="false" />
+            <element signature="e#5045#5456#0" expanded="false" />
+            <element signature="e#5102#5269#0" expanded="false" />
+            <element signature="e#5282#5396#0" expanded="false" />
+            <element signature="e#5468#5954#0" expanded="false" />
+            <element signature="e#5525#5718#0" expanded="false" />
+            <element signature="e#5731#5881#0" expanded="false" />
+            <element signature="e#6043#6150#0" expanded="false" />
+            <element signature="e#6106#6146#0" expanded="false" />
+            <element signature="e#6188#6295#0" expanded="false" />
+            <element signature="e#6251#6291#0" expanded="false" />
+            <element signature="e#6329#6518#0" expanded="false" />
+            <element signature="e#6546#6589#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/managers/user_manager.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="3" column="31" selection-start-line="3" selection-start-column="31" selection-end-line="3" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/users_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.1627907">
+          <caret line="12" column="9" selection-start-line="12" selection-start-column="9" selection-end-line="12" selection-end-column="9" />
+          <folding />
         </state>
       </provider>
     </entry>

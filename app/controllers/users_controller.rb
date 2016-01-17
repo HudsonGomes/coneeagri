@@ -20,7 +20,7 @@ class UsersController < ApplicationController
 
   def update
     begin
-      UserManager.update(params[:id], attributes)
+      UserManager.update(params[:id], attributes_to_update)
       flash[:success] = 'Atualizado com sucesso'
       redirect_to user_path(params[:id])
     rescue InvalidRecordError => e
@@ -32,6 +32,10 @@ class UsersController < ApplicationController
   private
 
   def attributes
+    params[:attributes].permit!
+  end
+
+  def attributes_to_update
     params[:user].permit!
   end
 

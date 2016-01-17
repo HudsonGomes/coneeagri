@@ -14,7 +14,6 @@ var RegisterModal = React.createClass({
     }
   },
 
-
   getInitialState: function() {
     return {
       errors: {}
