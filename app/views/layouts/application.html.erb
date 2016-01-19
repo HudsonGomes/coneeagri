@@ -32,6 +32,7 @@
               <% else %>
                 <ul id="user-dropdown" class="dropdown-content">
                   <% if current_user.admin? %>
+                    <li><%= link_to 'Cadastros', users_path %></li>
                     <li><%= link_to 'Inscrições', inscricoes_path %></li>
                   <% else %>
                     <li><%= link_to 'Minhas inscrições', inscricao_path(current_user.id) %></li>
@@ -63,6 +64,7 @@
               <% else %>
                 <ul id="user-dropdown" class="dropdown-content">
                   <% if current_user.admin? %>
+                    <li><%= link_to 'Cadastros', users_path %></li>
                     <li><%= link_to 'Inscrições', inscricoes_path %></li>
                   <% else %>
                     <li><%= link_to 'Minhas inscrições', inscricao_path(current_user.id) %></li>

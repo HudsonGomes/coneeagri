@@ -5,7 +5,7 @@ Rails.application.routes.draw do
 
   root to: 'application#index'
 
-  resources :users, only: [:create, :show, :edit, :update]
+  resources :users, only: [:create, :show, :edit, :update, :index]
   resources :eventos_academicos, only: [:index]
 
   resources :eventos_culturais, only: [:index]

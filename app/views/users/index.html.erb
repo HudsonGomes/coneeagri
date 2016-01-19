@@ -1,0 +1,67 @@
+<div id="users-index" class="container">
+  <div class="card">
+    <div class="card-content">
+      <ul class="collapsible" data-collapsible="accordion">
+        <li>
+          <div class="collapsible-header"><i class="material-icons">filter_list</i>Filtrar</div>
+          <div class="collapsible-body">
+            <%= search_form_for @q do |f| %>
+
+              <div class="row">
+                <div class="col s4">
+                  <%= f.label :name_cont, 'Nome' %>
+                  <%= f.search_field :name_cont %>
+                </div>
+                <div class="col s4">
+                  <%= f.label :sexo_eq, 'Sexo' %>
+                  <%= f.search_field :sexo_eq %>
+                </div>
+
+                <div class="col s4">
+                  <%= f.label :university_cont, 'Universidade' %>
+                  <%= f.search_field :university_cont %>
+                </div>
+              </div>
+
+              <div class="action-button">
+                <%= f.submit 'Filtrar', class: 'btn' %>
+              </div>
+              <div style="clear: both"></div>
+            <% end %>
+          </div>
+        </li>
+      </ul>
+      <% if @users.any? %>
+        <table>
+          <thead>
+            <tr>
+              <th>Nome</th>
+              <th >Sexo</th>
+              <th class="center-align">Universidade</th>
+              <th class="center-align">Email</th>
+              <th class="center-align">Confirmado</th>
+              <th class="center-align">Inscrito</th>
+            </tr>
+          </thead>
+          <tbody>
+            <% @users.each do |user| %>
+              <tr>
+                <td><%= user.name %></td>
+                <td class="center-align"><%= user.sexo %></td>
+                <td><%= user.university %></td>
+                <td><%= user.email%></td>
+                <td class="center-align"><%= user.confirmed_at ? 'Sim' : 'Não' %></td>
+                <td class="center-align">Não</td>
+              </tr>
+            <% end %>
+          </tbody>
+        </table>
+        <div style="float: right"><%= paginate @users %></div>
+      </div>
+    </div>
+  <% else %>
+    <div>
+      <span>Nenhum usário encontrado</span>
+    </div>
+  <% end %>
+</div>

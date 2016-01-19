@@ -1,4 +1,11 @@
 class UsersController < ApplicationController
+  before_filter :require_login, only: :index
+
+  def index
+    raise PermissionDenied unless current_user.admin
+    @q = User.ransack(params[:q])
+    @users = @q.result(distinct: true).page(params[:page]).per(20)
+  end
 
   def show
     @user = User.find(params[:id])
