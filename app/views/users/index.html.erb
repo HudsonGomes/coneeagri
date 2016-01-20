@@ -32,15 +32,15 @@
         </li>
       </ul>
       <% if @users.any? %>
-        <table>
+        <table class="bordered striped highlight">
           <thead>
             <tr>
-              <th>Nome</th>
-              <th >Sexo</th>
-              <th class="center-align">Universidade</th>
-              <th class="center-align">Email</th>
-              <th class="center-align">Confirmado</th>
-              <th class="center-align">Inscrito</th>
+              <th><%= sort_link(@q, :name, 'Nome') %></th>
+              <th><%= sort_link(@q, :sexo, 'Sexo') %></th>
+              <th class="center-align"><%= sort_link(@q, :university, 'Universidade') %></th>
+              <th class="center-align"><%= sort_link(@q, :email, 'Email') %></th>
+              <th class="center-align"><%= sort_link(@q, :confirmed_at, 'Confirmado') %></th>
+              <th class="center-align"><%= sort_link(@q, :sexo, 'Inscrito') %></th>
             </tr>
           </thead>
           <tbody>
