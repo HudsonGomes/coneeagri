@@ -41,4 +41,14 @@ class MostrasCientificaController < ApplicationController
     )
   end
 
+  def download_artigos_selecionados
+    send_file(
+      "#{Rails.root}/public/artigos-selecionados.pdf",
+      :disposition => 'inline',
+      filename: "Artigos Selecionados.pdf",
+      type: "application/pdf",
+      :x_sendfile => true
+    )
+  end
+
 end

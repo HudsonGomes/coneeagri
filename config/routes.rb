@@ -25,6 +25,7 @@ Rails.application.routes.draw do
   get '/formulario' => 'mostras_cientifica#download_formulario', as: :download_formulario
   get '/resumo_extendido' => 'mostras_cientifica#download_resumo_extendido', as: :download_resumo_extendido
   get '/modelo_banner' => 'mostras_cientifica#download_modelo_banner', as: :download_modelo_banner
+  get '/artigos_selecionados' => 'mostras_cientifica#download_artigos_selecionados', as: :download_artigos_selecionados
 
   scope 'admin' do
     resource :dashboards, only: [:show], path: ''
