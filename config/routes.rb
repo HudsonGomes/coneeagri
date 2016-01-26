@@ -17,6 +17,8 @@ Rails.application.routes.draw do
 
   resources :mostras_cientifica, only: [:index]
 
+  resources :cronogramas, only: [:index]
+
   resources :infraestruturas, only: [:index]
 
   resources :pacotes, only: [:index]
