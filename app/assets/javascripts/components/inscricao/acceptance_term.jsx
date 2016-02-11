@@ -98,6 +98,88 @@ var AcceptanceTerm = React.createClass({
 
             <h5>PARÁGRAFO QUINTO – Do Transporte</h5>
 
+            <p>5.1. Somente terá acesso ao transporte para os eventos acadêmicos, incluindo Cursos,
+              Palestras, Mostrade  IC,  Visita  Técnica,  Cerimônia  de  Abertura  e
+              Encerramento  e  Eventos  Culturais  o  congressista  que adquirir o
+              Pacote Completo em qualquer um dos lotes;</p>
+
+            <p>5.2. O transporte oficial do evento será realizado por ônibus contratados pela organização, com exceção
+              do transporte utilizado para o City Tour;</p>
+
+            <p>5.3. A entrada do congressista no transporte está condicionada ao cumprimento do
+              item 8.3 deste termo.</p>
+
+            <h5>PARÁGRAFO SEXTO – Dos Eventos Acadêmicos</h5>
+
+            <p>6.1. Todos os pacotes oferecem participação nas Atividades Acadêmicas do Evento. </p>
+
+            <p>6.2. A participação nas atividades acadêmicas inclui: Acesso a um minicurso, acesso às
+              palestras, acesso à visita técnica, acesso ao Encontro das Entidades Estudantis da
+              Engenharia Agrícola e Engenharia Agrícola e Ambiental, acesso ao Desafiando Engenheiros e
+              participação da mostra de iniciação científica.</p>
+
+            <p>6.3. Os cursos e visitas técnicas oferecidos possuirão vagas limitadas, sendo o
+              preenchimento dessas vagas por ordem de inscrição no curso ou visita técnica no respectivo período.</p>
+
+            <p>6.4. O Congressista que participar integralmente dos cursos, receberá o
+              respectivo certificado constando o nome, o(s) dia(s) de
+              atividade e a carga horária cumprida no último da atividade.</p>
+
+            <p>6.5. O acesso às palestras e ao Encontro das Entidades Estudantis da Engenharia Agrícola E
+              Engenharia Agrícola e Ambiental respeita a ordem de chegada no local da respectiva
+              palestra, sendo o auditório sujeito à lotação.</p>
+
+            <p>6.6. O congressista que participar das palestras e/ou Encontro e/ou visita técnica, receberá
+              por e-mail o certificado de participação na atividade, constando o nome, o (s) dia (s) de
+              atividade e a carga horária cumprida.</p>
+
+            <p>6.7. A participação na mostra de iniciação científica está condicionada ao cumprimento do
+              edital divulgado no site do evento.</p>
+
+            <p>6.8. A entrada do congressista nos eventos acadêmicos está condicionada ao
+              cumprimento do item 8.3 deste termo.</p>
+
+            <h5>PARÁGRAFO SÉTIMO – Dos Eventos Culturais </h5>
+
+            <p>7.1. O congressista que adquirir o Pacote Completo e o Pacote Sem Alojamento,
+              terá acesso aos eventos culturais.</p>
+
+            <p>7.2. Os eventos culturais ocorrem de domingo à sábado, das 22h às 5h e no sábado das 12h às 20h;</p>
+
+            <p>7.3. Os locais dos eventos serão divulgados em dezembro de 2015;</p>
+
+            <p>7.4. A entrada do congressista nos eventos culturais está condicionada ao cumprimento dos
+              itens 8.1 e 8.3 deste termo.</p>
+
+            <h5>PARÁGRAFO OITAVO – Das Proibições e Sanções</h5>
+
+            <p>8.1. Não será permitida a entrada de menores de 18 anos completos na data de início  do  evento
+              no alojamento e nos eventos culturais. Sendo permitida apenas nas atividades acadêmicas;</p>
+
+            <p>8.2. O Congressista menor de 18 anos pode ser obrigado a se retirar do alojamento, caso não
+              seja comprovada a sua maioridade legal no momento do credenciamento.</p>
+
+            <p>8.3. Não será permitida a entrada de garrafas de vidro, bebidas alcoólicas em qualquer
+              recipiente, drogas ilícitas, armas de fogo, explosivos e qualquer material que
+              possa trazer risco à integridade  física dos participantes no evento e ao patrimônio no
+              alojamento, no transporte e nos eventos culturais;</p>
+
+            <p>8.4. Todo material retido, no momento do credenciamento ou em um momento posterior, ficará sob
+            responsabilidade da organização do evento até o último dia do congresso, sendo, se
+              necessário, encaminhado para às autoridades competentes.</p>
+
+            <h5>PARÁGRAFO NONO – Disposições Gerais</h5>
+
+            <p>9.1. Ao participar deste evento, o (a) inscrito (a) cede todos os
+              direitos de utilização de suas imagens para finalidades legítimas; </p>
+
+            <p>9.2. Os casos omissos serão discutidos e avaliados pela organização do XXIX Congresso
+              Nacional dos Estudantes de Engenharia Agrícola e Engenharia Agrícola e Ambiental em
+              conjunto com a Diretoria Executiva da Federação Nacional dos Estudantes de Engenharia Agrícola.</p>
+
+            <p>9.3. Ao participar deste evento, o (a) inscrito (a) concorda com todo e qualquer
+              procedimento descritoneste termo.</p>
+
           </div>
 
         </div>

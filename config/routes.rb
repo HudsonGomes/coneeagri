@@ -28,6 +28,7 @@ Rails.application.routes.draw do
   get '/resumo_extendido' => 'mostras_cientifica#download_resumo_extendido', as: :download_resumo_extendido
   get '/modelo_banner' => 'mostras_cientifica#download_modelo_banner', as: :download_modelo_banner
   get '/artigos_selecionados' => 'mostras_cientifica#download_artigos_selecionados', as: :download_artigos_selecionados
+  get '/download_errata_edital' => 'mostras_cientifica#download_errata_edital', as: :download_errata_edital
 
   scope 'admin' do
     resource :dashboards, only: [:show], path: ''

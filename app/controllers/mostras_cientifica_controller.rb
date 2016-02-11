@@ -51,4 +51,14 @@ class MostrasCientificaController < ApplicationController
     )
   end
 
+  def download_errata_edital
+    send_file(
+      "#{Rails.root}/public/errata01-datas-artigos.pdf",
+      :disposition => 'inline',
+      filename: "Errata 01 - Datas dos Artigos.pdf",
+      type: "application/pdf",
+      :x_sendfile => true
+    )
+  end
+
 end
