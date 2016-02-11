@@ -1,28 +1,3 @@
 <div class="container">
-  <div id="eventos-academicos">
-    <div class="row">
-      <div class="col s12">
-        <h1>Eventos Acadêmicos</h1>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col s12">
-      <button class="waves-effect waves-light btn">17/04</button>
-      <button class="waves-effect waves-light btn">18/04</button>
-      <button class="waves-effect waves-light btn">19/04</button>
-      <button class="waves-effect waves-light btn">20/04</button>
-      <button class="waves-effect waves-light btn">21/04</button>
-      <button class="waves-effect waves-light btn">22/04</button>
-      <button class="waves-effect waves-light btn">23/04</button>
-      </div>
-    </div>
-    <div class="divider"></div>
-    <section data-section="eventos-academicos">
-      <% if @eventos_academicos.any? %>
-        <%= render partial: 'index' %>
-      <% else %>
-        <span>Aguarde! Em breve teremos novidades para você</span>
-      <% end %>
-    </section>
-  </div>
+  <%= react_component('EventosAcademicos', {image_url: image_tag('logo_maior.jpg')}) %>
 </div>
