@@ -1,5 +1,5 @@
 var StepActionButton = React.createClass({
-  mixins: [Reflux.ListenerMixin],
+  mixins: [],
 
   propTypes: {
     previewButton: React.PropTypes.object,
