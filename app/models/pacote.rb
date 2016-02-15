@@ -10,7 +10,7 @@ class Pacote < ActiveRecord::Base
     pacote_1 = {
       nome: 'Pacote Completo',
       descricao: 'O Pacote Completo oferece acesso ao alojamento,
-        incluindo alimentação de segunda à sexta, participação em um minicurso,
+        incluindo alimentação de segunda à sexta, participação em até 2 minicursos,
         uma visita técnica, acesso às palestras, acesso Encontro das Entidades Estudantis da
         Engenharia Agrícola e Engenharia Agrícola e Ambiental (Reunião Feeagri), direito de participação da
         Mostra de Iniciação Científica, participação no Desafiando Engenheiros,
@@ -29,8 +29,8 @@ class Pacote < ActiveRecord::Base
 
     pacote_2 = {
       nome: 'Pacote sem Alojamento',
-      descricao: 'O Pacote Sem Alojamento oferece participação em um
-        minicurso, uma visita técnica, acesso às palestras, acesso ao Encontro das
+      descricao: 'O Pacote Sem Alojamento oferece participação em até 2
+        minicursos, uma visita técnica, acesso às palestras, acesso ao Encontro das
         Entidades Estudantis da Engenharia Agrícola e Engenharia Agrícola e Ambiental (Reunião Feeagri),
         direito de participação da Mostra de Iniciação Científica, participação no
         Desafiando Engenheiros e aos 7 eventos culturais.',
@@ -40,7 +40,7 @@ class Pacote < ActiveRecord::Base
 
     pacote_3 = {
       nome: 'Pacote Acadêmico',
-      descricao: 'O Pacote Acadêmico oferece participação em um minicurso,
+      descricao: 'O Pacote Acadêmico oferece participação em até 2 minicursos,
         uma visita técnica, acesso às palestras, acesso ao Encontro das
         Entidades Estudantis da Engenharia Agrícola e Engenharia Agrícola e
         Ambiental (Reunião Feeagri), direito de participação da Mostra de Iniciação Científica,
