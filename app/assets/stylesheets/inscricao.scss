@@ -57,3 +57,85 @@
     }
   }
 }
+
+.new-inscricao {
+
+  .btn {
+    color: #1b5e20;
+    &:hover {
+      color: white;
+    }
+    &:focus {
+      color: white;
+    }
+  }
+
+  .collapsible-header {
+    background-color: #e0e0e0;
+  }
+
+  .errors {
+    background-color: #e57373;
+    border: 1px solid #b71c1c;
+
+    span {
+      padding: 10px 20px;
+      color: black;
+    }
+  }
+
+  .select-packages {
+    padding: 10px;
+
+    .package {
+      label {
+        color: #424242;
+      }
+    }
+
+    .description {
+      color: #757575;
+
+      .value {
+        margin-left: 30px;
+        margin-top: 10px;
+      }
+    }
+  }
+
+  .collapsible-body {
+    p {
+      padding: 0px;
+    }
+
+    .package {
+      padding: 10px 0px;
+    }
+  }
+
+  .information {
+    background-color: #fff59d;
+    border: 1px solid #fbc02d;
+    margin: 10px auto;
+    width: 50%;
+    text-align: center;
+
+    span {
+      padding: 10px;
+    }
+  }
+
+  .inscricao-resumo {
+    .terms {
+      margin-top: 20px;
+      margin-left: 20px;
+    }
+
+    .action-buttons {
+      margin-top: 20px;
+      padding-right: 20px;
+      text-align: right;
+    }
+  }
+
+}

@@ -204,3 +204,14 @@ pt-BR:
       long: "%d de %B de %Y, %H:%M"
       short: "%d de %B, %H:%M"
     pm: ''
+
+  inscricao:
+    1: Aguardando Pagamento
+    2: Em Análise
+    3: Paga
+    4: Disponível
+    5: Em disputa
+    6: Devolvida
+    7: Cancelada
+    8: Chargeback debitado
+    9: Em contestação

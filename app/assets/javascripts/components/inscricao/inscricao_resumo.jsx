@@ -1,0 +1,45 @@
+var InscricaoResumo = React.createClass({
+
+  PropTypes: {
+    handleConfirmInscricao: React.PropTypes.func,
+    handleAgreeTerms: React.PropTypes.func
+  },
+
+  getDefaultProps: function() {
+    return {
+      handleConfirmInscricao: function() { return null },
+      handleAgreeTerms: function() { return null }
+    }
+  },
+
+  render: function() {
+    return (
+      <div className='row inscricao-resumo'>
+        <div className='col s12 terms'>
+          <p>
+            <input onChange={this.handleChange} type="checkbox" id="agree_terms" name='agree_terms' />
+            <label htmlFor="agree_terms">Li e aceito os </label><a onClick={this.openModal}> termos de inscrição</a>
+          </p>
+        </div>
+        <div className=' col s12 action-buttons'>
+          <button className='btn' onClick={this.onHandleConfirm}>Realizar Inscrição</button>
+        </div>
+        <AcceptanceTerm />
+      </div>
+    )
+  },
+
+  openModal: function() {
+    $('#acceptance-modal').openModal();
+  },
+
+  onHandleConfirm: function() {
+    this.props.handleConfirmInscricao();
+  },
+
+  handleChange: function(event) {
+    var value = $(event.currentTarget).is(':checked');
+    this.props.handleAgreeTerms(value);
+  }
+
+});

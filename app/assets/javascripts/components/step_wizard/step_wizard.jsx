@@ -14,7 +14,7 @@ var StepWizard = React.createClass({
   getInitialState: function() {
     return {
       idActiveStep: null,
-      indexActiveStep: 3
+      indexActiveStep: 1
     }
   },
 

@@ -1,43 +1,44 @@
-class CheckoutController < ApplicationController
+class CheckoutsController < ApplicationController
+  before_filter :require_login
+
   def create
-    # O modo como você irá armazenar os produtos que estão sendo comprados
-    # depende de você. Neste caso, temos um modelo Order que referência os
-    # produtos que estão sendo comprados.
-    order = Order.find(params[:id])
+    ActiveRecord::Base.transaction do
+      begin
+        inscricao = InscricaoManager.create(current_user, params)
 
-    payment = PagSeguro::PaymentRequest.new
+        payment = PagSeguro::PaymentRequest.new
 
-    payment.reference = order.id
-    payment.notification_url = notifications_url
-    payment.redirect_url = processing_url
+        payment.reference = inscricao.id
+        payment.notification_url = notifications_path
+        payment.redirect_url = root_path
 
-    order.products.each do |product|
-      payment.items << {
-        id: product.id,
-        description: product.title,
-        amount: product.price,
-        weight: product.weight
-      }
-    end
+        payment.items << {
+          id: inscricao.id,
+          description: inscricao.pacote.nome,
+          amount: inscricao.price
+        }
 
-    # Caso você precise passar parâmetros para a api que ainda não foram
-    # mapeados na gem, você pode fazer de maneira dinâmica utilizando um
-    # simples hash.
-    #payment.extra_params << { paramName: 'paramValue' }
-    #payment.extra_params << { senderBirthDate: '07/05/1981' }
-    #payment.extra_params << { extraAmount: '-15.00' }
+        payment.sender = {
+          name: current_user.name,
+          email: current_user.email,
+          cpf: current_user.cpf.gsub('.', '').gsub('-', ''),
+          phone: {
+            area_code: current_user.phone_number[1]+current_user.phone_number[2],
+            number: current_user.phone_number.partition(' ').last.gsub('-', '')
+          }
+        }
 
-    response = payment.register
+        response = payment.register
+        if response.errors.any?
+          inscricao.destroy
+          render json: {errors: response.errors.join("\n")}, status: :unprocessable_entity
+        else
+          render js: "window.location = '#{response.url}'"
+        end
 
-    # Caso o processo de checkout tenha dado errado, lança uma exceção.
-    # Assim, um serviço de rastreamento de exceções ou até mesmo a gem
-    # exception_notification poderá notificar sobre o ocorrido.
-    #
-    # Se estiver tudo certo, redireciona o comprador para o PagSeguro.
-    if response.errors.any?
-      raise response.errors.join("\n")
-    else
-      redirect_to response.url
+      rescue InvalidRecordError => e
+        render json: {errors: e.message}, status: :unprocessable_entity
+      end
     end
   end
 

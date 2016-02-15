@@ -22,7 +22,7 @@ class InscricoesSerializer# < ActiveType::Object
     serialized_inscricao['user_name'] = inscricao.user_name
     serialized_inscricao['package_name'] = inscricao.pacote_nome
     serialized_inscricao['shirt_size'] = inscricao.tamanho_camisa
-    serialized_inscricao['confirmed'] = false #inscricao.confirmed
+    serialized_inscricao['status'] = inscricao.status
 
     serialized_inscricao
   end

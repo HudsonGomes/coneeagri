@@ -8,7 +8,9 @@ class Minicurso < ActiveRecord::Base
       start_at: DateTime.new(16, 4, 19, 14),
       finish_at: DateTime.new(16, 4, 19, 17),
       total_qtd: 40,
-      available_qtd: 40
+      available_qtd: 40,
+      short_name: 'Minicurso 1',
+      numero_id: 1
     }
 
     minicurso_2 = {
@@ -16,7 +18,9 @@ class Minicurso < ActiveRecord::Base
       start_at: DateTime.new(16, 4, 19, 9),
       finish_at: DateTime.new(16, 4, 19, 17),
       total_qtd: 40,
-      available_qtd: 40
+      available_qtd: 40,
+      short_name: 'Minicurso 2',
+      numero_id: 2
     }
 
     minicurso_3 = {
@@ -24,7 +28,9 @@ class Minicurso < ActiveRecord::Base
       start_at: DateTime.new(16, 4, 21, 10),
       finish_at: DateTime.new(16, 4, 21, 12),
       total_qtd: 40,
-      available_qtd: 40
+      available_qtd: 40,
+      short_name: 'Minicurso 3',
+      numero_id: 3
     }
 
     minicurso_4 = {
@@ -32,7 +38,9 @@ class Minicurso < ActiveRecord::Base
       start_at: DateTime.new(16, 4, 21, 9),
       finish_at: DateTime.new(16, 4, 21, 12),
       total_qtd: 40,
-      available_qtd: 40
+      available_qtd: 40,
+      short_name: 'Minicurso 4',
+      numero_id: 4
     }
 
     [minicurso_1, minicurso_2, minicurso_3, minicurso_4]

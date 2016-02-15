@@ -1,0 +1,3 @@
+class InscricaoError < StandardError
+
+end

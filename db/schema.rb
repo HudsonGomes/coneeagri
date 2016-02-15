@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160215005048) do
+ActiveRecord::Schema.define(version: 20160215205751) do
 
   create_table "identities", force: :cascade do |t|
     t.integer  "user_id"
@@ -38,6 +38,8 @@ ActiveRecord::Schema.define(version: 20160215005048) do
     t.integer  "pacote_id"
     t.string   "tamanho_camisa"
     t.integer  "technical_visit_id"
+    t.integer  "status"
+    t.datetime "started_at"
   end
 
   add_index "inscricoes", ["pacote_id"], name: "index_inscricoes_on_pacote_id"
@@ -52,11 +54,13 @@ ActiveRecord::Schema.define(version: 20160215005048) do
     t.integer  "available_qtd"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.string   "short_name"
+    t.integer  "numero_id"
   end
 
   create_table "pacotes", force: :cascade do |t|
-    t.string   "nome",         null: false
-    t.text     "descricao",    null: false
+    t.string   "nome",            null: false
+    t.text     "descricao",       null: false
     t.decimal  "valor_lote_1"
     t.decimal  "valor_lote_2"
     t.decimal  "valor_lote_3"
@@ -65,6 +69,10 @@ ActiveRecord::Schema.define(version: 20160215005048) do
     t.integer  "qtd_lote_3"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.integer  "numero_id"
+    t.integer  "available_qtd_1"
+    t.integer  "available_qtd_2"
+    t.integer  "available_qtd_3"
   end
 
   create_table "technical_visits", force: :cascade do |t|
@@ -75,6 +83,7 @@ ActiveRecord::Schema.define(version: 20160215005048) do
     t.integer  "available_qtd"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.integer  "numero_id"
   end
 
   create_table "users", force: :cascade do |t|

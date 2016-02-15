@@ -1,15 +1,50 @@
 var SelectPackage = React.createClass({
 
+  PropTypes: {
+    onSelectPackage: React.PropTypes.func
+  },
+
+  getDefaultProps: function() {
+    return {
+      onSelectPackage: function() { return null }
+    }
+  },
+
+  getInitialState: function() {
+    return {
+      packages:[]
+    }
+  },
+
+  componentDidMount: function() {
+    this.loadPackages();
+  },
+
   render: function() {
     return (
-      <div>
-        {this.renderCompletePackage()}
-        <div className='divider'></div>
-        {this.renderPackageWithoutAccommodation()}
-        <div className='divider'></div>
-        {this.renderAcademicPackage()}
+      <div className='select-packages'>
+          {this.renderPackages()}
       </div>
     )
+  },
+
+  renderPackages: function() {
+    var component = [];
+    var packages = this.state.packages;
+
+    for (var i = 0; i < packages.length; i++) {
+      var package = packages[i];
+      component.push(
+        <Package
+          packageId={package.package_id}
+          packageName={package.nome}
+          packageDescription={package.descricao}
+          packageValue={package.valor}
+          onHandleSelectPackage={this.props.onSelectPackage}/>
+      )
+    }
+
+    return component;
   },
 
   renderCompletePackage: function() {
@@ -54,6 +89,19 @@ var SelectPackage = React.createClass({
     );
 
     return component;
+  },
+
+  loadPackages: function() {
+    $.ajax({
+      url: '/pacotes',
+      method: 'GET',
+      dataType: 'json',
+      success: function(data) {
+        this.setState({
+          packages: data.packages
+        })
+      }.bind(this)
+    })
   }
 
 });

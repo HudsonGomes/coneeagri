@@ -1,11 +1,31 @@
-<div id="show-inscricao" class="container">
+<div class=" container index-inscricoes">
+  <div class="row">
+    <div class="col s12">
+      <h1>Inscrição</h1>
+    </div>
+  </div>
+  <div class="divider"></div>
+  <div class="card">
+    <div class="card-content">
 
-  <h2>Inscrição</h2>
+      <% if @inscricao %>
+        <div><strong>Nome: </strong><%= @inscricao.user.name %></div>
+        <div><strong>Pacote: </strong><%= @inscricao.pacote.nome %></div>
+        <div><strong>Status da Inscrição: </strong><%= @inscricao.status %></div>
+        <div><strong>Minicursos: </strong></div>
 
-  <% if @inscricao %>
+        <% if @inscricao.minicursos.any? %>
+          <% @inscricao.minicursos.each do |minicurso| %>
+            <span> - minicurso.nome</span>
+          <% end %>
+        <% else %>
+          <span> - </span>
+        <% end %>
 
-  <% else %>
-    <p>Você ainda não possui inscrições</p>
-  <% end %>
+      <% else %>
+        <p>Você ainda não possui inscrição</p>
+      <% end %>
 
+    </div>
+  </div>
 </div>

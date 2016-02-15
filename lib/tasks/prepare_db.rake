@@ -2,8 +2,18 @@ namespace :prepare_db do
 
   desc 'Prepara o banco com minicursos e visitas técnicas'
   task :prepare => :environment do
+    create_packages
     create_minicursos
     create_technical_visits
+  end
+
+  def create_packages
+    Pacote.destroy_all
+
+    pacotes = Pacote.pacotes
+    pacotes.each do |pacote|
+      Pacote.create!(pacote)
+    end
   end
 
   def create_minicursos

@@ -3,14 +3,16 @@ var Package = React.createClass({
   PropTypes: {
     className: React.PropTypes.string,
     packageName: React.PropTypes.string,
-    packageDescription: React.PropTypes.string
+    packageDescription: React.PropTypes.string,
+    onHandleSelectPackage: React.PropTypes.func
   },
 
   getDefaultProps: function() {
     return {
       className: 'package',
       packageName: 'Pacote Completo',
-      packageDescription: ''
+      packageDescription: '',
+      onHandleSelectPackage: function() { return null }
     }
   },
 
@@ -27,7 +29,7 @@ var Package = React.createClass({
     var component = [];
     component.push(
       <p>
-        <input className='with-gap' type="checkbox" type='radio' id={this.packageId()} name='select-package' />
+        <input onChange={this.handleSelectPackage} className='with-gap' type="checkbox" type='radio' id={this.packageId()} name='select-package' />
         <label htmlFor={this.packageId()} className='package-name'>{this.props.packageName}</label>
       </p>
     );
@@ -38,20 +40,28 @@ var Package = React.createClass({
   renderDescription: function() {
     var component = [];
     component.push(
-      <p className='package-description'>
-        {this.props.packageDescription}
-      </p>
+      <div className='description'>
+        <p className='package-description'>
+          {this.props.packageDescription}
+        </p>
+        <span className='value'><strong>Valor: </strong>{'R$ '+this.props.packageValue+'0'}</span>
+      </div>
     );
 
     return component;
   },
 
   packageId: function() {
-    return this.props.packageName.replace(' ', '-').toLowerCase();
+    return this.props.packageId;
   },
 
   packageName: function() {
     return 'package['+this.packageId()+']';
   },
+
+  handleSelectPackage: function(event) {
+    var value = event.currentTarget.id;
+    this.props.onHandleSelectPackage(value)
+  }
 
 });

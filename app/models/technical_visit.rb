@@ -8,7 +8,8 @@ class TechnicalVisit < ActiveRecord::Base
       start_at: DateTime.new(16, 4, 20, 9),
       finish_at: nil,
       total_qtd: 40,
-      available_qtd: 40
+      available_qtd: 40,
+      numero_id: 1
     }
 
     technical_visit_2 = {
@@ -16,7 +17,8 @@ class TechnicalVisit < ActiveRecord::Base
       start_at: DateTime.new(16, 4, 20, 9),
       finish_at: nil,
       total_qtd: 80,
-      available_qtd: 80
+      available_qtd: 80,
+      numero_id: 2
     }
 
     [technical_visit_1, technical_visit_2]

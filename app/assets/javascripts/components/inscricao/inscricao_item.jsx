@@ -21,7 +21,7 @@ var InscricaoItem = React.createClass({
         <td>{inscricao.user_name}</td>
         <td>{inscricao.package_name}</td>
         <td>{inscricao.shirt_size}</td>
-        <td>{inscricao.confirmed}</td>
+        <td>{inscricao.status}</td>
       </tr>
     )
   }

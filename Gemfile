@@ -48,6 +48,7 @@ gem 'rails-backbone'
 gem 'devise'
 gem 'paperclip'
 gem 'ransack'
+gem 'exception_notification'
 
 #Contact Us
 gem 'mail_form'

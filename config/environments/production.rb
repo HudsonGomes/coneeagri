@@ -57,6 +57,13 @@ Rails.application.configure do
   # Use a different cache store in production.
   # config.cache_store = :mem_cache_store
 
+  config.middleware.use ExceptionNotification::Rack,
+                        :email => {
+                          :email_prefix => "[ERRO - CONEEAGRI] ",
+                          :sender_address => %{"notifier" <coneeagriuff@gmail.com>},
+                          :exception_recipients => %w{hudson.sgomes@gmail.com.br}
+                        }
+
   # Enable serving of images, stylesheets, and JavaScripts from an asset server.
   # config.action_controller.asset_host = 'http://assets.example.com'
 

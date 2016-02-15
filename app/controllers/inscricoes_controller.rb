@@ -16,7 +16,7 @@ class InscricoesController < ApplicationController
   end
 
   def show
-    @inscricao = Inscricao.find_by(user_id = params[:id])
+    @inscricao = Inscricao.find_by(user_id = current_user.id)
   end
 
   def create

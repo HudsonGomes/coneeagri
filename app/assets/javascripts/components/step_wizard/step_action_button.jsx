@@ -1,5 +1,5 @@
 var StepActionButton = React.createClass({
-  mixins: [],
+  mixins: [Reflux.ListenerMixin],
 
   propTypes: {
     previewButton: React.PropTypes.object,
@@ -48,7 +48,7 @@ var StepActionButton = React.createClass({
   },
 
   componentDidMount: function() {
-    //this.listenTo(StepWizardStore, this.onStateButtonChange);
+    this.listenTo(StepWizardStore, this.onStateButtonChange);
   },
 
   onStateButtonChange: function(data) {

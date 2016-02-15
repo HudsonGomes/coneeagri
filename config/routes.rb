@@ -23,6 +23,9 @@ Rails.application.routes.draw do
 
   resources :pacotes, only: [:index]
 
+  resources :checkouts, only: [:create]
+  resources :notifications, only: [:create]
+
   get '/edital' => 'mostras_cientifica#download_edital', as: :download_edital
   get '/formulario' => 'mostras_cientifica#download_formulario', as: :download_formulario
   get '/resumo_extendido' => 'mostras_cientifica#download_resumo_extendido', as: :download_resumo_extendido
