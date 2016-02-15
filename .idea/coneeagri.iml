@@ -130,10 +130,11 @@
     <orderEntry type="library" scope="PROVIDED" name="activemodel (v4.2.1, RVM: ruby-2.2.1 [coneeagri]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="activerecord (v4.2.1, RVM: ruby-2.2.1 [coneeagri]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="activesupport (v4.2.1, RVM: ruby-2.2.1 [coneeagri]) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="aitch (v0.5.0, RVM: ruby-2.2.1 [coneeagri]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="akitaonrails-locarails (v1.2.0, RVM: ruby-2.2.1 [coneeagri]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="archive-tar-minitar (v0.5.2, RVM: ruby-2.2.1 [coneeagri]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="arel (v6.0.0, RVM: ruby-2.2.1 [coneeagri]) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="babel-source (v5.8.19, RVM: ruby-2.2.1 [coneeagri]) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="babel-source (v5.8.35, RVM: ruby-2.2.1 [coneeagri]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="babel-transpiler (v0.7.0, RVM: ruby-2.2.1 [coneeagri]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="bcrypt (v3.1.10, RVM: ruby-2.2.1 [coneeagri]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="binding_of_caller (v0.7.2, RVM: ruby-2.2.1 [coneeagri]) [gem]" level="application" />
@@ -182,6 +183,7 @@
     <orderEntry type="library" scope="PROVIDED" name="net-ssh-gateway (v1.2.0, RVM: ruby-2.2.1 [coneeagri]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="nokogiri (v1.6.6.2, RVM: ruby-2.2.1 [coneeagri]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="orm_adapter (v0.5.0, RVM: ruby-2.2.1 [coneeagri]) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="pagseguro-oficial (v2.4.0, RVM: ruby-2.2.1 [coneeagri]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="paperclip (v4.2.2, RVM: ruby-2.2.1 [coneeagri]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="pg (v0.18.2, RVM: ruby-2.2.1 [coneeagri]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="polyamorous (v1.2.0, RVM: ruby-2.2.1 [coneeagri]) [gem]" level="application" />
@@ -199,7 +201,7 @@
     <orderEntry type="library" scope="PROVIDED" name="rake (v10.4.2, RVM: ruby-2.2.1 [coneeagri]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="ransack (v1.6.6, RVM: ruby-2.2.1 [coneeagri]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="rdoc (v4.2.0, RVM: ruby-2.2.1 [coneeagri]) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="react-rails (v1.1.0, RVM: ruby-2.2.1 [coneeagri]) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="react-rails (v1.5.0, RVM: ruby-2.2.1 [coneeagri]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="ref (v1.0.5, RVM: ruby-2.2.1 [coneeagri]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="responders (v2.1.0, RVM: ruby-2.2.1 [coneeagri]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="sass (v3.4.14, RVM: ruby-2.2.1 [coneeagri]) [gem]" level="application" />

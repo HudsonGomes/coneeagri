@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160107235706) do
+ActiveRecord::Schema.define(version: 20160215000635) do
 
   create_table "identities", force: :cascade do |t|
     t.integer  "user_id"
@@ -24,19 +24,23 @@ ActiveRecord::Schema.define(version: 20160107235706) do
   add_index "identities", ["user_id"], name: "index_identities_on_user_id"
 
   create_table "inscricoes", force: :cascade do |t|
-    t.string   "nome"
-    t.string   "cpf"
-    t.string   "email"
-    t.string   "telefone"
-    t.string   "sexo"
     t.boolean  "paga"
-    t.string   "logradouro"
-    t.string   "cep"
-    t.string   "numero"
-    t.string   "complemento"
-    t.string   "bairro"
-    t.string   "cidade"
-    t.string   "estado"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.integer  "user_id"
+    t.integer  "pacote_id"
+    t.string   "tamanho_camisa"
+  end
+
+  add_index "inscricoes", ["pacote_id"], name: "index_inscricoes_on_pacote_id"
+  add_index "inscricoes", ["user_id"], name: "index_inscricoes_on_user_id"
+
+  create_table "minicursos", force: :cascade do |t|
+    t.string   "name"
+    t.datetime "start_at"
+    t.datetime "finish_at"
+    t.integer  "total_qtd"
+    t.integer  "available_qtd"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
@@ -54,11 +58,12 @@ ActiveRecord::Schema.define(version: 20160107235706) do
     t.datetime "updated_at"
   end
 
-  create_table "pacotes_adicionais", force: :cascade do |t|
-    t.string   "nome",       null: false
-    t.text     "descricao",  null: false
-    t.decimal  "valor"
-    t.integer  "qtd"
+  create_table "technical_visits", force: :cascade do |t|
+    t.string   "name"
+    t.datetime "start_at"
+    t.datetime "finish_at"
+    t.integer  "total_qtd"
+    t.integer  "available_qtd"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

@@ -52,9 +52,11 @@ gem 'ransack'
 #Contact Us
 gem 'mail_form'
 gem 'simple_form'
-gem 'react-rails', '~> 1.0'
+gem 'react-rails', '~> 1.5.0'
 gem 'akitaonrails-locarails'
 gem 'capistrano', '2.5.0'
+
+gem "pagseguro-oficial", "~> 2.4.0"
 
 # Use Unicorn as the app server
 # gem 'unicorn'

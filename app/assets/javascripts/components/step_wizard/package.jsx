@@ -27,7 +27,7 @@ var Package = React.createClass({
     var component = [];
     component.push(
       <p>
-        <input type="checkbox" id={this.packageId()} name={this.packageName()} />
+        <input className='with-gap' type="checkbox" type='radio' id={this.packageId()} name='select-package' />
         <label htmlFor={this.packageId()} className='package-name'>{this.props.packageName}</label>
       </p>
     );

@@ -10,7 +10,7 @@ Rails.application.routes.draw do
 
   resources :eventos_culturais, only: [:index]
 
-  resources :inscricoes, only: [:new, :index, :show]
+  resources :inscricoes, only: [:index, :new, :show]
 
   match '/contatos', to: 'contatos#new', via: 'get'
   resources :contatos, only: [:new, :create]

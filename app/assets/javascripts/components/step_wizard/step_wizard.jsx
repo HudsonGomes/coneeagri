@@ -14,7 +14,7 @@ var StepWizard = React.createClass({
   getInitialState: function() {
     return {
       idActiveStep: null,
-      indexActiveStep: 1
+      indexActiveStep: 3
     }
   },
 
@@ -35,7 +35,7 @@ var StepWizard = React.createClass({
   },
 
   componentDidMount: function() {
-    //this.listenTo(InventoryPlanStore, this.onHandleChangeStep);
+    //this.listenTo(StepWizardStore, this.onHandleChangeStep);
     this.setState({
       idActiveStep: this.props.children[this.state.indexActiveStep - 1].props.id
     })

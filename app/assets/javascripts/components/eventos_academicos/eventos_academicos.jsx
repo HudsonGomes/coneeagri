@@ -189,12 +189,12 @@ var EventosAcademicos = React.createClass({
           <h5 className='event-title'>Minicurso</h5>
           <ul>
             <li>
-              <h6>Minicurso 4 - Modelagem Fuzzi em Biossitema Animal</h6>
+              <h6>Minicurso 3 - Modelagem Fuzzi em Biossitema Animal</h6>
               <div>Horário: 10:00 - 12:00</div>
               <span>(Eng. Guilherme Tavares – USP)</span>
             </li>
             <li>
-              <h6>Minicurso 5 - Currículo como Ferramenta de Desenvolvimento  Pessoal e Competitividade no Mercado</h6>
+              <h6>Minicurso 4 - Currículo como Ferramenta de Desenvolvimento  Pessoal e Competitividade no Mercado</h6>
               <div>Horário: 9:00 - 12:00</div>
               <span>( Prof. Marcos Teixeira –UFF)</span>
             </li>

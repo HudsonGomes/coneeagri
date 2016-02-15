@@ -48,7 +48,7 @@ var StepActionButton = React.createClass({
   },
 
   componentDidMount: function() {
-    //this.listenTo(InventoryPlanStore, this.onStateButtonChange);
+    //this.listenTo(StepWizardStore, this.onStateButtonChange);
   },
 
   onStateButtonChange: function(data) {
@@ -68,12 +68,14 @@ var StepActionButton = React.createClass({
 
     if (!!this.props.previewButton)
       component.push(
-        <button className='btn'>{this.props.previewButton.name}</button>
+        <button className='btn previewButton'
+                onClick={this.handlePreviewStep}>{this.props.previewButton.name}</button>
       );
 
     if (!!this.props.nextButton)
       component.push(
-        <button className='btn next-button'>{this.props.nextButton.name}</button>
+        <button className='btn next-button'
+                onClick={this.handleNextStep}>{this.props.nextButton.name}</button>
       );
 
     if (!!this.props.concludeButton)

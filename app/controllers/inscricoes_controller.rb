@@ -1,12 +1,18 @@
 class InscricoesController < ApplicationController
   before_filter :require_login
 
-  def new
-    @inscricao = Inscricao.new
+  def index
+    inscricoes = InscricaoManager.list(current_user, options)
+    inscricoes = InscricoesSerializer.new(inscricoes).as_list
+
+    respond_to do |format|
+      format.html
+      format.json { render json: inscricoes }
+    end
   end
 
-  def index
-    @inscricoes = Inscricao.all
+  def new
+    @inscricao = Inscricao.new
   end
 
   def show
@@ -15,10 +21,19 @@ class InscricoesController < ApplicationController
 
   def create
     begin
-      InscricaoManager.create()
       flash[:success] = 'Parabéns! VocÊ foi inscrito no coneeagri UFF 2016'
     rescue
       render 'new'
     end
+  end
+
+  private
+
+  def options
+    {
+      query: params[:q],
+      page: params[:p],
+      per_page: params[:per_page] || 20
+    }
   end
 end
