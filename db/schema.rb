@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160215000635) do
+ActiveRecord::Schema.define(version: 20160215005048) do
 
   create_table "identities", force: :cascade do |t|
     t.integer  "user_id"
@@ -23,6 +23,13 @@ ActiveRecord::Schema.define(version: 20160215000635) do
 
   add_index "identities", ["user_id"], name: "index_identities_on_user_id"
 
+  create_table "inscricao_minicursos", force: :cascade do |t|
+    t.integer  "inscricao_id"
+    t.integer  "minicurso_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
   create_table "inscricoes", force: :cascade do |t|
     t.boolean  "paga"
     t.datetime "created_at"
@@ -30,9 +37,11 @@ ActiveRecord::Schema.define(version: 20160215000635) do
     t.integer  "user_id"
     t.integer  "pacote_id"
     t.string   "tamanho_camisa"
+    t.integer  "technical_visit_id"
   end
 
   add_index "inscricoes", ["pacote_id"], name: "index_inscricoes_on_pacote_id"
+  add_index "inscricoes", ["technical_visit_id"], name: "index_inscricoes_on_technical_visit_id"
   add_index "inscricoes", ["user_id"], name: "index_inscricoes_on_user_id"
 
   create_table "minicursos", force: :cascade do |t|

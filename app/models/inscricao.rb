@@ -1,6 +1,8 @@
 class Inscricao < ActiveRecord::Base
   belongs_to :user
   belongs_to :pacote
+  has_many :inscricao_minicursos
+  has_one :technical_visit
 
   validates :tamanho_camisa, inclusion: ['P', 'M', 'G', 'GG']
 
