@@ -14,7 +14,7 @@ class CheckoutsController < ApplicationController
 
         payment.items << {
           id: inscricao.id,
-          description: inscricao.pacote.nome,
+          description: "Coneeagri 2016 - #{inscricao.pacote.nome}" ,
           amount: inscricao.price
         }
 

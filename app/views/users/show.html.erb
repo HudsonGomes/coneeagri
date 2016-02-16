@@ -18,12 +18,12 @@
 
       <div class='row'>
         <div class="input-field col s6">
-          <%= f.text_field :birth_at %>
+          <%= f.text_field :birth_at, :value => @user.birth_at.strftime("%d-%m-%Y") %>
           <label for="user_birth_at">Data de Nascimento</label>
         </div>
         <div class="input-field col s6">
           <%= f.text_field :cpf %>
-          <label for="user_name">CPF</label>
+          <label for="user_cpf">CPF</label>
         </div>
       </div>
 
@@ -65,6 +65,9 @@
 <%= react_component('UpdatePasswordModal', {}) %>
 
 <script>
+  $('#user_cpf').inputmask("999.999.999-99");
+  $('#user_phone_number').inputmask("(99) 99999-9999");
+  $('#user_birth_at').inputmask("dd/mm/yyyy");
 
   $('#update-password-button').click(function(event){
     event.preventDefault();
