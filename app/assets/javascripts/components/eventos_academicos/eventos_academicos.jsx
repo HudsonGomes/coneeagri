@@ -73,12 +73,12 @@ var EventosAcademicos = React.createClass({
             <li>
               <h6>Palestra 1 - Mercado de Irrigação esportiva e paisagística e a importância do engenheiro agrícola (Rain Bird)</h6>
               <div>Horário : 10:00-12:00</div>
-              <span>( Eng. Agrícola José Giacoia)</span>
+              <span>(Eng. Agrícola José Giacoia)</span>
             </li>
             <li>
               <h6>Palestra 2 - Biocombustíveis: da produção à geração de energia</h6>
               <div>Horário: 9:00-11:00</div>
-              <span>( Eng. Mecânico Roberto Guimarães- UFF)</span>
+              <span>(Eng. Mecânico Roberto Guimarães- UFF)</span>
             </li>
           </ul>
         </div>
@@ -94,12 +94,12 @@ var EventosAcademicos = React.createClass({
             <li>
               <h6>Minicurso 2 - Saneamento e Drenagem Urbana Parte I</h6>
               <div>Horário: 9:00-12:00</div>
-              <span>( Prof.Dario Prata – UFF)</span>
+              <span>(Prof.Dario Prata – UFF)</span>
             </li>
             <li>
-              <h6>Minicurso 2 - Saneamento e Drenagem Urbana II</h6>
+              <h6>Minicurso 2 - Saneamento e Drenagem Urbana Parte II</h6>
               <div>Horário:14:00-17:00</div>
-              <span>( Prof. Dario Prata- UFF)</span>
+              <span>(Prof. Dario Prata- UFF)</span>
             </li>
           </ul>
         </div>
