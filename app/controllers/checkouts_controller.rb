@@ -18,7 +18,7 @@ class CheckoutsController < ApplicationController
           amount: inscricao.price
         }
 
-        payment.extra_params << { extraAmount: (0.40 + inscricao.price*(4.2/100)).round(2).to_s }
+        payment.extra_params << { extraAmount: (0.40 + inscricao.price*(4.19/100)).round(2).to_s }
 
         payment.sender = {
           name: current_user.name,
