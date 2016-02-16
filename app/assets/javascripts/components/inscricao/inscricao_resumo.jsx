@@ -2,13 +2,15 @@ var InscricaoResumo = React.createClass({
 
   PropTypes: {
     handleConfirmInscricao: React.PropTypes.func,
-    handleAgreeTerms: React.PropTypes.func
+    handleAgreeTerms: React.PropTypes.func,
+    loading: React.PropTypes.bool
   },
 
   getDefaultProps: function() {
     return {
       handleConfirmInscricao: function() { return null },
-      handleAgreeTerms: function() { return null }
+      handleAgreeTerms: function() { return null },
+      loading: false
     }
   },
 
@@ -22,11 +24,18 @@ var InscricaoResumo = React.createClass({
           </p>
         </div>
         <div className=' col s12 action-buttons'>
-          <button className='btn' onClick={this.onHandleConfirm}>Realizar Inscrição</button>
+          <button className='btn' onClick={this.onHandleConfirm}>{this.buttonText()}</button>
         </div>
         <AcceptanceTerm />
       </div>
     )
+  },
+  buttonText: function() {
+    if (!!this.props.loading) {
+      return 'Carregando...';
+    } else {
+      return 'Realizar Inscrição';
+    }
   },
 
   openModal: function() {

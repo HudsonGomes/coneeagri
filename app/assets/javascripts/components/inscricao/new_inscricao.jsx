@@ -12,7 +12,8 @@ var NewInscricao = React.createClass({
       technicalVisit: null,
       shirtSize: null,
       error: null,
-      agreeTerms: null
+      agreeTerms: null,
+      loading: false
     }
   },
 
@@ -110,7 +111,8 @@ var NewInscricao = React.createClass({
           <div className="collapsible-body">
             <InscricaoResumo
               handleConfirmInscricao={this.handleConfirmInscricao}
-              handleAgreeTerms={this.handleAgreeTerms} />
+              handleAgreeTerms={this.handleAgreeTerms}
+              loading={this.state.loading}/>
           </div>
         </li>
       </ul>
@@ -142,6 +144,10 @@ var NewInscricao = React.createClass({
   },
 
   handleConfirmInscricao: function() {
+    this.setState({
+      loading: true
+    });
+
     $.ajax({
       url: '/checkouts',
       method: 'POST',
@@ -154,11 +160,14 @@ var NewInscricao = React.createClass({
         agree_terms: this.state.agreeTerms
       },
       success: function() {
-
-      },
+        this.setState({
+          loading: false
+        });
+      }.bind(this),
       error: function(xhr, status) {
         this.setState({
-          error: xhr.responseJSON.errors
+          error: xhr.responseJSON.errors,
+          loading: false
         });
         $("html, body").animate({ scrollTop: 0 }, "slow");
       }.bind(this)

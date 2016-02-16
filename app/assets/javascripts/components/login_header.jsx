@@ -78,7 +78,7 @@ var Login = React.createClass({
     $('.register-modal').openModal();
     $('select').material_select();
     $('#attributes_birth_at').inputmask("dd/mm/yyyy");
-    $('#attributes_phone_number').inputmask("(99) 99999-9999");
+    $('#attributes_phone_number').inputmask("(99) 9999-9999");
     $('#attributes_cpf').inputmask("999.999.999-99");
     this.props.handleClose();
   },
