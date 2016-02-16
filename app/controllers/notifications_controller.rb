@@ -34,12 +34,6 @@ class NotificationsController < ApplicationController
           end
 
         end
-
-        InscricaoMailer.send_confirmed_email(inscricao.user).deliver
-      end
-
-      if transaction.status == 2
-        InscricaoMailer.send_analysis_email(inscricao.user).deliver
       end
 
       inscricao.update_attributes({status: transaction.status, started_at: transaction.date})
