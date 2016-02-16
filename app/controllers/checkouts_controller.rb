@@ -9,8 +9,8 @@ class CheckoutsController < ApplicationController
         payment = PagSeguro::PaymentRequest.new
 
         payment.reference = inscricao.id
-        payment.notification_url = notifications_path
-        payment.redirect_url = root_path
+        payment.notification_url = 'www.coneeagri.com.br/notifications'
+        payment.redirect_url = 'www.coneeagri.com.br'
 
         payment.items << {
           id: inscricao.id,
