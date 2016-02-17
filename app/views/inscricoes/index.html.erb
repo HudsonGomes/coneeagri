@@ -22,6 +22,14 @@
                   <%= f.search_field :status_eq %>
                 </div>
                 <div class="col s4">
+                  <%= f.label :technical_visit_numero_id_eq, 'Visita Técnica' %>
+                  <%= f.search_field :technical_visit_numero_id_eq %>
+                </div>
+                <div class="col s4">
+                  <%= f.label :minicursos_numero_id_eq, 'Minicurso' %>
+                  <%= f.search_field :minicursos_numero_id_eq %>
+                </div>
+                <div class="col s4">
                   <%= f.label :tamanho_camisa_eq, 'Camisa' %>
                   <%= f.search_field :tamanho_camisa_eq %>
                 </div>
@@ -42,6 +50,8 @@
             <th><%= sort_link(@q, :user_name, 'Nome') %></th>
             <th><%= sort_link(@q, :pacote_nome, 'Pacote') %></th>
             <th class="center-align"><%= sort_link(@q, :status, 'Status') %></th>
+            <th class="center-align"><%= sort_link(@q, :technical_visit, 'Visita Técnica') %></th>
+            <th class="center-align">Minicursos</th>
             <th class="center-align"><%= sort_link(@q, :tamanho_camisa, 'Camisa') %></th>
           </tr>
           </thead>
@@ -51,6 +61,12 @@
               <td><%= inscricao.user.name %></td>
               <td><%= inscricao.pacote.nome %></td>
               <td class="center-align"><%= inscricao.status %></td>
+              <td class="center-align"><%= inscricao.numero_id %></td>
+              <td class="center-align">
+                <% inscricao.minicursos.each do |mini| %>
+                  <span><%= mini.numero_id %>i</span>
+                <% end %>
+              </td>
               <td class="center-align"><%= inscricao.tamanho_camisa %></td>
             </tr>
           <% end %>
