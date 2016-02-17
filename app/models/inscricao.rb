@@ -3,7 +3,7 @@ class Inscricao < ActiveRecord::Base
   belongs_to :pacote
   has_many :inscricao_minicursos
   has_many :minicursos, through: :inscricao_minicursos
-  has_one :technical_visit
+  belongs_to :technical_visit
 
   validates :tamanho_camisa, inclusion: { in: ['P', 'M', 'G', 'GG'] }
 

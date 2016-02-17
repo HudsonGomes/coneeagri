@@ -2,18 +2,19 @@ class NotificationsController < ApplicationController
   skip_before_filter :verify_authenticity_token, only: :create
 
   def create
-    transaction = PagSeguro::Transaction.find_by_code(params[:notificationCode])
+    transaction = PagSeguro::Transaction.find_by_notification_code(params[:notificationCode])
 
     if transaction.errors.empty?
       inscricao_id = transaction.reference
       inscricao = Inscricao.find(inscricao_id)
 
-      if transacion.status == 3
+
+      if (transaction.status.id == '1')
         ActiveRecord::Base.transaction do
           # Update Pacote
           pacote = inscricao.pacote
           if pacote.numero_id == 1
-            available = pacote.aPavailable_qtd_1 - 1
+            available = pacote.available_qtd_1 - 1
             pacote.update_attributes({available_qtd_1: available})
           end
 
@@ -36,7 +37,7 @@ class NotificationsController < ApplicationController
         end
       end
 
-      inscricao.update_attributes({status: transaction.status, started_at: transaction.date})
+      inscricao.update_attributes({status: transaction.status.id})
     end
 
     render nothing: true, status: 200

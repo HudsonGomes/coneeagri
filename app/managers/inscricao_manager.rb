@@ -41,9 +41,17 @@ class InscricaoManager
     raise InscricaoError, 'É obrigatório selecionar um pacote' if package_id.nil? or package_id.blank?
     package = Pacote.find(package_id)
 
-    if package.available_qtd_1 == 0 and package.available_qtd_2 == 0 and pacote.available_qtd_3 == 0
-      raise InscricaoError, 'Esse Pacote está encerrado'
+    if package.numero_id == 1
+
+      #TODO: Código referente ao pacote COMPLETO
+      if package.available_qtd_1 == 0
+        raise InscricaoError, 'O PACOTE COMPLETO está temporariamente indisponível. Tente novamente mais tarde.'
+      end
     end
+
+    #if package.available_qtd_1 == 0 and package.available_qtd_2 == 0 and pacote.available_qtd_3 == 0
+     # raise InscricaoError, 'Esse Pacote está encerrado'
+    #end
 
     package.id
   end
@@ -55,7 +63,7 @@ class InscricaoManager
       if technical_visit && technical_visit.available_qtd > 0
         technical_visit.id
       else
-        raise InscricaoError, 'Visita técnica esgotada'
+        raise InscricaoError, "#{technical_visit.name} está esgotada"
       end
     end
   end
