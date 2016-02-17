@@ -2,7 +2,7 @@ class InscricaoManager
 
   def self.list(user, options = [])
     raise AccessDeniedError unless user.admin
-    inscricoes = Inscricao.ransack(options[:query]).result
+    inscricoes = Inscricao.ransack(options[:query]).where.not(status: nil).result
     inscricoes.page(options[:page]).per(options[:per_page])
   end
 
@@ -57,7 +57,7 @@ class InscricaoManager
   end
 
   def self.sync_technical_visit(technical_visit_number)
-    unless technical_visit_number or technical_visit_number.blank?
+    unless technical_visit_number.nil? or technical_visit_number.blank?
       technical_visit = TechnicalVisit.find_by(numero_id: technical_visit_number)
 
       if technical_visit && technical_visit.available_qtd > 0
