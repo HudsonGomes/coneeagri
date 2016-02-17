@@ -9,7 +9,7 @@ class NotificationsController < ApplicationController
       inscricao = Inscricao.find(inscricao_id)
 
 
-      if (transaction.status.id == '1')
+      if (inscricao.status.nil?)
         ActiveRecord::Base.transaction do
           # Update Pacote
           pacote = inscricao.pacote
