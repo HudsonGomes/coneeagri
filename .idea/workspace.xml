@@ -34,61 +34,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="index.html.erb" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/views/inscricoes/index.html.erb">
+      <file leaf-file-name="notifications_controller.rb" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/controllers/notifications_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.5410628">
-              <caret line="51" column="51" selection-start-line="51" selection-start-column="51" selection-end-line="51" selection-end-column="51" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="inscricoes_controller.rb" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/controllers/inscricoes_controller.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="14" column="9" selection-start-line="14" selection-start-column="9" selection-end-line="14" selection-end-column="9" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="inscricao_manager.rb" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/managers/inscricao_manager.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="4" column="81" selection-start-line="4" selection-start-column="58" selection-end-line="4" selection-end-column="81" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="users_controller.rb" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/controllers/users_controller.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="4" column="48" selection-start-line="4" selection-start-column="48" selection-end-line="4" selection-end-column="48" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="inscricoes_serializer.rb" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/serializers/inscricoes_serializer.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="24" column="53" selection-start-line="24" selection-start-column="53" selection-end-line="24" selection-end-column="53" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.html.erb" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/users/index.html.erb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="66" column="6" selection-start-line="0" selection-start-column="0" selection-end-line="66" selection-end-column="6" />
+            <state vertical-scroll-proportion="0.8372093">
+              <caret line="55" column="9" selection-start-line="55" selection-start-column="9" selection-end-line="55" selection-end-column="9" />
               <folding />
             </state>
           </provider>
@@ -146,10 +96,10 @@
         <option value="$PROJECT_DIR$/app/views/layouts/home.erb.html" />
         <option value="$PROJECT_DIR$/app/controllers/checkouts_controller.rb" />
         <option value="$PROJECT_DIR$/app/models/inscricao.rb" />
-        <option value="$PROJECT_DIR$/app/controllers/notifications_controller.rb" />
         <option value="$PROJECT_DIR$/app/managers/inscricao_manager.rb" />
         <option value="$PROJECT_DIR$/app/controllers/inscricoes_controller.rb" />
         <option value="$PROJECT_DIR$/app/views/inscricoes/index.html.erb" />
+        <option value="$PROJECT_DIR$/app/controllers/notifications_controller.rb" />
       </list>
     </option>
   </component>
@@ -869,13 +819,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/notifications_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.082170546">
-          <caret line="8" column="18" selection-start-line="8" selection-start-column="18" selection-end-line="8" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/models/technical_visit.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.4651163">
@@ -886,7 +829,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/users/index.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
+        <state vertical-scroll-proportion="0.85507244">
           <caret line="66" column="6" selection-start-line="0" selection-start-column="0" selection-end-line="66" selection-end-column="6" />
           <folding />
         </state>
@@ -894,7 +837,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/serializers/inscricoes_serializer.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
+        <state vertical-scroll-proportion="0.55813956">
           <caret line="24" column="53" selection-start-line="24" selection-start-column="53" selection-end-line="24" selection-end-column="53" />
           <folding />
         </state>
@@ -902,7 +845,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/users_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
+        <state vertical-scroll-proportion="0.093023255">
           <caret line="4" column="48" selection-start-line="4" selection-start-column="48" selection-end-line="4" selection-end-column="48" />
           <folding />
         </state>
@@ -910,7 +853,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/managers/inscricao_manager.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
+        <state vertical-scroll-proportion="0.093023255">
           <caret line="4" column="81" selection-start-line="4" selection-start-column="58" selection-end-line="4" selection-end-column="81" />
           <folding />
         </state>
@@ -918,7 +861,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/inscricoes_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
+        <state vertical-scroll-proportion="0.3255814">
           <caret line="14" column="9" selection-start-line="14" selection-start-column="9" selection-end-line="14" selection-end-column="9" />
           <folding />
         </state>
@@ -928,6 +871,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.5410628">
           <caret line="51" column="51" selection-start-line="51" selection-start-column="51" selection-end-line="51" selection-end-column="51" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/notifications_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.8372093">
+          <caret line="55" column="9" selection-start-line="55" selection-start-column="9" selection-end-line="55" selection-end-column="9" />
           <folding />
         </state>
       </provider>

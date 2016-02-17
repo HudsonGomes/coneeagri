@@ -37,6 +37,24 @@ class NotificationsController < ApplicationController
         end
       end
 
+      if (transaction.status.id == '7')
+        # Update Technical Visit
+        technical_visit = inscricao.technical_visit
+        if technical_visit
+          available = technical_visit.available_qtd + 1
+          technical_visit.update_attributes({available_qtd: available})
+        end
+
+        # Update Minicursos
+        minicursos = inscricao.minicursos
+        if minicursos.any?
+          minicursos.each do |minicurso|
+            available = minicurso.available_qtd + 1
+            minicurso.update_attributes({available_qtd: available})
+          end
+        end
+      end
+
       inscricao.update_attributes({status: transaction.status.id})
     end
 
