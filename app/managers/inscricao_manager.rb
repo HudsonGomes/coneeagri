@@ -7,13 +7,18 @@ class InscricaoManager
   end
 
   def self.create(user, options)
+    inscricao = user.inscricoes.first
+    if inscricao and !inscricao.status.nil?
+      raise InscricaoError, 'Você já se inscreveu no CONEEAGRI - 2016'
+    end
+
     ActiveRecord::Base.transaction do
       begin
         if options[:agree_terms].nil? or options[:agree_terms].blank?
           raise InscricaoError, 'Você não concordou com os termos de inscrição'
         end
 
-        inscricao = Inscricao.new
+        inscricao = (inscricao || Inscricao.new)
         attributes = self.attributes(user, options)
         inscricao.assign_attributes(attributes)
         inscricao.save!
