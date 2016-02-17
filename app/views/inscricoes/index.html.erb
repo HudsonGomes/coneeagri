@@ -1,15 +1,67 @@
-<div class=" container index-inscricoes">
-  <div class="row">
-    <div class="col s12">
-      <h1>Inscrições</h1>
-    </div>
-  </div>
-  <div class="divider"></div>
+<div id="users-index" class="container">
   <div class="card">
     <div class="card-content">
+      <ul class="collapsible" data-collapsible="accordion">
+        <li>
+          <div class="collapsible-header"><i class="material-icons">filter_list</i>Filtrar</div>
+          <div class="collapsible-body">
+            <%= search_form_for @q do |f| %>
 
-      <%= react_component 'InscricoesIndex', {} %>
+              <div class="row">
+                <div class="col s4">
+                  <%= f.label :user_name_cont, 'Nome' %>
+                  <%= f.search_field :user_name_cont %>
+                </div>
+                <div class="col s4">
+                  <%= f.label :pacote_nome_cont, 'Pacote' %>
+                  <%= f.search_field :pacote_nome_cont %>
+                </div>
 
-    </div>
-  </div>
-</div>
+                <div class="col s4">
+                  <%= f.label :status_eq, 'Status' %>
+                  <%= f.search_field :status_eq %>
+                </div>
+                <div class="col s4">
+                  <%= f.label :tamanho_camisa_eq, 'Camisa' %>
+                  <%= f.search_field :tamanho_camisa_eq %>
+                </div>
+              </div>
+
+              <div class="action-button">
+                <%= f.submit 'Filtrar', class: 'btn' %>
+              </div>
+              <div style="clear: both"></div>
+            <% end %>
+          </div>
+        </li>
+      </ul>
+      <% if @inscricoes.any? %>
+        <table class="bordered striped highlight">
+          <thead>
+          <tr>
+            <th><%= sort_link(@q, :user_name, 'Nome') %></th>
+            <th><%= sort_link(@q, :pacote_nome, 'Pacote') %></th>
+            <th class="center-align"><%= sort_link(@q, :status, 'Status') %></th>
+            <th class="center-align"><%= sort_link(@q, :tamanho_camisa, 'Camisa') %></th>
+          </tr>
+          </thead>
+          <tbody>
+          <% @inscricoes.each do |inscricao| %>
+            <tr>
+              <td><%= inscricao.user.name %></td>
+              <td><%= inscricao.pacote.nome %></td>
+              <td class="center-align"><%= inscricao.status %></td>
+              <td class="center-align"><%= inscricao.tamanho_camisa %></td>
+            </tr>
+          <% end %>
+          </tbody>
+        </table>
+        <div style="float: right"><%= paginate @inscricoes %></div>
+        </div>
+        </div>
+      <% else %>
+        <div>
+          <span>Nenhuma inscrição encontrada</span>
+        </div>
+      <% end %>
+      </div>

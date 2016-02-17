@@ -2,12 +2,13 @@ class InscricoesController < ApplicationController
   before_filter :require_login
 
   def index
-    inscricoes = InscricaoManager.list(current_user, options)
-    inscricoes = InscricoesSerializer.new(inscricoes).as_list
+    raise PermissionDenied unless current_user.admin
+    @q = Inscricao.ransack(params[:q])
+    @inscricoes = @q.result(distinct: true).where.not(status: nil).page(params[:page]).per(20)
 
     respond_to do |format|
       format.html
-      format.json { render json: inscricoes }
+      format.json { render json: @inscricoes }
     end
   end
 
