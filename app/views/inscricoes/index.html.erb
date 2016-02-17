@@ -61,7 +61,13 @@
               <td><%= inscricao.user.name %></td>
               <td><%= inscricao.pacote.nome %></td>
               <td class="center-align"><%= inscricao.status %></td>
-              <td class="center-align"><%= inscricao.technical_visit.numero_id %></td>
+              <td class="center-align">
+                <% if inscricao.technical_visit %>
+                  <%= inscricao.technical_visit.numero_id %>
+                <% else %>
+                 - 
+                <% end %>
+              </td>
               <td class="center-align">
                 <% inscricao.minicursos.each do |mini| %>
                   <span><%= mini.numero_id %>i</span>
