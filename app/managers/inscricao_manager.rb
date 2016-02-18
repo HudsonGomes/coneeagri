@@ -19,6 +19,9 @@ class InscricaoManager
         end
 
         inscricao = (inscricao || Inscricao.new)
+
+        inscricao.inscricao_minicursos.destroy_all
+
         attributes = self.attributes(user, options)
         inscricao.assign_attributes(attributes)
         inscricao.save!
