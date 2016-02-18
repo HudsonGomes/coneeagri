@@ -53,6 +53,7 @@
             <th class="center-align"><%= sort_link(@q, :technical_visit, 'Visita Técnica') %></th>
             <th class="center-align">Minicursos</th>
             <th class="center-align"><%= sort_link(@q, :tamanho_camisa, 'Camisa') %></th>
+            <th class="center-align">Telefone</th>
           </tr>
           </thead>
           <tbody>
@@ -74,6 +75,7 @@
                 <% end %>
               </td>
               <td class="center-align"><%= inscricao.tamanho_camisa %></td>
+              <td class="center-align"><%= inscricao.user.phone_number %></td>
             </tr>
           <% end %>
           </tbody>
