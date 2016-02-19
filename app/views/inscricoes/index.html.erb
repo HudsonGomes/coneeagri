@@ -47,6 +47,7 @@
         <table class="bordered striped highlight">
           <thead>
           <tr>
+            <th>Código</th>
             <th><%= sort_link(@q, :user_name, 'Nome') %></th>
             <th><%= sort_link(@q, :pacote_nome, 'Pacote') %></th>
             <th class="center-align"><%= sort_link(@q, :status, 'Status') %></th>
@@ -59,6 +60,7 @@
           <tbody>
           <% @inscricoes.each do |inscricao| %>
             <tr>
+              <td><%= inscricao.id %></td>
               <td><%= inscricao.user.name %></td>
               <td><%= inscricao.pacote.nome %></td>
               <td class="center-align"><%= inscricao.status %></td>
