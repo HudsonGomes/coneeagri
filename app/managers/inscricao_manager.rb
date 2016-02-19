@@ -53,7 +53,7 @@ class InscricaoManager
     if package.numero_id == 1
 
       #TODO: Código referente ao pacote COMPLETO
-      if package.available_qtd_1 == 0
+      if package.available_qtd_2 == 0
         raise InscricaoError, 'O PACOTE COMPLETO está temporariamente indisponível. Tente novamente mais tarde.'
       end
     end
