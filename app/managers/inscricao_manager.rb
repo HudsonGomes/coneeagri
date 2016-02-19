@@ -39,7 +39,8 @@ class InscricaoManager
       user_id: user.id,
       pacote_id: sync_package(attributes[:package]),
       technical_visit_id: sync_technical_visit(attributes[:technical_visit]),
-      tamanho_camisa: attributes[:tamanho_camisa]
+      tamanho_camisa: attributes[:tamanho_camisa],
+      lote: 2
     }
   end
 

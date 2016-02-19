@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160215205751) do
+ActiveRecord::Schema.define(version: 20160219000036) do
 
   create_table "identities", force: :cascade do |t|
     t.integer  "user_id"
@@ -40,6 +40,7 @@ ActiveRecord::Schema.define(version: 20160215205751) do
     t.integer  "technical_visit_id"
     t.integer  "status"
     t.datetime "started_at"
+    t.integer  "lote"
   end
 
   add_index "inscricoes", ["pacote_id"], name: "index_inscricoes_on_pacote_id"

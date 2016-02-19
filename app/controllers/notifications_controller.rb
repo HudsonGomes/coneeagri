@@ -14,8 +14,8 @@ class NotificationsController < ApplicationController
           # Update Pacote
           pacote = inscricao.pacote
           if pacote.numero_id == 1
-            available = pacote.available_qtd_1 - 1
-            pacote.update_attributes({available_qtd_1: available})
+            available = pacote.available_qtd_2 - 1
+            pacote.update_attributes({available_qtd_2: available})
           end
 
           # Update Technical Visit
