@@ -82,7 +82,9 @@
           <% end %>
           </tbody>
         </table>
+        <div style="float: left">Total: <%= @inscricoes.total_count %></div>
         <div style="float: right"><%= paginate @inscricoes %></div>
+        <div style="clear: both"></div>
         </div>
         </div>
       <% else %>

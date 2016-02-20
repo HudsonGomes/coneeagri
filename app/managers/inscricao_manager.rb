@@ -3,6 +3,7 @@ class InscricaoManager
   def self.list(user, options = [])
     raise AccessDeniedError unless user.admin
     inscricoes = Inscricao.ransack(options[:query]).result.where.not(status: nil)
+    inscricao.total_count = inscricoes.count
     inscricoes.page(options[:page]).per(options[:per_page])
   end
 
