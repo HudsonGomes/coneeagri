@@ -16,11 +16,7 @@
               <p><%= pacote.descricao %></p>
               <div class="valores-pacote">
 
-                <% if pacote.valor_lote_2 or pacote.valor_lote_3 %>
-                  <div class="lote-inscricao">
-                    <span><strong>Lote 1: </strong><%= number_to_currency(pacote.valor_lote_1) %></span>
-                  </div>
-                <% else %>
+                <% if !(pacote.valor_lote_2 or pacote.valor_lote_3) %>
                   <div class="lote-inscricao">
                     <span><strong>Lote Único: </strong><%= number_to_currency(pacote.valor_lote_1) %></span>
                   </div>

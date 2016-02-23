@@ -1,7 +1,7 @@
 class PacotesController < ApplicationController
 
   def index
-    @pacotes = Pacote.all
+    @pacotes = Pacote.all.order(:created_at)
 
     respond_to do |format|
       format.html
