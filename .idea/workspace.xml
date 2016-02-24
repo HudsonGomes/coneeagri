@@ -33,38 +33,7 @@
     <favorites_list name="coneeagri" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="pacotes_controller.rb" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/controllers/pacotes_controller.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.html.erb" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/pacotes/index.html.erb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-12.5">
-              <caret line="20" column="50" selection-start-line="20" selection-start-column="50" selection-end-line="20" selection-end-column="50" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="home.erb.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/views/layouts/home.erb.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.61030596">
-              <caret line="35" column="46" selection-start-line="35" selection-start-column="46" selection-end-line="35" selection-end-column="46" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -103,7 +72,6 @@
         <option value="$PROJECT_DIR$/app/assets/javascripts/components/step_wizard/step_action_button.jsx" />
         <option value="$PROJECT_DIR$/app/models/pacote.rb" />
         <option value="$PROJECT_DIR$/app/assets/javascripts/components/inscricao/acceptance_term.jsx" />
-        <option value="$PROJECT_DIR$/app/assets/javascripts/components/eventos_academicos/eventos_academicos.jsx" />
         <option value="$PROJECT_DIR$/app/assets/javascripts/components/inscricao/new_inscricao.jsx" />
         <option value="$PROJECT_DIR$/app/assets/javascripts/components/inscricao/inscricao_resumo.jsx" />
         <option value="$PROJECT_DIR$/app/views/users/show.html.erb" />
@@ -120,6 +88,7 @@
         <option value="$PROJECT_DIR$/app/controllers/pacotes_controller.rb" />
         <option value="$PROJECT_DIR$/app/views/pacotes/index.html.erb" />
         <option value="$PROJECT_DIR$/app/views/layouts/home.erb.html" />
+        <option value="$PROJECT_DIR$/app/assets/javascripts/components/eventos_academicos/eventos_academicos.jsx" />
       </list>
     </option>
   </component>
@@ -174,8 +143,7 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="RailsProjectView" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -250,7 +218,8 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
+      <pane id="Scope" />
+      <pane id="RailsProjectView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -477,9 +446,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="24" width="1360" height="744" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.28234398" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2869102" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3288889" sideWeight="0.5" order="11" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -741,20 +710,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/components/eventos_academicos/eventos_academicos.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="99" column="66" selection-start-line="99" selection-start-column="66" selection-end-line="99" selection-end-column="66" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/eventos_academicos/index.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/assets/javascripts/components/inscricao/new_inscricao.jsx">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -864,7 +819,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.6988728">
           <caret line="86" column="31" selection-start-line="86" selection-start-column="31" selection-end-line="86" selection-end-column="31" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -872,33 +826,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.13953489">
           <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
-          <folding>
-            <element signature="e#302#1146#0" expanded="false" />
-            <element signature="e#375#493#0" expanded="false" />
-            <element signature="e#530#1140#0" expanded="false" />
-            <element signature="e#539#1132#1" expanded="false" />
-            <element signature="e#553#706#0" expanded="false" />
-            <element signature="e#1150#1427#0" expanded="false" />
-            <element signature="e#1442#2058#0" expanded="false" />
-            <element signature="e#1622#1866#0" expanded="false" />
-            <element signature="e#1704#1858#1" expanded="false" />
-            <element signature="e#1480#2052#1" expanded="false" />
-            <element signature="e#2062#2464#0" expanded="false" />
-            <element signature="e#2120#2458#2" expanded="false" />
-            <element signature="e#2277#2450#0" expanded="false" />
-            <element signature="e#2468#3659#0" expanded="false" />
-            <element signature="e#2546#2665#0" expanded="false" />
-            <element signature="e#2671#2861#0" expanded="false" />
-            <element signature="e#2867#3057#0" expanded="false" />
-            <element signature="e#3063#3285#0" expanded="false" />
-            <element signature="e#3291#3519#0" expanded="false" />
-            <element signature="e#3663#4038#0" expanded="false" />
-            <element signature="e#3737#3880#0" expanded="false" />
-            <element signature="e#3886#4032#0" expanded="false" />
-            <element signature="e#4042#4394#0" expanded="false" />
-            <element signature="e#4128#4254#0" expanded="false" />
-            <element signature="e#4260#4388#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -906,7 +833,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -914,7 +840,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-12.5">
           <caret line="20" column="50" selection-start-line="20" selection-start-column="50" selection-end-line="20" selection-end-column="50" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -922,6 +847,73 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.61030596">
           <caret line="35" column="46" selection-start-line="35" selection-start-column="46" selection-end-line="35" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/components/eventos_academicos/eventos_academicos.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.4651163">
+          <caret line="175" column="37" selection-start-line="175" selection-start-column="37" selection-end-line="175" selection-end-column="37" />
+          <folding>
+            <element signature="e#134#178#0" expanded="false" />
+            <element signature="e#147#174#0" expanded="false" />
+            <element signature="e#211#250#0" expanded="false" />
+            <element signature="e#224#246#0" expanded="false" />
+            <element signature="e#275#482#0" expanded="false" />
+            <element signature="e#296#472#0" expanded="false" />
+            <element signature="e#511#663#0" expanded="false" />
+            <element signature="e#532#653#0" expanded="false" />
+            <element signature="e#562#640#0" expanded="false" />
+            <element signature="e#700#1278#0" expanded="false" />
+            <element signature="e#721#1268#0" expanded="false" />
+            <element signature="e#751#1255#0" expanded="false" />
+            <element signature="e#1306#1572#0" expanded="false" />
+            <element signature="e#1604#3178#0" expanded="false" />
+            <element signature="e#1625#3168#0" expanded="false" />
+            <element signature="e#1729#2360#0" expanded="false" />
+            <element signature="e#1821#2345#0" expanded="false" />
+            <element signature="e#1839#2097#0" expanded="false" />
+            <element signature="e#2110#2329#0" expanded="false" />
+            <element signature="e#2370#3155#0" expanded="false" />
+            <element signature="e#2473#3140#0" expanded="false" />
+            <element signature="e#2490#2711#0" expanded="false" />
+            <element signature="e#2724#2917#0" expanded="false" />
+            <element signature="e#2930#3124#0" expanded="false" />
+            <element signature="e#3211#4643#0" expanded="false" />
+            <element signature="e#3232#4633#0" expanded="false" />
+            <element signature="e#3338#3803#0" expanded="false" />
+            <element signature="e#3437#3788#0" expanded="false" />
+            <element signature="e#3454#3591#0" expanded="false" />
+            <element signature="e#3604#3772#0" expanded="false" />
+            <element signature="e#3813#4620#0" expanded="false" />
+            <element signature="e#3915#4605#0" expanded="false" />
+            <element signature="e#3932#4133#0" expanded="false" />
+            <element signature="e#4146#4373#0" expanded="false" />
+            <element signature="e#4386#4589#0" expanded="false" />
+            <element signature="e#4910#5138#0" expanded="false" />
+            <element signature="e#5151#5356#0" expanded="false" />
+            <element signature="e#5369#5551#0" expanded="false" />
+            <element signature="e#5778#5985#0" expanded="false" />
+            <element signature="e#6026#6637#0" expanded="false" />
+            <element signature="e#6128#6622#0" expanded="false" />
+            <element signature="e#6145#6347#0" expanded="false" />
+            <element signature="e#6360#6606#0" expanded="false" />
+            <element signature="e#6693#7301#0" expanded="false" />
+            <element signature="e#6712#7292#0" expanded="false" />
+            <element signature="e#6815#7280#0" expanded="false" />
+            <element signature="e#6902#7266#0" expanded="false" />
+            <element signature="e#6918#7063#0" expanded="false" />
+            <element signature="e#7075#7251#0" expanded="false" />
+            <element signature="e#7335#7386#0" expanded="false" />
+            <element signature="e#7355#7381#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/eventos_academicos/index.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>

@@ -173,7 +173,7 @@ var EventosAcademicos = React.createClass({
               <span>(Ademir Fontana – Embrapa Solos)</span>
             </li>
             <li>
-              <h6>Palestra 9 - Automoção de Unidades Armazenadoras</h6>
+              <h6>Palestra 9 - Automação de Unidades Armazenadoras</h6>
               <div>Horário: 15:00 - 17:00</div>
               <span>(Prof. Ednilton Tavares – UFLA)</span>
             </li>
