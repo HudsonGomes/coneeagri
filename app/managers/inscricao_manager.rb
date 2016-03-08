@@ -23,6 +23,7 @@ class InscricaoManager
         end
 
         inscricao = (inscricao || Inscricao.new)
+        inscricao.status = nil
 
         inscricao.inscricao_minicursos.destroy_all
 
