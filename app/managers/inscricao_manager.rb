@@ -8,10 +8,13 @@ class InscricaoManager
   end
 
   def self.create(user, options)
-    inscricao = user.inscricoes.first
-    if inscricao and !inscricao.status.nil?
+    have_inscricao = user.inscricoes.where(status: [1, 3]).any?
+
+    if have_inscricao
       raise InscricaoError, 'Você já se inscreveu no CONEEAGRI - 2016'
     end
+
+    inscricao = user.inscricoes.where(status: [nil, 7]).first
 
     ActiveRecord::Base.transaction do
       begin

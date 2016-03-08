@@ -40,6 +40,7 @@ var SelectVisitaTecnica = React.createClass({
           <option value="" disabled selected>Selecione a Visita técnica:</option>
           <option value="1">Visita Técnica 1 - Embrapa Solos (Jardim Botânico RJ)</option>
           <option value="2">Visita Técnica 2 - Paty de Alferes (Produção de tomate + Visita ao Museu da Cachaça)</option>
+          <option value="3">Visita Técnica 3 - Embrapa Solos (Jardim Botânico RJ)</option>
         </select>
         <label>Visita Técnica</label>
       </div>
