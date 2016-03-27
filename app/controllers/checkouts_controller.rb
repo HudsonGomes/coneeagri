@@ -5,7 +5,10 @@ class CheckoutsController < ApplicationController
     ActiveRecord::Base.transaction do
       begin
         inscricao = InscricaoManager.create(current_user, params)
+        InscricaoMailer.inscricao_mailer(current_user, inscricao).deliver
 
+        render js: "window.location = '#{root_path}'"
+=begin
         payment = PagSeguro::PaymentRequest.new
 
         payment.reference = inscricao.id
@@ -37,8 +40,10 @@ class CheckoutsController < ApplicationController
         else
           render js: "window.location = '#{response.url}'"
         end
+=end
 
       rescue InvalidRecordError => e
+        inscricao.destroy
         render json: {errors: e.message}, status: :unprocessable_entity
       end
     end

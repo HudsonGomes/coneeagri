@@ -14,7 +14,7 @@ class InscricaoManager
       raise InscricaoError, 'Você já se inscreveu no CONEEAGRI - 2016'
     end
 
-    inscricao = user.inscricoes.where(status: [nil, 7]).first
+    inscricao = user.inscricoes.where(status: [nil, 7, 20]).first
 
     ActiveRecord::Base.transaction do
       begin
@@ -23,7 +23,9 @@ class InscricaoManager
         end
 
         inscricao = (inscricao || Inscricao.new)
-        inscricao.status = nil
+        inscricao.status = 20 #Criada via email e não paga
+
+        #Status 30 = Criada via email e paga
 
         inscricao.inscricao_minicursos.destroy_all
 
