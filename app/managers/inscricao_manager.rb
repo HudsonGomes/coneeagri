@@ -36,6 +36,9 @@ class InscricaoManager
 
         inscricao
       rescue => e
+        puts '############# ERROR MESSAGE #############'
+        puts e.message
+        puts '##########################################'
         raise InvalidRecordError.new(inscricao), e.message
       end
     end

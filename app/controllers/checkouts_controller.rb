@@ -43,7 +43,7 @@ class CheckoutsController < ApplicationController
 =end
 
       rescue InvalidRecordError => e
-        inscricao.destroy
+        inscricao.destroy if inscricao
         render json: {errors: e.message}, status: :unprocessable_entity
       end
     end
