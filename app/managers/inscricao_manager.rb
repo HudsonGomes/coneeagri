@@ -88,7 +88,7 @@ class InscricaoManager
   end
 
   def self.sync_minicursos(inscricao_id, first_minicurso, second_minicurso)
-    if (first_minicurso == second_minicurso)
+    if (first_minicurso == second_minicurso) and (!first_minicurso.blank?)
       raise InscricaoError, 'Você não pode escolher minicursos iguais'
     end
 
