@@ -8,7 +8,7 @@ namespace :inscricao do
         i = Inscricao.find(args.inscricao_id)
         puts "Deletando a inscricão de #{i.user.name}"
 
-        if i.status == 7
+        if i.status != 7
           if i.technical_visit
             tv = TechnicalVisit.find(i.technical_visit_id)
             tv.available_qtd += 1
