@@ -54,11 +54,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="inscricoes_controller.rb" pinned="false" current-in-tab="true">
+      <file leaf-file-name="inscricoes_controller.rb" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/controllers/admin/inscricoes_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.1627907">
-              <caret line="7" column="12" selection-start-line="7" selection-start-column="12" selection-end-line="7" selection-end-column="12" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="9" column="35" selection-start-line="9" selection-start-column="35" selection-end-line="9" selection-end-column="35" />
               <folding />
             </state>
           </provider>
@@ -74,11 +74,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="inscricao_manager.rb" pinned="false" current-in-tab="false">
+      <file leaf-file-name="inscricao_manager.rb" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/managers/inscricao_manager.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="84" column="0" selection-start-line="84" selection-start-column="0" selection-end-line="84" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.9302326">
+              <caret line="98" column="24" selection-start-line="98" selection-start-column="24" selection-end-line="98" selection-end-column="24" />
               <folding>
                 <element signature="e#26#298#0" expanded="false" />
                 <element signature="e#302#1461#0" expanded="false" />
@@ -165,10 +165,10 @@
         <option value="$PROJECT_DIR$/lib/tasks/remove_inscricao.rake" />
         <option value="$PROJECT_DIR$/app/assets/javascripts/components/eventos_academicos/eventos_academicos.jsx" />
         <option value="$PROJECT_DIR$/config/routes.rb" />
-        <option value="$PROJECT_DIR$/app/managers/inscricao_manager.rb" />
         <option value="$PROJECT_DIR$/app/views/admin/inscricoes/new.html.erb" />
         <option value="$PROJECT_DIR$/app/views/inscricoes/index.html.erb" />
         <option value="$PROJECT_DIR$/app/controllers/admin/inscricoes_controller.rb" />
+        <option value="$PROJECT_DIR$/app/managers/inscricao_manager.rb" />
       </list>
     </option>
   </component>
@@ -962,23 +962,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/managers/inscricao_manager.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="84" column="0" selection-start-line="84" selection-start-column="0" selection-end-line="84" selection-end-column="0" />
-          <folding>
-            <element signature="e#26#298#0" expanded="false" />
-            <element signature="e#302#1461#0" expanded="false" />
-            <element signature="e#402#498#0" expanded="false" />
-            <element signature="e#602#1455#0" expanded="false" />
-            <element signature="e#611#1447#1" expanded="false" />
-            <element signature="e#625#778#0" expanded="false" />
-            <element signature="e#625#1222#0" expanded="false" />
-            <element signature="e#1465#1742#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/inscricoes/index.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-9.541667">
@@ -1005,9 +988,26 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/admin/inscricoes_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.1627907">
-          <caret line="7" column="12" selection-start-line="7" selection-start-column="12" selection-end-line="7" selection-end-column="12" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="9" column="35" selection-start-line="9" selection-start-column="35" selection-end-line="9" selection-end-column="35" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/managers/inscricao_manager.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.9302326">
+          <caret line="98" column="24" selection-start-line="98" selection-start-column="24" selection-end-line="98" selection-end-column="24" />
+          <folding>
+            <element signature="e#26#298#0" expanded="false" />
+            <element signature="e#302#1461#0" expanded="false" />
+            <element signature="e#402#498#0" expanded="false" />
+            <element signature="e#602#1455#0" expanded="false" />
+            <element signature="e#611#1447#1" expanded="false" />
+            <element signature="e#625#778#0" expanded="false" />
+            <element signature="e#625#1222#0" expanded="false" />
+            <element signature="e#1465#1742#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>

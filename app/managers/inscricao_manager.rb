@@ -96,7 +96,7 @@ class InscricaoManager
         t.available_qtd -= 1
         t.save!
 
-        inscricao.techincal_visit_id = inscricao_attributes['visita_tecnica']
+        inscricao.technical_visit_id = inscricao_attributes['visita_tecnica']
       end
 
 
