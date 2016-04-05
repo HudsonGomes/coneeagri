@@ -139,11 +139,6 @@ var EventosAcademicos = React.createClass({
               <div>Horário: 14:00 - 16:00</div>
               <span>(Prof. André Belém- UFF)</span>
             </li>
-            <li>
-              <h6>Palestra 5 – Georefenciamento em áreas remotas</h6>
-              <div>Horário: 9:00 - 11:00</div>
-              <span>(Prof. Leonardo Schart – Eng. IBGE )</span>
-            </li>
           </ul>
         </div>
       </div>
@@ -158,27 +153,27 @@ var EventosAcademicos = React.createClass({
           <h5 className='event-title'>Palestras</h5>
           <ul>
             <li>
-              <h6>Palestra 6 - IoT  Perspectiva de uso em ambientes Agrícolas</h6>
+              <h6>Palestra 5 - IoT  Perspectiva de uso em ambientes Agrícolas</h6>
               <div>Horário:10:00-12:00</div>
               <span>(Alessanro Martins – Analista Lojas Americanas RJ)</span>
             </li>
             <li>
-              <h6>Palestra 7 - Sustentabilidade em Projetos de Engenharia</h6>
+              <h6>Palestra 6 - Sustentabilidade em Projetos de Engenharia</h6>
               <div>Horário: 14:00 - 16:00</div>
               <span>(Prof. Marcos Teixeira- UFF)</span>
             </li>
             <li>
-              <h6>Palestra 8 - Ciência do Solo</h6>
+              <h6>Palestra 7 - Ciência do Solo</h6>
               <div>Horário: 14:00 - 16:00</div>
               <span>(Ademir Fontana – Embrapa Solos)</span>
             </li>
             <li>
-              <h6>Palestra 9 - Automação de Unidades Armazenadoras</h6>
+              <h6>Palestra 8 - Automação de Unidades Armazenadoras</h6>
               <div>Horário: 15:00 - 17:00</div>
               <span>(Prof. Ednilton Tavares – UFLA)</span>
             </li>
             <li>
-              <h6>Palestra 10 - Avanços Tecnológicos em Máquinas Agrícolas</h6>
+              <h6>Palestra 9 - Avanços Tecnológicos em Máquinas Agrícolas</h6>
               <div>Horário: 16:00 - 17:00</div>
               <span>(Prof. Carlos Volpato – UFLA)</span>
             </li>
