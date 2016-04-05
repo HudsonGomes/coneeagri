@@ -1,0 +1,120 @@
+<div class="container">
+  <h1>Cadastrar inscrição</h1>
+
+  <div class="divider"></div>
+
+  <% if flash[:error] %>
+    <div style="background-color: #e57373; margin-bottom: 10px; border: 1px solid #b71c1c; text-align: center">
+      <p id="flash_error">
+        <%= flash[:error] %>
+      </p>
+    </div>
+  <% end %>
+
+  <%= form_tag(admin_inscricoes_path, :method=>'post') do %>
+    <div class="row">
+      <div class="input-field col s8">
+        <input id="user_name" type="text" name="user[name]" >
+        <label for="user_name">Nome</label>
+      </div>
+
+      <div class="input-field col s4">
+        <select name="user[sexo]">
+          <option value="" disabled selected>Escolha uma opção</option>
+          <option value="M">Masculino</option>
+          <option value="F">Feminino</option>
+        </select>
+        <label>Sexo</label>
+      </div>
+
+      <div class="input-field col s6">
+        <input id="user_email" type="text" name="user[email]" >
+        <label for="user_email">Email</label>
+      </div>
+
+      <div class="input-field col s6">
+        <input id="user_university" type="text" name="user[university]" >
+        <label for="user_university">Universidade</label>
+      </div>
+
+      <div class="input-field col s6">
+        <input id="user_cpf" type="text" name="user[cpf]" >
+        <label for="user_cpf">CPF</label>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="input-field col s6">
+        <select name="inscricao[pacote]" id="inscricao_inscricao_pacote">
+          <option value="" disabled selected>Escolha uma opção</option>
+          <option value="4">Pacote Completo</option>
+          <option value="5">Pacote sem Alojamento</option>
+          <option value="6">Pacote Acadêmico</option>
+        </select>
+        <label>Pacote</label>
+      </div>
+
+      <div class="input-field col s6">
+        <select name="inscricao[visita_tecnica]" id="inscricao_visita_tecnica">
+          <option value="" disabled selected>Escolha uma opção</option>
+          <option value="1">Embrapa Solos (Jardim Botânico RJ)</option>
+          <option value=2>Paty de Alferes (Produção de tomate + visita ao Museu da Cachaça)</option>
+        </select>
+        <label>Visita técnica</label>
+      </div>
+
+      <div class="input-field col s6">
+        <select name="inscricao[minicurso_1]" id="inscricao_minicurso_1">
+          <option value="" disabled selected>Escolha uma opção</option>
+          <option value="1">Minicurso 1 - Técnicas de irrigação para gramados esportivos (Rain Bird)</option>
+          <option value="2">Minicurso 2 - Saneamento e Drenagem Urbana</option>
+          <option value="3">Minicurso 3 - Modelagem Fuzzi em Biossitema Animal</option>
+          <option value="4">Minicurso 4 - Currículo como Ferramenta de Desenvolvimento Pessoal e Competitividade no Mercado
+          </option>
+        </select>
+        <label>Minicurso 1</label>
+      </div>
+
+      <div class="input-field col s6">
+        <select name="inscricao[minicurso_2]" id="inscricao_minicurso_2">
+          <option value="" disabled selected>Escolha uma opção</option>
+          <option value="1">Minicurso 1 - Técnicas de irrigação para gramados esportivos (Rain Bird)</option>
+          <option value="2">Minicurso 2 - Saneamento e Drenagem Urbana</option>
+          <option value="3">Minicurso 3 - Modelagem Fuzzi em Biossitema Animal</option>
+          <option value="4">Minicurso 4 - Currículo como Ferramenta de Desenvolvimento Pessoal e Competitividade no Mercado
+          </option>
+        </select>
+        <label>Minicurso 2</label>
+      </div>
+
+      <div class="input-field col s6">
+        <select name="inscricao[tamanho_camisa]" id="inscricao_tamanho_camisa">
+          <option value="" disabled selected>Escolha uma opção</option>
+          <option value="P">Pequena</option>
+          <option value="M">Média</option>
+          <option value="G">Grande</option>
+        </select>
+        <label>Tamanho da camisa</label>
+      </div>
+
+      <div class="input-field col s6">
+        <select name="inscricao[status]" id="inscricao_status">
+          <option value="" disabled selected>Escolha uma opção</option>
+          <option value="20">Aguardando Pagamento</option>
+          <option value="30">Paga</option>
+        </select>
+        <label>Status da Inscrição</label>
+      </div>
+    </div>
+
+    <div class="right-align">
+    <%= submit_tag 'Cadastrar', class: 'btn btn-primary' %>
+    </div>
+  <% end %>
+</div>
+
+<script>
+  $(document).ready(function() {
+    $('select').material_select();
+  });
+</script>

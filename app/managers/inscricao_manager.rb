@@ -54,6 +54,73 @@ class InscricaoManager
     }
   end
 
+  def self.create_for_admin(user_attributes, inscricao_attributes)
+    ActiveRecord::Base.transaction do
+
+      unless inscricao_attributes['pacote'] and user_attributes['email'] and
+        inscricao_attributes['tamanho_camisa'] and inscricao_attributes['status']
+        raise InscricaoError, 'Todos os campos são obrigatórios'
+      end
+
+      user = User.find_by(email: user_attributes['email'])
+
+      unless user
+        unless user_attributes['name'] and user_attributes['email'] and
+            user_attributes['sexo'] and user_attributes['university']
+          raise InscricaoError, 'Todos os campos são obrigatórios'
+        end
+
+        user = User.new(user_attributes)
+        user.birth_at = Date.today
+        user.phone_number = '123456789'
+        user.password = '123456789'
+        user.skip_confirmation!
+        user.save!
+      end
+
+      inscricao = user.inscricoes[0]
+      inscricao = Inscricao.new unless inscricao
+
+      inscricao.user = user
+      inscricao.lote = '2'
+      inscricao.status = inscricao_attributes['status']
+      inscricao.pacote_id = inscricao_attributes['pacote']
+
+      if inscricao_attributes['visita_tecnica']
+        t = TechnicalVisit.find(inscricao_attributes['visita_tecnica'])
+
+        if t.available_qtd <= 0
+          raise InscricaoError, "Você não pode selecionar a visita #{inscricao_attributes['visita_tecnica']}. ESGOTADA!"
+        end
+
+        t.available_qtd -= 1
+        t.save!
+
+        inscricao.techincal_visit_id = inscricao_attributes['visita_tecnica']
+      end
+
+
+      inscricao.tamanho_camisa = inscricao_attributes['tamanho_camisa']
+
+      inscricao.save!
+
+      minicurso_1 = inscricao_attributes['minicurso_1']
+      minicurso_2 = inscricao_attributes['minicurso_2']
+      minicursos = [minicurso_1, minicurso_2].compact
+
+      minicursos.each do |minicurso_id|
+        m = Minicurso.find(minicurso_id)
+
+        raise InscricaoError, "Você não pode selecionar o minicurso #{minicurso_id}. ESGOTADO!" if m.available_qtd <= 0
+
+        m.available_qtd -= 1
+        m.save!
+
+        InscricaoMinicurso.create!({minicurso_id: minicurso_id, inscricao: inscricao})
+      end
+    end
+  end
+
   private
 
   def self.sync_package(package_id)

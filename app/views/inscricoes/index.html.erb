@@ -43,6 +43,11 @@
           </div>
         </li>
       </ul>
+
+      <div class="right-align">
+        <%= link_to 'Inscrever', new_admin_inscricao_path, class: 'btn btn-primary'%>
+      </div>
+
       <% if @inscricoes.any? %>
         <table class="bordered striped highlight">
           <thead>
