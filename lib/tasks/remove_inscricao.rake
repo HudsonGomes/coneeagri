@@ -8,17 +8,19 @@ namespace :inscricao do
         i = Inscricao.find(args.inscricao_id)
         puts "Deletando a inscricão de #{i.user.name}"
 
-        if i.technical_visit
-          tv = TechnicalVisit.find(i.technical_visit_id)
-          tv.available_qtd += 1
-          tv.save
-        end
-        
-        i.inscricao_minicursos.each do |im|
-          minicurso_id = im.minicurso_id
-          m = Minicurso.find(minicurso_id)
-          m.available_qtd += 1
-          m.save
+        if i.status == 7
+          if i.technical_visit
+            tv = TechnicalVisit.find(i.technical_visit_id)
+            tv.available_qtd += 1
+            tv.save
+          end
+
+          i.inscricao_minicursos.each do |im|
+            minicurso_id = im.minicurso_id
+            m = Minicurso.find(minicurso_id)
+            m.available_qtd += 1
+            m.save
+          end
         end
 
         i.inscricao_minicursos.destroy_all
