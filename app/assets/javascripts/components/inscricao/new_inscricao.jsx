@@ -28,7 +28,6 @@ var NewInscricao = React.createClass({
       <div className='new-inscricao'>
         {this.renderErrors()}
         {this.renderSelectPackages()}
-        {this.renderSelectMinicursos()}
         {this.renderSelectVisitaTecnica()}
         {this.renderSelectShirtSize()}
         {this.renderResume()}
@@ -79,7 +78,7 @@ var NewInscricao = React.createClass({
     return (
       <ul className="collapsible" data-collapsible="accordion">
         <li>
-          <div className="collapsible-header">3 - Clique para selecionar a visita técnica</div>
+          <div className="collapsible-header">2 - Clique para selecionar a visita técnica</div>
           <div className="collapsible-body">
             <SelectVisitaTecnica
               onSelectTechnicalVisit={this.handleSelectTechnicalVisit} />
@@ -93,7 +92,7 @@ var NewInscricao = React.createClass({
     return (
       <ul className="collapsible" data-collapsible="accordion">
         <li>
-          <div className="collapsible-header">4 - Clique para selecionar o tamanho de sua camisa</div>
+          <div className="collapsible-header">3 - Clique para selecionar o tamanho de sua camisa</div>
           <div className="collapsible-body">
             <SelectShirtSize
               onSelectShirdSize={this.handleSelectShirtSize} />
@@ -107,7 +106,7 @@ var NewInscricao = React.createClass({
     return (
       <ul className="collapsible" data-collapsible="accordion">
         <li>
-          <div className="collapsible-header">5 - Clique para finalizar a inscrição</div>
+          <div className="collapsible-header">4 - Clique para finalizar a inscrição</div>
           <div className="collapsible-body">
             <InscricaoResumo
               handleConfirmInscricao={this.handleConfirmInscricao}
