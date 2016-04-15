@@ -72,7 +72,7 @@ var EventosAcademicos = React.createClass({
           <ul >
             <li>
               <h6>Palestra 1 - Mercado de Irrigação esportiva e paisagística e a importância do engenheiro agrícola (Rain Bird)</h6>
-              <div>Horário : 10:00-12:00</div>
+              <div>Horário : 16:00-17:00</div>
               <span>(Eng. Agrícola José Giacoia)</span>
             </li>
             <li>
@@ -88,7 +88,7 @@ var EventosAcademicos = React.createClass({
           <ul>
             <li>
               <h6>Minicurso 1 - Técnicas de irrigação para gramados esportivos ( Rain Bird)</h6>
-              <div>Horário: 14:00-17:00</div>
+              <div>Horário: 10:00-12:00</div>
               <span>(Eng. Agrícola José Giacoia)</span>
             </li>
             <li>
@@ -117,7 +117,7 @@ var EventosAcademicos = React.createClass({
           <ul>
             <li>
               <h6>Visita Técnica Embrapa Solos ( Jardim Botânico RJ)</h6>
-              <div>Saída: 9:00 hrs</div>
+              <div>Saída: 8:00 hrs</div>
             </li>
             <li>
               <h6>Visita Técnica Paty de Alferes ( produção de tomate + visita ao Museu da Cachaça)</h6>
@@ -132,12 +132,17 @@ var EventosAcademicos = React.createClass({
             <li>
               <h6>Palestra 3 – Novas diretrizes da Legislação Ambiental</h6>
               <div>Horário: 9:00 - 11:00</div>
-              <span>(Prof. Carlos Pereira- UFF)</span>
+              <span>(Profa. Lívia Maria- UFF)</span>
             </li>
             <li>
               <h6>Palestra 4 – Os impactos das Mudanças Climáticas no potêncial produtivo do Brasil</h6>
               <div>Horário: 14:00 - 16:00</div>
               <span>(Prof. André Belém- UFF)</span>
+            </li>
+            <li>
+              <h6>Palestra 5 – A Amazônia e a cobiça internacional, ameaça à soberania nacional</h6>
+              <div>Horário: 16:00 - 17:30</div>
+              <span>(Prof. Lynce Naveira - Geólogo Sênior)</span>
             </li>
           </ul>
         </div>
@@ -153,27 +158,27 @@ var EventosAcademicos = React.createClass({
           <h5 className='event-title'>Palestras</h5>
           <ul>
             <li>
-              <h6>Palestra 5 - IoT  Perspectiva de uso em ambientes Agrícolas</h6>
+              <h6>Palestra 6 - IoT  Perspectiva de uso em ambientes Agrícolas</h6>
               <div>Horário:10:00-12:00</div>
               <span>(Alessanro Martins – Analista Lojas Americanas RJ)</span>
             </li>
             <li>
-              <h6>Palestra 6 - Sustentabilidade em Projetos de Engenharia</h6>
+              <h6>Palestra 7 - Sustentabilidade em Projetos de Engenharia</h6>
               <div>Horário: 14:00 - 16:00</div>
               <span>(Prof. Marcos Teixeira- UFF)</span>
             </li>
             <li>
-              <h6>Palestra 7 - Ciência do Solo</h6>
+              <h6>Palestra 8 - Ciência do Solo</h6>
               <div>Horário: 14:00 - 16:00</div>
               <span>(Ademir Fontana – Embrapa Solos)</span>
             </li>
             <li>
-              <h6>Palestra 8 - Automação de Unidades Armazenadoras</h6>
+              <h6>Palestra 9 - Automação de Unidades Armazenadoras</h6>
               <div>Horário: 15:00 - 17:00</div>
               <span>(Prof. Ednilton Tavares – UFLA)</span>
             </li>
             <li>
-              <h6>Palestra 9 - Avanços Tecnológicos em Máquinas Agrícolas</h6>
+              <h6>Palestra 10 - Avanços Tecnológicos em Máquinas Agrícolas</h6>
               <div>Horário: 16:00 - 17:00</div>
               <span>(Prof. Carlos Volpato – UFLA)</span>
             </li>
@@ -212,7 +217,7 @@ var EventosAcademicos = React.createClass({
              <div>Horário: 9:00-12:00</div>
            </li>
            <li>
-             <h6>Mesa Redonda + Desafiando Engenheiros – Tema : Avaliação de Impactos no  Caso Samarco</h6>
+             <h6>Mesa Redonda + Desafiando Engenheiros – Tema: Avaliação de Impactos no  Caso Rio Doce</h6>
              <div>Horário: 14:00 - 17:00</div>
            </li>
          </ul>

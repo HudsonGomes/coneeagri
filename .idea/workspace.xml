@@ -34,66 +34,12 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="new.html.erb" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/inscricoes/new.html.erb">
+      <file leaf-file-name="eventos_academicos.jsx" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/assets/javascripts/components/eventos_academicos/eventos_academicos.jsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.6107492">
+              <caret line="145" column="17" selection-start-line="145" selection-start-column="17" selection-end-line="145" selection-end-column="17" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="new_inscricao.jsx" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/assets/javascripts/components/inscricao/new_inscricao.jsx">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.6744186">
-              <caret line="114" column="16" selection-start-line="114" selection-start-column="16" selection-end-line="114" selection-end-column="16" />
-              <folding>
-                <element signature="e#125#343#0" expanded="false" />
-                <element signature="e#138#339#0" expanded="false" />
-                <element signature="e#378#451#0" expanded="false" />
-                <element signature="e#414#445#0" expanded="false" />
-                <element signature="e#760#914#0" expanded="false" />
-                <element signature="e#790#910#0" expanded="false" />
-                <element signature="e#815#896#0" expanded="false" />
-                <element signature="e#952#1317#0" expanded="false" />
-                <element signature="e#973#1306#0" expanded="false" />
-                <element signature="e#1039#1294#0" expanded="false" />
-                <element signature="e#1142#1280#0" expanded="false" />
-                <element signature="e#1189#1263#0" expanded="false" />
-                <element signature="e#1357#1819#0" expanded="false" />
-                <element signature="e#1378#1809#0" expanded="false" />
-                <element signature="e#1444#1797#0" expanded="false" />
-                <element signature="e#1556#1783#0" expanded="false" />
-                <element signature="e#1603#1766#0" expanded="false" />
-                <element signature="e#2060#2218#0" expanded="false" />
-                <element signature="e#2107#2201#0" expanded="false" />
-                <element signature="e#2498#2642#0" expanded="false" />
-                <element signature="e#2545#2625#0" expanded="false" />
-                <element signature="e#2900#3147#0" expanded="false" />
-                <element signature="e#2947#3130#0" expanded="false" />
-                <element signature="e#3225#3278#0" expanded="false" />
-                <element signature="e#3245#3273#0" expanded="false" />
-                <element signature="e#3327#3387#0" expanded="false" />
-                <element signature="e#3347#3382#0" expanded="false" />
-                <element signature="e#3437#3498#0" expanded="false" />
-                <element signature="e#3457#3493#0" expanded="false" />
-                <element signature="e#3547#3607#0" expanded="false" />
-                <element signature="e#3567#3602#0" expanded="false" />
-                <element signature="e#3647#4400#0" expanded="false" />
-                <element signature="e#3667#3694#0" expanded="false" />
-                <element signature="e#3709#4395#0" expanded="false" />
-                <element signature="e#3770#4061#0" expanded="false" />
-                <element signature="e#4089#4159#0" expanded="false" />
-                <element signature="e#4113#4149#0" expanded="false" />
-                <element signature="e#4207#4378#0" expanded="false" />
-                <element signature="e#4231#4309#0" expanded="false" />
-                <element signature="e#4439#4495#0" expanded="false" />
-                <element signature="e#4459#4490#0" expanded="false" />
-                <element signature="e#4539#4594#0" expanded="false" />
-                <element signature="e#4559#4589#0" expanded="false" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -146,7 +92,6 @@
         <option value="$PROJECT_DIR$/app/views/inscricao_mailer/inscricao_mailer.html.erb" />
         <option value="$PROJECT_DIR$/app/controllers/checkouts_controller.rb" />
         <option value="$PROJECT_DIR$/lib/tasks/remove_inscricao.rake" />
-        <option value="$PROJECT_DIR$/app/assets/javascripts/components/eventos_academicos/eventos_academicos.jsx" />
         <option value="$PROJECT_DIR$/config/routes.rb" />
         <option value="$PROJECT_DIR$/app/views/inscricoes/index.html.erb" />
         <option value="$PROJECT_DIR$/app/controllers/admin/inscricoes_controller.rb" />
@@ -154,6 +99,7 @@
         <option value="$PROJECT_DIR$/app/views/admin/inscricoes/new.html.erb" />
         <option value="$PROJECT_DIR$/app/assets/javascripts/components/inscricao/select_visita_tecnica.jsx" />
         <option value="$PROJECT_DIR$/app/assets/javascripts/components/inscricao/new_inscricao.jsx" />
+        <option value="$PROJECT_DIR$/app/assets/javascripts/components/eventos_academicos/eventos_academicos.jsx" />
       </list>
     </option>
   </component>
@@ -165,9 +111,9 @@
     <order />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="y" value="-4" />
+    <option name="y" value="24" />
     <option name="width" value="1360" />
-    <option name="height" value="772" />
+    <option name="height" value="744" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -332,9 +278,9 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
       <pane id="RailsProjectView" />
       <pane id="Scratches" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -560,28 +506,28 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="-4" width="1360" height="772" extended-state="6" />
+    <frame x="0" y="24" width="1360" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32724506" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2739726" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3288889" sideWeight="0.5" order="11" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.14307459" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3295129" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3288889" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -888,13 +834,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/components/eventos_academicos/eventos_academicos.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="175" column="28" selection-start-line="175" selection-start-column="28" selection-end-line="175" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/contatos/new.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-0.0">
@@ -913,7 +852,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="7" column="27" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="27" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -921,7 +859,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="20" selection-start-line="0" selection-start-column="6" selection-end-line="0" selection-end-column="20" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -929,7 +866,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="4" column="52" selection-start-line="4" selection-start-column="4" selection-end-line="4" selection-end-column="52" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -937,7 +873,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="9" column="35" selection-start-line="9" selection-start-column="35" selection-end-line="9" selection-end-column="35" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -945,16 +880,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="98" column="24" selection-start-line="98" selection-start-column="24" selection-end-line="98" selection-end-column="24" />
-          <folding>
-            <element signature="e#26#298#0" expanded="false" />
-            <element signature="e#302#1461#0" expanded="false" />
-            <element signature="e#402#498#0" expanded="false" />
-            <element signature="e#602#1455#0" expanded="false" />
-            <element signature="e#611#1447#1" expanded="false" />
-            <element signature="e#625#778#0" expanded="false" />
-            <element signature="e#625#1222#0" expanded="false" />
-            <element signature="e#1465#1742#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -962,7 +887,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.9891473">
           <caret line="50" column="3" selection-start-line="50" selection-start-column="3" selection-end-line="50" selection-end-column="3" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -970,7 +894,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="47" column="31" selection-start-line="47" selection-start-column="31" selection-end-line="47" selection-end-column="31" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -978,7 +901,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="58" column="71" selection-start-line="58" selection-start-column="71" selection-end-line="58" selection-end-column="71" />
-          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/components/inscricao/new_inscricao.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.43100774">
+          <caret line="114" column="16" selection-start-line="114" selection-start-column="16" selection-end-line="114" selection-end-column="16" />
         </state>
       </provider>
     </entry>
@@ -986,59 +915,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/components/inscricao/new_inscricao.jsx">
+    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/components/eventos_academicos/eventos_academicos.jsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6744186">
-          <caret line="114" column="16" selection-start-line="114" selection-start-column="16" selection-end-line="114" selection-end-column="16" />
-          <folding>
-            <element signature="e#125#343#0" expanded="false" />
-            <element signature="e#138#339#0" expanded="false" />
-            <element signature="e#378#451#0" expanded="false" />
-            <element signature="e#414#445#0" expanded="false" />
-            <element signature="e#760#914#0" expanded="false" />
-            <element signature="e#790#910#0" expanded="false" />
-            <element signature="e#815#896#0" expanded="false" />
-            <element signature="e#952#1317#0" expanded="false" />
-            <element signature="e#973#1306#0" expanded="false" />
-            <element signature="e#1039#1294#0" expanded="false" />
-            <element signature="e#1142#1280#0" expanded="false" />
-            <element signature="e#1189#1263#0" expanded="false" />
-            <element signature="e#1357#1819#0" expanded="false" />
-            <element signature="e#1378#1809#0" expanded="false" />
-            <element signature="e#1444#1797#0" expanded="false" />
-            <element signature="e#1556#1783#0" expanded="false" />
-            <element signature="e#1603#1766#0" expanded="false" />
-            <element signature="e#2060#2218#0" expanded="false" />
-            <element signature="e#2107#2201#0" expanded="false" />
-            <element signature="e#2498#2642#0" expanded="false" />
-            <element signature="e#2545#2625#0" expanded="false" />
-            <element signature="e#2900#3147#0" expanded="false" />
-            <element signature="e#2947#3130#0" expanded="false" />
-            <element signature="e#3225#3278#0" expanded="false" />
-            <element signature="e#3245#3273#0" expanded="false" />
-            <element signature="e#3327#3387#0" expanded="false" />
-            <element signature="e#3347#3382#0" expanded="false" />
-            <element signature="e#3437#3498#0" expanded="false" />
-            <element signature="e#3457#3493#0" expanded="false" />
-            <element signature="e#3547#3607#0" expanded="false" />
-            <element signature="e#3567#3602#0" expanded="false" />
-            <element signature="e#3647#4400#0" expanded="false" />
-            <element signature="e#3667#3694#0" expanded="false" />
-            <element signature="e#3709#4395#0" expanded="false" />
-            <element signature="e#3770#4061#0" expanded="false" />
-            <element signature="e#4089#4159#0" expanded="false" />
-            <element signature="e#4113#4149#0" expanded="false" />
-            <element signature="e#4207#4378#0" expanded="false" />
-            <element signature="e#4231#4309#0" expanded="false" />
-            <element signature="e#4439#4495#0" expanded="false" />
-            <element signature="e#4459#4490#0" expanded="false" />
-            <element signature="e#4539#4594#0" expanded="false" />
-            <element signature="e#4559#4589#0" expanded="false" />
-          </folding>
+        <state vertical-scroll-proportion="0.6107492">
+          <caret line="145" column="17" selection-start-line="145" selection-start-column="17" selection-end-line="145" selection-end-column="17" />
+          <folding />
         </state>
       </provider>
     </entry>
